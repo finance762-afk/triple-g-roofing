@@ -135,7 +135,7 @@ $yearsInBusiness = null;
 $tier = 'premium';
 
 /* --- CSS cache-bust — SINGLE source of truth. Bump on every framework.css change. --- */
-$cssVersion = '3';                        // pages must NEVER set their own $cssVersion
+$cssVersion = '5';                        // pages must NEVER set their own $cssVersion
 
 /* --- Forms --- */
 $formAction = 'https://formsubmit.co/tmenn013@gmail.com';

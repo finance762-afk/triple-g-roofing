@@ -160,7 +160,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <!-- Contact Info & Map -->
             <div data-animate="fade-up" style="animation-delay: 0.1s;">
                 <h2>Contact Information</h2>
-                <p style="margin-bottom: var(--space-lg);">Reach out by phone, email, or stop by our office in Huffman.</p>
+                <p style="margin-bottom: var(--space-lg);">Reach out by phone or email — we serve Huffman and all of North Harris County.</p>
 
                 <div class="contact-info-card" style="background: var(--color-bg-alt); padding: var(--space-lg); border-radius: var(--radius); margin-bottom: var(--space-lg);">
                     <div class="contact-item" style="display: flex; align-items: flex-start; gap: var(--space-md); margin-bottom: var(--space-md);">
@@ -183,7 +183,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                         <?php echo icon('map-pin', 24); ?>
                         <div>
                             <strong style="display: block; margin-bottom: 4px;">Address</strong>
-                            <span><?php echo $address['street']; ?><br><?php echo $address['city']; ?>, <?php echo $address['state']; ?> <?php echo $address['zip']; ?></span>
+                            <span><?php echo $address['city']; ?>, <?php echo $address['state']; ?> <?php echo $address['zip']; ?></span>
                         </div>
                     </div>
 
