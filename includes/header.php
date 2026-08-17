@@ -30,6 +30,22 @@
                     </ul>
                 </li>
 
+                <!-- Service Areas Dropdown -->
+                <li class="nav-dropdown">
+                    <a href="/service-areas/" <?php if (isActivePage('service-areas')): ?>aria-current="page"<?php endif; ?>>
+                        Service Areas <?php echo icon('chevron-down', 16); ?>
+                    </a>
+                    <ul class="nav-dropdown-menu" role="menu" style="display:none">
+                        <?php foreach ($serviceAreas as $area): ?>
+                        <li role="none">
+                            <a href="/service-areas/<?php echo strtolower(str_replace(' ', '-', $area)); ?>/" role="menuitem">
+                                <?php echo htmlspecialchars($area); ?> Roofing
+                            </a>
+                        </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </li>
+
                 <li><a href="/about/" <?php if (isActivePage('about')): ?>aria-current="page"<?php endif; ?>>About</a></li>
                 <li><a href="/contact/" <?php if (isActivePage('contact')): ?>aria-current="page"<?php endif; ?>>Contact</a></li>
             </ul>
