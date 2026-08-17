@@ -22,7 +22,7 @@
                     <ul class="nav-dropdown-menu" role="menu" style="display:none">
                         <?php foreach ($services as $service): ?>
                         <li role="none">
-                            <a href="/services/<?php echo getServiceSlug($service['name']); ?>/" role="menuitem">
+                            <a href="/services/<?php echo $service['slug']; ?>/" role="menuitem">
                                 <?php echo htmlspecialchars($service['name']); ?>
                             </a>
                         </li>

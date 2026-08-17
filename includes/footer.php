@@ -32,7 +32,7 @@
                         $service = $services[$i];
                     ?>
                     <li>
-                        <a href="/services/<?php echo getServiceSlug($service['name']); ?>/">
+                        <a href="/services/<?php echo $service['slug']; ?>/">
                             <?php echo htmlspecialchars($service['name']); ?>
                         </a>
                     </li>
