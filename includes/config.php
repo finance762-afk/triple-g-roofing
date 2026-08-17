@@ -122,9 +122,9 @@ $googleAnalyticsId = 'G-XXXXXXXXXX';      // placeholder — replace at launch
 
 /* --- Brand colors (mirror framework.css :root, extracted from logo) --- */
 $colors = [
-    'primary'   => '#1a2b3c',
-    'secondary' => '#4d5e6f',
-    'accent'    => '#06b6d4',
+    'primary'   => '#EE5816',
+    'secondary' => '#1a1a2e',
+    'accent'    => '#DD9F5D',
 ];
 
 /* --- Business timeline --- */
