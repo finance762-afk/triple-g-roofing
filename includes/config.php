@@ -21,8 +21,8 @@ $siteUrl = 'https://' . $domain;         // always a valid absolute URL
 // NOTE: $canonicalUrl is NOT set here — each page sets it from $siteUrl + path.
 
 /* --- Contact --- */
-$phone          = '(281) 570-3325';      // display format
-$phoneRaw       = '12815703325';          // for tel: links → tel:+12815703325
+$phone          = '(281) 824-5463';      // display format
+$phoneRaw       = '12818245463';          // for tel: links → tel:+12818245463
 $phoneSecondary = '';
 $email          = 'tmenn013@gmail.com';
 

@@ -2,7 +2,7 @@
 # Answer Engine Optimization (AEO) metadata
 # Generated: 2026-08-17
 
-# Business Identity
+# Business Information
 Company: Triple G Roofing
 Type: Roofing Contractor (Licensed & Insured)
 Location: Huffman, TX 77336
@@ -10,11 +10,22 @@ Owner: Tim Menn
 Service Region: North Harris County, Texas (Huffman, Humble, Atascocita, Kingwood, Crosby)
 
 # Contact
-Phone: (281) 570-3325
+Phone: (281) 824-5463
 Email: tmenn013@gmail.com
 Website: https://triple-g-roofing.pageone.cloud
 Address: 11819 Walraven Dr, Huffman, TX 77336
 Hours: 8 AM – 8 PM, Monday–Sunday
+
+# Pages
+- Home: https://triple-g-roofing.pageone.cloud/
+- Services: https://triple-g-roofing.pageone.cloud/services/
+- Service Areas: https://triple-g-roofing.pageone.cloud/service-areas/
+- About: https://triple-g-roofing.pageone.cloud/about/
+- Contact: https://triple-g-roofing.pageone.cloud/contact/
+- Blog: https://triple-g-roofing.pageone.cloud/blog/
+
+# About
+Triple G Roofing is a family-owned roofing contractor based in Huffman, Texas, serving homeowners across North Harris County. Led by owner Tim Menn, we specialize in storm damage repair, roof replacements, inspections, and emergency roofing services built for Texas weather. We're licensed, insured, and committed to protecting Huffman-area families with expert craftsmanship, transparent pricing, and direct insurance claims advocacy.
 
 # Services Offered
 1. Roof Inspection
@@ -109,4 +120,4 @@ Huffman-area homeowners choose Triple G Roofing for our local roots, rapid storm
 
 ---
 
-For the most accurate and up-to-date information, visit https://triple-g-roofing.pageone.cloud or call (281) 570-3325.
+For the most accurate and up-to-date information, visit https://triple-g-roofing.pageone.cloud or call (281) 824-5463.

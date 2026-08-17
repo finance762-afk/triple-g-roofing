@@ -12,7 +12,7 @@ $currentPage     = 'services';
 $serviceName     = 'Gutter Installation';
 $serviceSlug     = 'gutter-installation';
 $pageTitle       = 'Seamless Gutter Installation Huffman TX | Triple G Roofing';
-$pageDescription = 'Seamless gutter installation in Huffman, TX from Triple G Roofing — custom on-site runs and proper pitch that route water away from your foundation. Call (281) 570-3325.';
+$pageDescription = 'Seamless gutter installation in Huffman, TX from Triple G Roofing — custom on-site runs and proper pitch that route water away from your foundation. Call (281) 824-5463.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 /* --- FAQs specific to gutter installation in Huffman --- */

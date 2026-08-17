@@ -13,7 +13,7 @@ $currentPage     = 'services';
 $serviceName     = 'Attic Venting';
 $serviceSlug     = 'attic-venting';
 $pageTitle       = 'Attic Venting & Roof Ventilation Huffman TX | Triple G Roofing';
-$pageDescription = 'Balanced attic ventilation in Huffman, TX from Triple G Roofing — soffit intake and ridge exhaust that cool your attic, protect shingles, and cut cooling bills. Call (281) 570-3325.';
+$pageDescription = 'Balanced attic ventilation in Huffman, TX from Triple G Roofing — soffit intake and ridge exhaust that cool your attic, protect shingles, and cut cooling bills. Call (281) 824-5463.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 /* --- FAQs specific to attic venting in Huffman --- */

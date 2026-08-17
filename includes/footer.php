@@ -8,7 +8,7 @@
             <!-- Column 1: About & Trust Badges -->
             <div class="footer-col">
                 <div class="site-logo" style="margin-bottom: var(--space-4);">
-                    <img src="/assets/images/logo.png" alt="<?php echo htmlspecialchars($siteName); ?>" style="height: 48px; width: auto;">
+                    <img src="/assets/images/logo.png" alt="<?php echo htmlspecialchars($siteName); ?>" width="96" height="48" style="height: 48px; width: auto;">
                 </div>
                 <p><?php echo htmlspecialchars($tagline); ?></p>
                 <p style="font-size: var(--font-size-sm); margin-top: var(--space-3);">
@@ -107,7 +107,7 @@
             <span class="footer-legal-divider">|</span>
             <a href="/privacy-policy/#ccpa-rights">Do Not Sell or Share My Personal Information</a>
             <span class="footer-legal-divider">|</span>
-            <a href="/sitemap/">Sitemap</a>
+            <a href="/sitemap.xml">Sitemap</a>
         </div>
 
         <!-- Footer Bottom Bar -->

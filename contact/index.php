@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'contact';
 $pageTitle       = 'Contact Triple G Roofing | Free Roof Estimates in Huffman, TX';
-$pageDescription = 'Contact Triple G Roofing for a free roof inspection and estimate. Serving Huffman and North Harris County. Call (281) 570-3325 or request an estimate online.';
+$pageDescription = 'Contact Triple G Roofing for a free roof inspection and estimate. Serving Huffman and North Harris County. Call (281) 824-5463 or request an estimate online.';
 $canonicalUrl    = $siteUrl . '/contact/';
 
 /* --- BreadcrumbList Schema --- */

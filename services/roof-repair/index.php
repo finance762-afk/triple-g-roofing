@@ -12,7 +12,7 @@ $currentPage     = 'services';
 $serviceName     = 'Roof Repair';
 $serviceSlug     = 'roof-repair';
 $pageTitle       = 'Roof Repair Huffman TX | Triple G Roofing';
-$pageDescription = 'Fast, honest roof repair in Huffman, TX from Triple G Roofing. Leaks stopped at the source, most repairs within 48 hours, 10-year workmanship warranty. Call (281) 570-3325.';
+$pageDescription = 'Fast, honest roof repair in Huffman, TX from Triple G Roofing. Leaks stopped at the source, most repairs within 48 hours, 10-year workmanship warranty. Call (281) 824-5463.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 /* --- FAQs specific to roof repair in Huffman --- */

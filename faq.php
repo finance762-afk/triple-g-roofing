@@ -17,7 +17,7 @@ $faqCategories = [
     'General' => [
         [
             'q' => 'Does Triple G Roofing offer free estimates?',
-            'a' => 'Yes. We provide free, no-obligation estimates across Huffman, Humble, Atascocita, Kingwood, and Crosby. Call (281) 570-3325 or request an estimate online and we will respond the same day.',
+            'a' => 'Yes. We provide free, no-obligation estimates across Huffman, Humble, Atascocita, Kingwood, and Crosby. Call (281) 824-5463 or request an estimate online and we will respond the same day.',
         ],
         [
             'q' => 'What areas do you serve?',

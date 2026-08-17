@@ -12,7 +12,7 @@ $currentPage     = 'services';
 $serviceName     = 'Roof Inspection';
 $serviceSlug     = 'roof-inspection';
 $pageTitle       = 'Roof Inspection Huffman TX | Triple G Roofing';
-$pageDescription = 'Same-day, photo-documented roof inspections in Huffman, TX from Triple G Roofing. Storm-damage assessments that back up your insurance claim. Free & honest. Call (281) 570-3325.';
+$pageDescription = 'Same-day, photo-documented roof inspections in Huffman, TX from Triple G Roofing. Storm-damage assessments that back up your insurance claim. Free & honest. Call (281) 824-5463.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 /* --- FAQs specific to roof inspection in Huffman --- */

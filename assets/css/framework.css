@@ -198,7 +198,7 @@ p {
 
 /* === Hero Section === */
 .hero {
-  position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: center; justify-content: center;
   background-size: cover; background-position: center; background-repeat: no-repeat;
   overflow: hidden; padding-top: 80px;
 }
@@ -437,4 +437,19 @@ section.hero {
 
   section { padding: var(--space-12) 0; }
   .btn-lg { padding: var(--space-3) var(--space-6); font-size: var(--font-size-sm); }
+}
+
+/* === Form Input Font Size ≥16px (v6.2 — prevents iOS zoom on focus) === */
+input, select, textarea {
+  font-size: 1rem;
+}
+
+/* === Reduced Motion Accessibility (v6.2 REQUIRED) === */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

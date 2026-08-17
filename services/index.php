@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'services';
 $pageTitle       = 'Roofing Services in Huffman, TX | Triple G Roofing';
-$pageDescription = 'Explore Triple G Roofing services in Huffman, TX — roof inspections, repairs, attic venting, seamless gutters, and storm & wind damage restoration across North Harris County. Call (281) 570-3325.';
+$pageDescription = 'Explore Triple G Roofing services in Huffman, TX — roof inspections, repairs, attic venting, seamless gutters, and storm & wind damage restoration across North Harris County. Call (281) 824-5463.';
 $canonicalUrl    = $siteUrl . '/services/';
 
 /* --- Enriched service data (img + icon + 3 benefit bullets) — canonical source shared with home + service pages --- */

@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'home';
 $pageTitle       = 'Triple G Roofing | Roofing Contractor in Huffman, TX';
-$pageDescription = 'Triple G Roofing is a licensed, family-owned roofing contractor in Huffman, TX. Storm damage repair, roof replacement, inspections & insurance-claim help across North Harris County. Call (281) 570-3325.';
+$pageDescription = 'Triple G Roofing is a licensed, family-owned roofing contractor in Huffman, TX. Storm damage repair, roof replacement, inspections & insurance-claim help across North Harris County. Call (281) 824-5463.';
 $pageDescription = $pageDescription;
 $canonicalUrl    = $siteUrl . '/';
 
@@ -95,7 +95,7 @@ $faqs = [
     ],
     [
         'q' => 'Do you offer free roof estimates near me in Huffman?',
-        'a' => 'Yes. Triple G Roofing provides free, no-obligation estimates across Huffman, Humble, Atascocita, Kingwood, and Crosby. Call (281) 570-3325 or request an estimate online and we will respond the same day.',
+        'a' => 'Yes. Triple G Roofing provides free, no-obligation estimates across Huffman, Humble, Atascocita, Kingwood, and Crosby. Call (281) 824-5463 or request an estimate online and we will respond the same day.',
     ],
 ];
 
