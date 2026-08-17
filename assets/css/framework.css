@@ -161,23 +161,25 @@ p {
 .btn-lg { padding: var(--space-4) var(--space-8); font-size: var(--font-size-base); }
 .btn-sm { padding: var(--space-2) var(--space-4); font-size: var(--font-size-xs); }
 
-/* === Glassmorphism Navigation === */
+/* === Glassmorphism Navigation (white — lets the logo carry the color) === */
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-  background: rgba(var(--color-primary-rgb), 0.85);
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(26, 26, 46, 0.06);
   padding: var(--space-3) 0; transition: all var(--transition-base);
 }
 .site-header.scrolled {
-  background: rgba(var(--color-primary-rgb), 0.95);
-  box-shadow: 0 2px 20px rgba(0,0,0,0.15); padding: var(--space-2) 0;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 2px 20px rgba(26, 26, 46, 0.10); padding: var(--space-2) 0;
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; }
-.site-logo { height: 45px; width: auto; }
+.site-logo { height: 96px; width: auto; transition: height var(--transition-base); }
 .site-logo img { height: 100%; width: auto; }
+.site-header.scrolled .site-logo { height: 90px; }
 .nav-links { display: flex; align-items: center; gap: var(--space-6); list-style: none; }
-.nav-links a { color: var(--color-white); font-family: var(--font-heading); font-size: var(--font-size-sm); font-weight: 500; transition: opacity var(--transition-fast); }
-.nav-links a:hover { opacity: 0.8; color: var(--color-white); }
+.nav-links a { color: var(--color-dark); font-family: var(--font-heading); font-size: var(--font-size-sm); font-weight: 500; transition: color var(--transition-fast); }
+.nav-links a:hover { opacity: 1; color: var(--color-primary); }
 .nav-dropdown { position: relative; }
 .nav-dropdown-menu {
   position: absolute; top: 100%; left: 0; background: var(--color-white); border-radius: var(--radius-md);
@@ -191,7 +193,7 @@ p {
 
 /* Mobile Nav Toggle */
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: var(--space-2); background: none; border: none; }
-.hamburger span { display: block; width: 24px; height: 2px; background: var(--color-white); transition: all var(--transition-fast); }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--color-dark); transition: all var(--transition-fast); }
 .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
 .hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
@@ -200,7 +202,7 @@ p {
 .hero {
   position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: center; justify-content: center;
   background-size: cover; background-position: center; background-repeat: no-repeat;
-  overflow: hidden; padding-top: 80px;
+  overflow: hidden;
 }
 .hero-overlay {
   position: absolute; inset: 0;
@@ -228,6 +230,10 @@ section {
 }
 section.hero {
   padding: 0; /* hero overrides — full bleed */
+  padding-top: 132px; /* clear the fixed white nav (96px logo + bar padding) */
+}
+@media (max-width: 768px) {
+  section.hero { padding-top: 100px; } /* mobile nav is 72px logo */
 }
 .section-header { text-align: center; margin-bottom: var(--space-12); }
 .section-header .eyebrow {
@@ -408,8 +414,12 @@ section.hero {
 
   .nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(var(--color-secondary-rgb), 0.98); flex-direction: column; align-items: center; justify-content: center; gap: var(--space-8); z-index: 999; }
   .nav-links.active { display: flex; }
-  .nav-links a { font-size: var(--font-size-xl); }
+  /* overlay menu is dark navy — links must stay white there (desktop nav is white with dark links) */
+  .nav-links a { font-size: var(--font-size-xl); color: var(--color-white); }
+  .nav-links a:hover { color: var(--color-accent); }
   .hamburger { display: flex; z-index: 1001; }
+  .hamburger.active span { background: var(--color-white); }
+  .site-logo, .site-header.scrolled .site-logo { height: 72px; }
   .header-cta { display: none; }
 
   .services-grid { grid-template-columns: 1fr 1fr; }
