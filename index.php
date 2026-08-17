@@ -10,6 +10,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $currentPage     = 'home';
 $pageTitle       = 'Triple G Roofing | Roofing Contractor in Huffman, TX';
 $metaDescription = 'Triple G Roofing is a licensed, family-owned roofing contractor in Huffman, TX. Storm damage repair, roof replacement, inspections & insurance-claim help across North Harris County. Call (281) 570-3325.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/';
 
 /* --- Homepage service data (image + icon + 3 benefit bullets per required-components) --- */
@@ -140,7 +141,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
    HERO — layered photo + gradient overlay, 60/40 split
    ===================================================== */
 .home-hero {
-  min-height: 100vh; display: flex; align-items: center;
+  min-height: 100vh; min-height: 100svh; display: flex; align-items: center;
   text-align: left; padding-top: 96px; padding-bottom: var(--space-16);
   overflow: hidden;
 }
@@ -247,7 +248,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
    SERVICES (required-components tinted image cards)
    ===================================================== */
 .services-section { background: var(--color-white); }
-.services-section .section-header { max-width: 760px; margin-left: auto; margin-right: auto; }
+/* logical properties keep centering correct in any writing mode */
+.services-section .section-header { max-width: 760px; margin-inline: auto; padding-inline: var(--space-4); }
 .hero-answer {
   font-size: var(--font-size-lg); color: var(--color-gray-dark);
   line-height: 1.7; max-width: 64ch; margin: var(--space-4) auto 0;
