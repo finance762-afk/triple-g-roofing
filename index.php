@@ -764,11 +764,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
 
       <div class="about-figure" data-animate>
-        <img src="/assets/images/owner-customer.jpg"
-             srcset="/assets/images/owner-customer-480.webp 480w, /assets/images/owner-customer-960.webp 960w, /assets/images/owner-customer-1600.webp 1600w"
+        <img src="/assets/images/owner-father.jpg"
+             srcset="/assets/images/owner-father-480.webp 480w, /assets/images/owner-father-960.webp 960w"
              sizes="(max-width: 900px) 100vw, 420px"
-             alt="Triple G Roofing owner Tim Menn with a satisfied Huffman-area customer"
-             width="600" height="750" loading="lazy">
+             alt="Owner Tim Menn and his father with the Triple G Roofing sign at a Huffman job site"
+             width="600" height="800" loading="lazy">
         <div class="about-badge">
           <div class="big">Local</div>
           <div class="label">Family-Owned &amp; Operated in Huffman, TX</div>
