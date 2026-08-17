@@ -46,6 +46,14 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
         <priority>0.7</priority>
     </url>
 
+    <!-- FAQ -->
+    <url>
+        <loc><?php echo $siteUrl; ?>/faq/</loc>
+        <lastmod><?php echo $lastmod; ?></lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
     <!-- Blog Main -->
     <url>
         <loc><?php echo $siteUrl; ?>/blog/</loc>

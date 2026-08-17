@@ -57,6 +57,8 @@
                     <?php if (count($serviceAreas) > 5): ?>
                     <li><a href="/service-areas/">View All Areas</a></li>
                     <?php endif; ?>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/blog/">Blog</a></li>
                 </ul>
             </div>
 
@@ -73,7 +75,7 @@
                 </div>
                 <div class="contact-item">
                     <?php echo icon('map-pin', 18); ?>
-                    <span><?php echo $address['street']; ?><br>
+                    <span><?php /* service-area business — street withheld to match the GBP listing */ ?>
                     <?php echo $address['city']; ?>, <?php echo $address['state']; ?> <?php echo $address['zip']; ?></span>
                 </div>
                 <div class="contact-item">
