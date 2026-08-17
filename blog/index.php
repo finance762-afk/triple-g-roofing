@@ -1,10 +1,11 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 $currentPage = 'blog';
-$pageTitle = 'Roofing Tips & Industry News | Triple G Roofing Blog';
-$pageDescription = 'Expert roofing advice, storm preparation tips, and industry updates from Triple G Roofing. Learn how to protect your North Harris County home from our licensed roofing professionals.';
+$pageTitle = 'Roofing & Siding Tips for North Harris County | Triple G Roofing Blog';
+$pageDescription = 'Expert roofing and siding advice for Huffman, Humble, Atascocita, Kingwood, and Crosby homeowners — costs, storm damage, insurance claims, and Gulf Coast maintenance guides.';
 $canonicalUrl = $siteUrl . '/blog/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
@@ -12,48 +13,49 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
 <main id="main-content">
-    <!-- Hero Section -->
-    <section class="hero hero--page">
+    <!-- Page Header -->
+    <section class="blog-post__header">
         <div class="container">
-            <div class="hero__content">
-                <span class="eyebrow-label">ROOFING KNOWLEDGE</span>
-                <h1>Triple G Roofing <span class="text-accent">Blog</span></h1>
-                <p class="hero-subtitle">Expert roofing advice, storm preparation tips, and industry updates for North Harris County homeowners</p>
-            </div>
+            <span class="blog-post__category">Roofing Knowledge</span>
+            <h1>Triple G Roofing <span class="text-accent">Blog</span></h1>
+            <p style="color: var(--color-gray); max-width: 60ch; margin: 0 auto;">Roofing and siding answers for Huffman, Humble, Atascocita, Kingwood, and Crosby homeowners — written by the crew that works these neighborhoods.</p>
         </div>
     </section>
 
-    <!-- Blog Posts Coming Soon -->
+    <!-- Blog Grid -->
     <section class="section">
         <div class="container">
-            <div class="prose prose-centered">
-                <h2>Blog Posts Coming Soon</h2>
-                <p>We're currently developing helpful roofing content for North Harris County homeowners. Check back soon for:</p>
-                <ul style="text-align: left; max-width: 600px; margin: 2rem auto;">
-                    <li>Storm preparation and damage prevention tips</li>
-                    <li>Roof maintenance guides for Texas climates</li>
-                    <li>Insurance claim process walkthroughs</li>
-                    <li>Material selection advice for Gulf Coast homes</li>
-                    <li>DIY inspection checklists</li>
-                </ul>
-                <p>In the meantime, if you have roofing questions, <a href="/contact/" style="color: var(--color-primary); text-decoration: underline;">contact us directly</a> — we're always happy to help.</p>
+            <div class="blog-grid" data-p1-dynamic>
+                <?php foreach ($blogPosts as $post): ?>
+                <a href="/blog/<?php echo $post['slug']; ?>/" class="blog-card">
+                    <div class="blog-card__image">
+                        <img src="<?php echo $post['image']; ?>"
+                             alt="<?php echo htmlspecialchars($post['alt']); ?>"
+                             width="960" height="600" loading="lazy">
+                    </div>
+                    <div class="blog-card__body">
+                        <span class="blog-card__category"><?php echo htmlspecialchars($post['category']); ?></span>
+                        <h2 class="blog-card__title"><?php echo htmlspecialchars($post['title']); ?></h2>
+                        <p class="blog-card__excerpt"><?php echo htmlspecialchars($post['excerpt']); ?></p>
+                        <div class="blog-card__meta">
+                            <time datetime="<?php echo $post['dateISO']; ?>"><?php echo $post['date']; ?></time>
+                            <span>•</span>
+                            <span><?php echo $post['readtime']; ?></span>
+                        </div>
+                        <span class="blog-card__cta">Read Article →</span>
+                    </div>
+                </a>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
 
-    <!-- CTA Banner -->
-    <section class="cta-banner">
-        <div class="container">
-            <div class="cta-banner__content">
-                <h2>Need Roofing Help Today?</h2>
-                <p>Don't wait for the blog — call Triple G Roofing now for expert advice and free estimates.</p>
-            </div>
-            <div class="cta-banner__action">
-                <a href="tel:+<?php echo $phoneRaw; ?>" class="btn btn-light">
-                    <?php echo icon('phone', 18); ?> <?php echo $phone; ?>
-                </a>
-                <a href="/contact/" class="btn btn-outline-light">Get Free Estimate</a>
-            </div>
+    <!-- CTA -->
+    <section class="section cta-banner">
+        <div class="container" style="text-align:center">
+            <h2>Have a roofing question we haven't answered?</h2>
+            <p>Call the Triple G Roofing team — real answers from a local roofer, no runaround.</p>
+            <a href="tel:+<?php echo $phoneRaw; ?>" class="btn btn-primary btn-lg"><?php echo $phone; ?></a>
         </div>
     </section>
 </main>

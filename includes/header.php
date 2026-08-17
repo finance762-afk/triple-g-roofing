@@ -47,6 +47,7 @@
                 </li>
 
                 <li><a href="/about/" <?php if (isActivePage('about')): ?>aria-current="page"<?php endif; ?>>About</a></li>
+                <li><a href="/blog/" <?php if (isActivePage('blog')): ?>aria-current="page"<?php endif; ?>>Blog</a></li>
                 <li><a href="/contact/" <?php if (isActivePage('contact')): ?>aria-current="page"<?php endif; ?>>Contact</a></li>
             </ul>
         </nav>

@@ -166,158 +166,32 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 </div>
             </div>
         </section>
+
+        <!-- Related Articles -->
+        <section class="blog-post__related-articles">
+            <div class="container-narrow">
+                <h2>Related Articles</h2>
+                <div class="blog-grid" data-p1-dynamic>
+                    <?php
+                    $related = array_filter($blogPosts, fn($p) => $p['slug'] !== 'hail-damage-roof-inspection-guide');
+                    usort($related, fn($a, $b) => ($b['category'] === 'Storm Damage') <=> ($a['category'] === 'Storm Damage'));
+                    foreach (array_slice($related, 0, 2) as $post): ?>
+                    <a href="/blog/<?php echo $post['slug']; ?>/" class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="<?php echo $post['image']; ?>" alt="<?php echo htmlspecialchars($post['alt']); ?>" width="960" height="600" loading="lazy">
+                        </div>
+                        <div class="blog-card__body">
+                            <span class="blog-card__category"><?php echo htmlspecialchars($post['category']); ?></span>
+                            <h3 class="blog-card__title"><?php echo htmlspecialchars($post['title']); ?></h3>
+                            <div class="blog-card__meta"><time datetime="<?php echo $post['dateISO']; ?>"><?php echo $post['date']; ?></time><span>•</span><span><?php echo $post['readtime']; ?></span></div>
+                        </div>
+                    </a>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </section>
     </article>
 </main>
 
-<style>
-/* Blog Post Styles */
-.blog-post__header {
-    background: var(--color-bg-alt);
-    padding: var(--space-3xl) 0 var(--space-2xl);
-    text-align: center;
-}
-
-.blog-post__category {
-    display: inline-block;
-    background: var(--color-primary);
-    color: white;
-    padding: var(--space-xs) var(--space-sm);
-    border-radius: var(--radius-sm);
-    font-size: 0.875rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: var(--space-md);
-}
-
-.blog-post__header h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    margin-bottom: var(--space-md);
-    line-height: 1.2;
-}
-
-.blog-post__meta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-sm);
-    color: var(--color-text-light);
-    font-size: 0.9375rem;
-}
-
-.blog-post__featured-image {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-}
-
-.blog-post__featured-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.blog-post__content {
-    padding: var(--space-3xl) 0;
-}
-
-.container-narrow {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 var(--space-lg);
-}
-
-.answer-block {
-    background: var(--color-bg-alt);
-    border-left: 4px solid var(--color-primary);
-    padding: var(--space-lg);
-    margin-bottom: var(--space-2xl);
-    border-radius: var(--radius-sm);
-}
-
-.lead {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text);
-}
-
-.blog-post__content h2 {
-    font-size: 1.75rem;
-    margin-top: var(--space-2xl);
-    margin-bottom: var(--space-md);
-    color: var(--color-text);
-}
-
-.blog-post__content p {
-    margin-bottom: var(--space-md);
-    line-height: 1.7;
-}
-
-.blog-post__content ul,
-.blog-post__content ol {
-    margin-bottom: var(--space-md);
-    padding-left: var(--space-lg);
-}
-
-.blog-post__content li {
-    margin-bottom: var(--space-sm);
-    line-height: 1.7;
-}
-
-.blog-post__content a {
-    color: var(--color-primary);
-    text-decoration: underline;
-}
-
-.blog-post__content a:hover {
-    color: var(--color-primary-dark);
-}
-
-.blog-post__related-services {
-    background: var(--color-bg-alt);
-    padding: var(--space-2xl) 0;
-    margin-top: var(--space-3xl);
-}
-
-.blog-post__related-services h2 {
-    text-align: center;
-    margin-bottom: var(--space-xl);
-}
-
-.service-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-lg);
-}
-
-.service-link-card {
-    background: white;
-    padding: var(--space-lg);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    text-decoration: none;
-    color: inherit;
-    transition: var(--transition);
-}
-
-.service-link-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-}
-
-.service-link-card h3 {
-    color: var(--color-primary);
-    margin-bottom: var(--space-sm);
-}
-
-.service-link-card p {
-    color: var(--color-text-light);
-    font-size: 0.9375rem;
-    line-height: 1.6;
-    margin: 0;
-}
-</style>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

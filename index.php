@@ -837,6 +837,38 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   </div>
 </section>
 
+<!-- ===================== FROM THE BLOG ===================== -->
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php'; $latestPost = $blogPosts[0]; ?>
+<section class="blog-preview numbered-section" data-num="05" aria-label="From the blog">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">From the Blog</span>
+      <h2>Roofing answers for <span class="text-accent">North Harris County</span> homeowners</h2>
+    </div>
+    <div class="blog-grid" style="grid-template-columns: minmax(0, 640px); justify-content: center;" data-p1-dynamic>
+      <a href="/blog/<?php echo $latestPost['slug']; ?>/" class="blog-card">
+        <div class="blog-card__image">
+          <img src="<?php echo $latestPost['image']; ?>" alt="<?php echo htmlspecialchars($latestPost['alt']); ?>" width="960" height="600" loading="lazy">
+        </div>
+        <div class="blog-card__body">
+          <span class="blog-card__category"><?php echo htmlspecialchars($latestPost['category']); ?></span>
+          <h3 class="blog-card__title"><?php echo htmlspecialchars($latestPost['title']); ?></h3>
+          <p class="blog-card__excerpt"><?php echo htmlspecialchars($latestPost['excerpt']); ?></p>
+          <div class="blog-card__meta">
+            <time datetime="<?php echo $latestPost['dateISO']; ?>"><?php echo $latestPost['date']; ?></time>
+            <span>•</span>
+            <span><?php echo $latestPost['readtime']; ?></span>
+          </div>
+          <span class="blog-card__cta">Read Article →</span>
+        </div>
+      </a>
+    </div>
+    <p style="text-align:center; margin-top: var(--space-8);">
+      <a href="/blog/" class="btn btn-primary">View All Articles</a>
+    </p>
+  </div>
+</section>
+
 <!-- ===================== CLOSING CTA ===================== -->
 <section class="closing-cta" aria-label="Get your free roofing estimate">
   <div class="container">
