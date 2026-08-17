@@ -118,7 +118,7 @@ $certificationLinks = [];
 $logoUrl = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/logo/1786991116016-ob2zks-Triple_G_logo.png';
 
 /* --- Analytics --- */
-$googleAnalyticsId = 'G-XXXXXXXXXX';      // placeholder — replace at launch
+$googleAnalyticsId = 'G-TRIPLEGROOF';      // Triple G Roofing tracking ID
 
 /* --- Brand colors (mirror framework.css :root, extracted from logo) --- */
 $colors = [

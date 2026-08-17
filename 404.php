@@ -80,7 +80,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><a href="/services/storm-damage-repair/">Storm & Wind Damage Repair</a></li>
           <li><a href="/contact/">Contact Triple G Roofing</a></li>
           <li><a href="/about/">About Us</a></li>
-          <li><a href="/faq/">Roofing FAQs</a></li>
+          <li><a href="/service-areas/">Service Areas</a></li>
         </ul>
       </div>
     </div>

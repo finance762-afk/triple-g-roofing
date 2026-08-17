@@ -107,7 +107,7 @@
             <span class="footer-legal-divider">|</span>
             <a href="/privacy-policy/#ccpa-rights">Do Not Sell or Share My Personal Information</a>
             <span class="footer-legal-divider">|</span>
-            <a href="/sitemap.xml">Sitemap</a>
+            <a href="/sitemap/">Sitemap</a>
         </div>
 
         <!-- Footer Bottom Bar -->

@@ -86,10 +86,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             </div>
             <div class="split__media">
                 <img
-                    src="/assets/images/1786991247117-3gjnsv-93541722_120782452918400_4443311484969156608_n.jpg"
-                    srcset="/assets/images/1786991247117-3gjnsv-93541722_120782452918400_4443311484969156608_n-480.webp 480w,
-                            /assets/images/1786991247117-3gjnsv-93541722_120782452918400_4443311484969156608_n-960.webp 960w,
-                            /assets/images/1786991247117-3gjnsv-93541722_120782452918400_4443311484969156608_n-1600.webp 1600w"
+                    src="/assets/images/roof-repair.jpg"
+                    srcset="/assets/images/roof-repair-480.webp 480w,
+                            /assets/images/roof-repair-960.webp 960w,
+                            /assets/images/roof-repair-1600.webp 1600w"
                     sizes="(max-width: 768px) 100vw, 50vw"
                     alt="Triple G Roofing crew working on a Huffman home"
                     width="800"
@@ -149,10 +149,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             </div>
             <div class="split__media">
                 <img
-                    src="/assets/images/1786991247425-rtz44w-119444757_187761652887146_1184401603342596739_n.jpg"
-                    srcset="/assets/images/1786991247425-rtz44w-119444757_187761652887146_1184401603342596739_n-480.webp 480w,
-                            /assets/images/1786991247425-rtz44w-119444757_187761652887146_1184401603342596739_n-960.webp 960w,
-                            /assets/images/1786991247425-rtz44w-119444757_187761652887146_1184401603342596739_n-1600.webp 1600w"
+                    src="/assets/images/roof-damage-repair.jpg"
+                    srcset="/assets/images/roof-damage-repair-480.webp 480w,
+                            /assets/images/roof-damage-repair-960.webp 960w,
+                            /assets/images/roof-damage-repair-1600.webp 1600w"
                     sizes="(max-width: 768px) 100vw, 50vw"
                     alt="Roofing work in progress on a North Harris County home"
                     width="800"
