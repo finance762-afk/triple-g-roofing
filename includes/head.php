@@ -20,6 +20,9 @@
 
     <title><?php echo htmlspecialchars($pageTitle); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
+    <?php if (isset($noindex) && $noindex === true): ?>
+    <meta name="robots" content="noindex, nofollow">
+    <?php endif; ?>
     <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl); ?>">
 
     <!-- Open Graph -->

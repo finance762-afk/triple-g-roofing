@@ -92,9 +92,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                     <input type="hidden" name="_cc" value="CustomerService@pageoneinsights.com">
                     <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
-                    <!-- Consent Fields (v6.1 requirement) -->
-                    <input type="hidden" name="_consent_version" value="v2.1">
-                    <input type="hidden" name="_consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'] ?? ''); ?>">
+                    <!-- Consent Fields (v6.1 requirement — no underscore prefix for Formsubmit.co) -->
+                    <input type="hidden" name="consent_version" value="v2.1">
+                    <input type="hidden" name="consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'] ?? ''); ?>">
 
                     <!-- Form Fields -->
                     <div class="form-field">

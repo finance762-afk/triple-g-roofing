@@ -46,13 +46,30 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
         <priority>0.7</priority>
     </url>
 
-    <!-- FAQ -->
+    <!-- Blog Main -->
     <url>
-        <loc><?php echo $siteUrl; ?>/faq/</loc>
+        <loc><?php echo $siteUrl; ?>/blog/</loc>
         <lastmod><?php echo $lastmod; ?></lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
+
+    <!-- Individual Blog Posts -->
+    <?php
+    if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php')) {
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
+        foreach ($blogPosts as $post):
+    ?>
+    <url>
+        <loc><?php echo $siteUrl; ?>/blog/<?php echo $post['slug']; ?>/</loc>
+        <lastmod><?php echo $post['dateISO']; ?></lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <?php
+        endforeach;
+    }
+    ?>
 
     <!-- Services Main -->
     <url>
