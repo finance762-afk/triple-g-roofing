@@ -1,0 +1,1106 @@
+{
+  "seo": {
+    "serp_context": null,
+    "target_radius": 25,
+    "primary_keyword": "Roofing",
+    "secondary_keywords": []
+  },
+  "tier": "premium",
+  "email": "tmenn013@gmail.com",
+  "pages": [],
+  "phone": "12815703325",
+  "assets": {
+    "logo": {
+      "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/logo/1786991116016-ob2zks-Triple_G_logo.png",
+      "storage_path": "triple-g-roofing/logo/1786991116016-ob2zks-Triple_G_logo.png"
+    },
+    "images": [
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/logo/1786991116016-ob2zks-Triple_G_logo.png",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "logo",
+        "storage_path": "triple-g-roofing/logo/1786991116016-ob2zks-Triple_G_logo.png",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991247117-3gjnsv-93541722_120782452918400_4443311484969156608_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991247117-3gjnsv-93541722_120782452918400_4443311484969156608_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991247425-rtz44w-119444757_187761652887146_1184401603342596739_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991247425-rtz44w-119444757_187761652887146_1184401603342596739_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991247713-sn27ek-473073340_1169795181350450_5273767219034025918_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991247713-sn27ek-473073340_1169795181350450_5273767219034025918_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991248049-gw11k8-473165663_1169782761351692_4112942555971947607_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991248049-gw11k8-473165663_1169782761351692_4112942555971947607_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991248337-5pneph-473228977_1169795098017125_8651076958427985971_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991248337-5pneph-473228977_1169795098017125_8651076958427985971_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991248636-qtl1qe-473256910_1171071601222808_2686827398021664490_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991248636-qtl1qe-473256910_1171071601222808_2686827398021664490_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991248955-f1pg5r-473427745_1171672637829371_233240814179695342_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991248955-f1pg5r-473427745_1171672637829371_233240814179695342_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991249242-q40lfk-473431519_1171956167801018_7610621470037795406_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991249242-q40lfk-473431519_1171956167801018_7610621470037795406_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991250013-nr6uiq-473565320_1171672544496047_1585882327531435673_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991250013-nr6uiq-473565320_1171672544496047_1585882327531435673_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991250353-018066-473588204_1171071441222824_4691600887886504550_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991250353-018066-473588204_1171071441222824_4691600887886504550_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991250626-xx3tsz-473590751_1171061094557192_3391742130731069508_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991250626-xx3tsz-473590751_1171061094557192_3391742130731069508_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991250955-3gt51z-485883682_1283122000159979_4031154436095853134_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991250955-3gt51z-485883682_1283122000159979_4031154436095853134_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991251348-k57gzj-486461171_1283284190143760_2767074503402847467_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991251348-k57gzj-486461171_1283284190143760_2767074503402847467_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991251727-o2fcv4-487482365_1291915385947307_7475046219407776657_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991251727-o2fcv4-487482365_1291915385947307_7475046219407776657_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991252026-hvna43-487777992_1294314412374071_403823467514939892_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991252026-hvna43-487777992_1294314412374071_403823467514939892_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991252349-om9fi2-487855541_1293459299126249_2298945551482709625_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991252349-om9fi2-487855541_1293459299126249_2298945551482709625_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991252637-ka8zun-487855985_1292915752513937_3391874541146948350_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991252637-ka8zun-487855985_1292915752513937_3391874541146948350_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991252893-v6m35o-488078195_1294172552388257_8327142382181740036_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991252893-v6m35o-488078195_1294172552388257_8327142382181740036_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991253291-a6gyad-488257607_1294968928975286_3234957640497804800_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991253291-a6gyad-488257607_1294968928975286_3234957640497804800_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991253550-i6w1u8-488658115_1295533388918840_5129300848407022400_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991253550-i6w1u8-488658115_1295533388918840_5129300848407022400_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991253840-xuz42f-488949330_1295312218940957_7168625836177405785_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991253840-xuz42f-488949330_1295312218940957_7168625836177405785_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991254129-7xgkj9-489051863_1298623968609782_5832953254806378545_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991254129-7xgkj9-489051863_1298623968609782_5832953254806378545_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991254388-iy5jz1-489229023_1298624155276430_1849206992029729227_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991254388-iy5jz1-489229023_1298624155276430_1849206992029729227_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991254653-urv89d-489334049_1297046138767565_7004437340009602765_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991254653-urv89d-489334049_1297046138767565_7004437340009602765_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991254987-z996ez-489434577_1296327632172749_1693129327062442700_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991254987-z996ez-489434577_1296327632172749_1693129327062442700_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991255290-dv0f64-489441305_1304214351384077_110047326682272175_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991255290-dv0f64-489441305_1304214351384077_110047326682272175_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991255585-1ngrfz-489444115_1296251728847006_4715932563847343568_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991255585-1ngrfz-489444115_1296251728847006_4715932563847343568_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991255983-rordkc-489445805_1296251788847000_193988716704454757_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991255983-rordkc-489445805_1296251788847000_193988716704454757_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991256262-azm7ki-489482900_1297046135434232_4915476274566599593_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991256262-azm7ki-489482900_1297046135434232_4915476274566599593_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991256592-jibelb-489567484_1304213774717468_1277222509652803281_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991256592-jibelb-489567484_1304213774717468_1277222509652803281_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991256920-71eztg-489649874_1304214494717396_4179247323664911583_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991256920-71eztg-489649874_1304214494717396_4179247323664911583_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991257241-vqturh-489701747_1298624161943096_248102086904460743_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991257241-vqturh-489701747_1298624161943096_248102086904460743_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991257538-vsia4f-489717320_1300068005132045_2986644298230878079_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991257538-vsia4f-489717320_1300068005132045_2986644298230878079_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991257870-3i4gw2-489785645_1300068011798711_2671274165089209986_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991257870-3i4gw2-489785645_1300068011798711_2671274165089209986_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991258115-obl1d2-489820839_1300068018465377_1654530746410416917_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991258115-obl1d2-489820839_1300068018465377_1654530746410416917_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991258389-4juezt-489821759_1298624358609743_8538797973255189100_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991258389-4juezt-489821759_1298624358609743_8538797973255189100_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991258683-kzmknb-490058353_1304214358050743_4495468768349611292_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991258683-kzmknb-490058353_1304214358050743_4495468768349611292_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991258947-atv8b9-490066940_1298624061943106_5470650549893104977_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991258947-atv8b9-490066940_1298624061943106_5470650549893104977_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991259236-pfh2q0-490089763_1298623971943115_8782345779269026515_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991259236-pfh2q0-490089763_1298623971943115_8782345779269026515_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991259525-pfqw59-490193460_1303219864816859_2154559381324211858_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991259525-pfqw59-490193460_1303219864816859_2154559381324211858_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991259790-cib27i-490221236_1304214504717395_6098862797499751663_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991259790-cib27i-490221236_1304214504717395_6098862797499751663_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991260063-7xksiq-490265848_1304214378050741_4145366591582822109_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991260063-7xksiq-490265848_1304214378050741_4145366591582822109_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991260335-olmf9z-490272442_1303219811483531_3172403532293835266_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991260335-olmf9z-490272442_1303219811483531_3172403532293835266_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991260602-eart1p-490291572_1303219861483526_1603688483896696659_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991260602-eart1p-490291572_1303219861483526_1603688483896696659_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991260886-9k06bl-490299041_1304195068052672_2384541425743602682_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991260886-9k06bl-490299041_1304195068052672_2384541425743602682_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991261225-n3ysgc-490328352_1304214411384071_2525133442800990778_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991261225-n3ysgc-490328352_1304214411384071_2525133442800990778_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991261546-u2r905-490330989_1304214371384075_340705280680114601_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991261546-u2r905-490330989_1304214371384075_340705280680114601_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991261807-20efzy-490346738_1304214368050742_55765501430768797_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991261807-20efzy-490346738_1304214368050742_55765501430768797_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991262094-0xw5t2-490351324_1304214461384066_4159230263515426692_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991262094-0xw5t2-490351324_1304214461384066_4159230263515426692_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991262392-fjkwum-490367057_1303219741483538_6729860081302218625_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991262392-fjkwum-490367057_1303219741483538_6729860081302218625_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991262806-rmk83y-490386796_1303383401467172_1713034619573488297_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991262806-rmk83y-490386796_1303383401467172_1713034619573488297_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991263138-na5rst-490414395_1303085251496987_7968082339083170888_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991263138-na5rst-490414395_1303085251496987_7968082339083170888_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991263475-cfamq7-490417261_1303383501467162_3344395200118469014_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991263475-cfamq7-490417261_1303383501467162_3344395200118469014_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991263805-ktbpu3-490419670_1302231804915665_7896864273925043419_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991263805-ktbpu3-490419670_1302231804915665_7896864273925043419_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991264188-yx4dt7-490464813_1304214458050733_4366580077792134218_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991264188-yx4dt7-490464813_1304214458050733_4366580077792134218_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991264530-drtrcp-490466419_1303219738150205_1253499253830348265_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991264530-drtrcp-490466419_1303219738150205_1253499253830348265_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991264919-3tap93-490468579_1303383421467170_5710771529172206111_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991264919-3tap93-490468579_1303383421467170_5710771529172206111_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991265352-eny4z8-490471476_1303383351467177_6526472442037256081_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991265352-eny4z8-490471476_1303383351467177_6526472442037256081_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991265703-0aedon-490488170_1304214514717394_448873473374981829_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991265703-0aedon-490488170_1304214514717394_448873473374981829_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991265957-j0oun0-490592542_1302792838192895_6030083891481629083_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991265957-j0oun0-490592542_1302792838192895_6030083891481629083_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991266224-p14lka-490626515_1303383124800533_1115514115010979087_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991266224-p14lka-490626515_1303383124800533_1115514115010979087_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991266662-nsp95v-490667640_1303219788150200_1965617980313091035_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991266662-nsp95v-490667640_1303219788150200_1965617980313091035_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991266994-dj1ifv-490677556_1303383378133841_2463109686714677494_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991266994-dj1ifv-490677556_1303383378133841_2463109686714677494_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991267345-qlqijj-490690100_1304214474717398_502394118117843810_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991267345-qlqijj-490690100_1304214474717398_502394118117843810_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991267690-p87eey-490756362_1304214361384076_6631465053655393766_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991267690-p87eey-490756362_1304214361384076_6631465053655393766_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991267948-x2iisr-490801213_1304214048050774_5437419007000003776_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991267948-x2iisr-490801213_1304214048050774_5437419007000003776_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991268275-6barn3-490801219_1304214391384073_6319654176244815150_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991268275-6barn3-490801219_1304214391384073_6319654176244815150_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991268519-u22a75-490863913_1303219881483524_8523390276534952314_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991268519-u22a75-490863913_1303219881483524_8523390276534952314_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991268789-clgb0f-490931623_1303930421412470_2898808338666355894_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991268789-clgb0f-490931623_1303930421412470_2898808338666355894_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991269110-51bs85-490989934_1303219878150191_4072642363769878134_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991269110-51bs85-490989934_1303219878150191_4072642363769878134_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991269386-odpmyc-491139314_1303930428079136_1930981922004840361_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991269386-odpmyc-491139314_1303930428079136_1930981922004840361_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991269703-iykzcs-491268666_1304214374717408_8022682703604693765_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991269703-iykzcs-491268666_1304214374717408_8022682703604693765_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991269988-w1j6o3-491328383_1303383418133837_8917176455717418598_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991269988-w1j6o3-491328383_1303383418133837_8917176455717418598_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991270269-6q9oy4-491341070_1304214518050727_2808031058693041776_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991270269-6q9oy4-491341070_1304214518050727_2808031058693041776_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991270535-tpdmes-491350960_1304213754717470_433234372027234553_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991270535-tpdmes-491350960_1304213754717470_433234372027234553_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991270859-bm8uwh-491377037_1304214531384059_1937498540802830090_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991270859-bm8uwh-491377037_1304214531384059_1937498540802830090_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991271135-945em8-491378591_1304214388050740_8748511667921887045_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991271135-945em8-491378591_1304214388050740_8748511667921887045_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991271394-nmfn22-491397796_1304213741384138_2167647604361403986_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991271394-nmfn22-491397796_1304213741384138_2167647604361403986_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991271698-6k9dpe-491399198_1304214394717406_5627686665442611987_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991271698-6k9dpe-491399198_1304214394717406_5627686665442611987_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991271952-mwr6e7-491406748_1304214464717399_2731335272737126727_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991271952-mwr6e7-491406748_1304214464717399_2731335272737126727_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991272245-ylmm2j-491503540_1305401454598700_750371082308783653_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991272245-ylmm2j-491503540_1305401454598700_750371082308783653_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991272535-pa03i1-491514798_1303219821483530_3880229058180924467_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991272535-pa03i1-491514798_1303219821483530_3880229058180924467_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991272830-3wzd7c-491545535_1304214471384065_5891309567558750141_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991272830-3wzd7c-491545535_1304214471384065_5891309567558750141_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991273161-naogz1-491641107_1303383324800513_3298645848587381050_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991273161-naogz1-491641107_1303383324800513_3298645848587381050_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991273499-0o2093-491813906_1304214364717409_5232428321410470820_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991273499-0o2093-491813906_1304214364717409_5232428321410470820_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991273787-9x2pz7-492000952_1304214534717392_6286090722859912502_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991273787-9x2pz7-492000952_1304214534717392_6286090722859912502_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991274087-qcwqr2-492404681_1314881313650714_3513457789153751867_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991274087-qcwqr2-492404681_1314881313650714_3513457789153751867_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991274352-wfqu56-518195422_1378360927302752_2909895327675899142_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991274352-wfqu56-518195422_1378360927302752_2909895327675899142_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991274669-fhv62z-557606882_1455384269600417_248906317929895676_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991274669-fhv62z-557606882_1455384269600417_248906317929895676_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991274948-gxxdqg-558059212_1455384212933756_3989270939613339502_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991274948-gxxdqg-558059212_1455384212933756_3989270939613339502_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991275174-733dux-672650309_1624421409363368_3660539753627753835_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991275174-733dux-672650309_1624421409363368_3660539753627753835_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991275435-bvjrft-686965142_1636812751457567_648876008451449976_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991275435-bvjrft-686965142_1636812751457567_648876008451449976_n.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/photos/1786991275662-phbekz-751403159_1709651020840406_343729001442103583_n.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "triple-g-roofing/photos/1786991275662-phbekz-751403159_1709651020840406_343729001442103583_n.jpg",
+        "quality_score": null
+      }
+    ],
+    "page_allocations": null,
+    "recommended_hero_image": {
+      "alt": "",
+      "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/logo/1786991116016-ob2zks-Triple_G_logo.png",
+      "context": "logo",
+      "quality_score": null
+    }
+  },
+  "design": {
+    "fonts": {},
+    "notes": "",
+    "style": "modern",
+    "colors": {
+      "extracted_from_logo": true
+    },
+    "logo_analysis": {}
+  },
+  "domain": "triple-g-roofing",
+  "phases": [
+    {
+      "name": "scaffold",
+      "phase": 1,
+      "status": "pending"
+    },
+    {
+      "name": "nav_footer_head",
+      "phase": 2,
+      "status": "pending"
+    },
+    {
+      "name": "homepage",
+      "phase": 3,
+      "status": "pending"
+    },
+    {
+      "name": "inner_pages",
+      "phase": 4,
+      "status": "pending"
+    },
+    {
+      "name": "seo_aeo_deploy",
+      "phase": 5,
+      "status": "pending"
+    }
+  ],
+  "address": {
+    "zip": "77336",
+    "city": "Huffman",
+    "state": "TX",
+    "street": "11819 Walraven Dr, Huffman, TX 77336"
+  },
+  "content": {
+    "usps": [],
+    "years": null,
+    "insurance": "",
+    "description": "Triple G Roofing is a roofing contractor serving Huffman, TX and the surrounding area. Services include Roof Inspection, Roof Repair, Attic Venting, Gutter Installation, Roof Damage Repair, Storm Wind Damage Roof Repair. Call (281) 570-3325 for more information.",
+    "certifications": []
+  },
+  "reviews": [],
+  "tagline": "",
+  "industry": "Roofing contractor",
+  "services": [],
+  "owner_name": "Tim Menn",
+  "client_slug": "triple-g-roofing",
+  "form_action": "https://formsubmit.co/tmenn013@gmail.com",
+  "github_repo": "",
+  "web_sources": [
+    "https://maps.google.com/?cid=10580275172075655340",
+    "https://www.triplegroofing.com/"
+  ],
+  "company_name": "Triple G Roofing",
+  "integrations": {
+    "geo": {
+      "lat": 30.030417999999987,
+      "lng": -95.0968133
+    },
+    "bbb_url": null,
+    "financing": null,
+    "accepts_sms": false,
+    "gbp_place_id": "ChIJ1WdM8uOqQIYRrFB0WTaw1JI",
+    "gbp_map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4313.28287342969!2d-95.0968133!3d30.030417999999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640aae3f24c67d5%3A0x92d4b036597450ac!2sTriple%20G%20Roofing!5e1!3m2!1sen!2sus!4v1786995133311!5m2!1sen!2sus\" loading=\"lazy\" allowfullscreen referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "directions_url": "https://www.google.com/maps/dir/?api=1&destination=place_id:ChIJ1WdM8uOqQIYRrFB0WTaw1JI",
+    "elfsight_embed": "<script src=\"https://static.elfsight.com/platform/platform.js\" defer></script>\n<div class=\"elfsight-app-5efa8cd2-aca1-4464-badb-d5f058f8ad55\" data-elfsight-app-lazy></div>",
+    "scheduling_url": null,
+    "review_request_url": "https://search.google.com/local/writereview?placeid=ChIJ1WdM8uOqQIYRrFB0WTaw1JI",
+    "certification_links": []
+  },
+  "service_areas": [
+    "10506 Scenic Cove CtHumbleTX77396"
+  ],
+  "business_hours": "8-8 m-sun",
+  "image_curation": null,
+  "research_brief": {
+    "gbp": null,
+    "brief": {
+      "faqs": [
+        {
+          "a": "We offer same-day inspections for storm damage and work directly with insurance adjusters. Most repairs begin within 48 hours of approval. During severe weather season, we have emergency crews standing by.",
+          "q": "How quickly can you repair storm damage?"
+        },
+        {
+          "a": "Impact-resistant shingles, architectural asphalt, or metal roofing all perform well in our climate. We assess your home's specific exposure, budget, and aesthetic preferences to recommend the best option.",
+          "q": "What roof materials work best in Huffman's heat and humidity?"
+        },
+        {
+          "a": "Yes. We provide detailed estimates that meet insurance requirements, communicate directly with your adjuster, and bill your insurance company whenever possible—so you're not paying out of pocket.",
+          "q": "Do you handle insurance claims?"
+        },
+        {
+          "a": "We guarantee 10 years of workmanship on all installations. Shingles carry manufacturer warranties of 25-30 years. We're an authorized installer, so your warranty stays valid even after we're done.",
+          "q": "What warranty comes with a new roof?"
+        },
+        {
+          "a": "Annual inspections (especially after storms) catch problems early and protect your investment. Many insurance claims are denied because damage wasn't documented quickly—we help you stay ahead.",
+          "q": "How often should I inspect my roof?"
+        }
+      ],
+      "about_angle": "Position Triple G as the neighborhood's go-to roofer with authentic local roots. Tell the story of why the family started the business, their commitment to Huffman homeowners, and specific examples of how they've protected families through storm season. Emphasize personalized service, direct communication, and the peace of mind that comes from trusting your roofer.",
+      "hero_headline": "Trusted Roofing for Huffman Families",
+      "differentiators": [
+        "Deep expertise in severe weather damage (hail, wind resistance critical for Huffman's climate)",
+        "Emergency response with same-day inspections and rapid claims coordination",
+        "Family-owned local business with multi-generational Huffman community presence",
+        "Direct insurance billing and claims advocacy to reduce homeowner friction",
+        "Licensed, insured, and certified with transparent pricing and no hidden fees",
+        "Specialized knowledge of North Harris County building codes and climate challenges",
+        "Extended workmanship and material warranties protecting long-term investment"
+      ],
+      "hero_subheadline": "Storm damage repair, new installations & inspections from a local roofer who understands Texas weather",
+      "tone_recommendation": "Professional, approachable, and reassuring. Homeowners asking about roofing are often stressed about damage or large expenses—use clear, jargon-free language that builds confidence. Be warm and locally knowledgeable (reference Huffman specifically, not generic Texas), but maintain authority through credentials and specifics. Avoid aggressive sales language; instead, position yourself as a trusted neighbor solving a real problem. Show pride in serving the community without sounding boastful."
+    },
+    "competitors": [],
+    "generated_at": "2026-08-17T19:37:04.162Z",
+    "existing_site": null
+  },
+  "competitor_urls": [],
+  "phone_secondary": "",
+  "service_grouping": {
+    "cap": 16,
+    "tier": "premium",
+    "groups": [],
+    "grouped_count": 0,
+    "original_count": 0
+  },
+  "lead_notification_email": "tmenn013@gmail.com",
+  "lead_notification_phone": "12815703325",
+  "google_business_profile_url": "https://maps.google.com/?cid=10580275172075655340"
+}
