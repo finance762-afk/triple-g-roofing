@@ -5,7 +5,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $currentPage = 'service-areas';
 $areaName = 'Kingwood';
 $pageTitle = 'Kingwood Roofing Services | Storm Damage & Roof Replacement | ' . $siteName;
-$metaDescription = 'Triple G Roofing serves Kingwood, TX with expert roofing services including storm damage repair, architectural replacements, and HOA-compliant installations. Licensed Northeast Harris County roofer.';
+$pageDescription = 'Triple G Roofing serves Kingwood, TX with expert roofing services including storm damage repair, architectural replacements, and HOA-compliant installations. Licensed Northeast Harris County roofer.';
 $canonicalUrl = $siteUrl . '/service-areas/kingwood/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';

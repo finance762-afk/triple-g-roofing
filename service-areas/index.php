@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage = 'service-areas';
 $pageTitle = 'Service Areas — Roofing Services in North Harris County | ' . $siteName;
-$metaDescription = 'Triple G Roofing serves Huffman, Humble, Atascocita, Kingwood, Crosby, and surrounding North Harris County communities with professional roofing services. Licensed contractor serving your area.';
+$pageDescription = 'Triple G Roofing serves Huffman, Humble, Atascocita, Kingwood, Crosby, and surrounding North Harris County communities with professional roofing services. Licensed contractor serving your area.';
 $canonicalUrl = $siteUrl . '/service-areas/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';

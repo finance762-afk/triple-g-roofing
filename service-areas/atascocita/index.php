@@ -5,7 +5,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $currentPage = 'service-areas';
 $areaName = 'Atascocita';
 $pageTitle = 'Atascocita Roofing Services | Roof Replacement & Hail Damage Repair | ' . $siteName;
-$metaDescription = 'Triple G Roofing serves Atascocita, TX with professional roofing including hail damage repair, architectural shingle replacements, and emergency storm response. Licensed Harris County roofer.';
+$pageDescription = 'Triple G Roofing serves Atascocita, TX with professional roofing including hail damage repair, architectural shingle replacements, and emergency storm response. Licensed Harris County roofer.';
 $canonicalUrl = $siteUrl . '/service-areas/atascocita/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';

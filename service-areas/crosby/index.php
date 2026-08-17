@@ -5,7 +5,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $currentPage = 'service-areas';
 $areaName = 'Crosby';
 $pageTitle = 'Crosby, TX Roofing Services | Storm Damage & Roof Repair | ' . $siteName;
-$metaDescription = 'Triple G Roofing serves Crosby, TX with professional roofing including storm damage repair, metal roofing, and agricultural building solutions. Licensed Harris County contractor.';
+$pageDescription = 'Triple G Roofing serves Crosby, TX with professional roofing including storm damage repair, metal roofing, and agricultural building solutions. Licensed Harris County contractor.';
 $canonicalUrl = $siteUrl . '/service-areas/crosby/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';

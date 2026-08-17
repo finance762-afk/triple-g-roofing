@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'areas';
 $pageTitle       = 'Roofing Contractor in Crosby, TX | Triple G Roofing';
-$metaDescription = 'Triple G Roofing serves Crosby, TX with roof inspections, repairs, and installations for rural and suburban properties. Serving Newport, Barrett Station, and FM 2100 corridor. Call (281) 570-3325.';
+$pageDescription = 'Triple G Roofing serves Crosby, TX with roof inspections, repairs, and installations for rural and suburban properties. Serving Newport, Barrett Station, and FM 2100 corridor. Call (281) 570-3325.';
 $canonicalUrl    = $siteUrl . '/areas/crosby/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
@@ -192,7 +192,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 ['icon' => 'home', 'name' => 'Complete Re-Roofs', 'desc' => 'Full residential tear-offs and installations with architectural or impact-resistant shingles built for wind exposure.'],
                 ['icon' => 'wind', 'name' => 'Storm Damage Restoration', 'desc' => 'Rapid response after severe weather—we document damage, coordinate insurance, and start repairs fast.'],
                 ['icon' => 'hard-hat', 'name' => 'Metal Roof Installation', 'desc' => 'Standing-seam, corrugated, and 5V-crimp metal roofs for shops, barns, garages, and agricultural buildings.'],
-                ['icon' => 'ruler', 'name' => 'Attic Ventilation Upgrades', 'desc' => 'Ridge and soffit vents that combat Crosby's open-country heat and extend residential shingle life.'],
+                ['icon' => 'ruler', 'name' => 'Attic Ventilation Upgrades', 'desc' => 'Ridge and soffit vents that combat Crosby\'s open-country heat and extend residential shingle life.'],
             ];
             foreach ($crosbyServices as $index => $service):
             ?>

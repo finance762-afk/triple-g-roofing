@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'areas';
 $pageTitle       = 'Roofing Contractor in Atascocita, TX | Triple G Roofing';
-$metaDescription = 'Triple G Roofing provides professional roofing services in Atascocita, TX. Serving Eagle Springs, Kings River, and lakeside communities near Lake Houston. Call (281) 570-3325 for a free estimate.';
+$pageDescription = 'Triple G Roofing provides professional roofing services in Atascocita, TX. Serving Eagle Springs, Kings River, and lakeside communities near Lake Houston. Call (281) 570-3325 for a free estimate.';
 $canonicalUrl    = $siteUrl . '/areas/atascocita/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
@@ -191,7 +191,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 ['icon' => 'wrench', 'name' => 'Roof Repairs', 'desc' => 'Leak repairs, shingle replacement, and flashing fixes—most completed within 48 hours of approval.'],
                 ['icon' => 'home', 'name' => 'Impact-Resistant Re-Roofs', 'desc' => 'Full replacements with Class 4 hail-rated shingles that qualify for insurance discounts.'],
                 ['icon' => 'wind', 'name' => 'Storm Damage Restoration', 'desc' => 'Rapid response after severe weather—we document damage, coordinate with insurance, and start repairs fast.'],
-                ['icon' => 'droplets', 'name' => 'Seamless Gutter Systems', 'desc' => 'Custom gutters that handle Atascocita's heavy rainstorms and protect lakeside foundations from erosion.'],
+                ['icon' => 'droplets', 'name' => 'Seamless Gutter Systems', 'desc' => 'Custom gutters that handle Atascocita\'s heavy rainstorms and protect lakeside foundations from erosion.'],
                 ['icon' => 'ruler', 'name' => 'Attic Ventilation Upgrades', 'desc' => 'Ridge and soffit vent systems that combat lake-climate humidity and lower attic temperatures year-round.'],
             ];
             foreach ($atascocitaServices as $index => $service):

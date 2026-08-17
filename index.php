@@ -9,8 +9,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'home';
 $pageTitle       = 'Triple G Roofing | Roofing Contractor in Huffman, TX';
-$metaDescription = 'Triple G Roofing is a licensed, family-owned roofing contractor in Huffman, TX. Storm damage repair, roof replacement, inspections & insurance-claim help across North Harris County. Call (281) 570-3325.';
-$pageDescription = $metaDescription;
+$pageDescription = 'Triple G Roofing is a licensed, family-owned roofing contractor in Huffman, TX. Storm damage repair, roof replacement, inspections & insurance-claim help across North Harris County. Call (281) 570-3325.';
+$pageDescription = $pageDescription;
 $canonicalUrl    = $siteUrl . '/';
 
 /* --- Homepage service data (image + icon + 3 benefit bullets per required-components) --- */

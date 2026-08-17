@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'about';
 $pageTitle       = 'About Triple G Roofing | Family-Owned Roofing Contractor in Huffman, TX';
-$metaDescription = 'Meet the team at Triple G Roofing. Family-owned roofing contractor serving Huffman and North Harris County since the beginning. Licensed, insured, and committed to protecting your home.';
+$pageDescription = 'Meet the team at Triple G Roofing. Family-owned roofing contractor serving Huffman and North Harris County since the beginning. Licensed, insured, and committed to protecting your home.';
 $canonicalUrl    = $siteUrl . '/about/';
 
 /* --- BreadcrumbList Schema --- */
@@ -21,7 +21,7 @@ $schemaGraph = [
             '@id' => $canonicalUrl . '#webpage',
             'url' => $canonicalUrl,
             'name' => $pageTitle,
-            'description' => $metaDescription,
+            'description' => $pageDescription,
             'provider' => [
                 '@id' => $siteUrl . '/#organization'
             ]

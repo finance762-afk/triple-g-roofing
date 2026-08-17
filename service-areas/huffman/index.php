@@ -5,7 +5,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $currentPage = 'service-areas';
 $areaName = 'Huffman';
 $pageTitle = 'Roofing Services in Huffman, TX | Storm Damage & Roof Repair | ' . $siteName;
-$metaDescription = 'Triple G Roofing serves Huffman, TX with professional roofing services including storm damage repair, roof replacements, and emergency repairs. Licensed Texas roofer serving Huffman homeowners.';
+$pageDescription = 'Triple G Roofing serves Huffman, TX with professional roofing services including storm damage repair, roof replacements, and emergency repairs. Licensed Texas roofer serving Huffman homeowners.';
 $canonicalUrl = $siteUrl . '/service-areas/huffman/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';

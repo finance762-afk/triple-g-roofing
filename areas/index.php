@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'areas';
 $pageTitle       = 'Roofing Service Areas in North Harris County, TX | Triple G Roofing';
-$metaDescription = 'Triple G Roofing serves Huffman, Humble, Atascocita, Kingwood, Crosby, and surrounding North Harris County communities with trusted roofing inspections, repairs, and installations. Call (281) 570-3325.';
+$pageDescription = 'Triple G Roofing serves Huffman, Humble, Atascocita, Kingwood, Crosby, and surrounding North Harris County communities with trusted roofing inspections, repairs, and installations. Call (281) 570-3325.';
 $canonicalUrl    = $siteUrl . '/areas/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';

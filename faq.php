@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'faq';
 $pageTitle       = 'Roofing FAQs | Triple G Roofing Huffman TX';
-$metaDescription = 'Frequently asked questions about roof repairs, inspections, materials, insurance claims, and warranties. Get straight answers from a licensed Huffman, TX roofer.';
+$pageDescription = 'Frequently asked questions about roof repairs, inspections, materials, insurance claims, and warranties. Get straight answers from a licensed Huffman, TX roofer.';
 $canonicalUrl    = $siteUrl . '/faq/';
 
 /* --- Comprehensive FAQ organized by category --- */

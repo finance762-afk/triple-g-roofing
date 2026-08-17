@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage       = 'privacy-policy';
 $pageTitle         = 'Privacy Policy | Triple G Roofing';
-$metaDescription   = 'How Triple G Roofing collects, uses, and protects your information. Privacy practices for our website and contact forms.';
+$pageDescription   = 'How Triple G Roofing collects, uses, and protects your information. Privacy practices for our website and contact forms.';
 $canonicalUrl      = $siteUrl . '/privacy-policy/';
 $companyEntityType = 'Limited Liability Company';
 $companyState      = 'TX';
@@ -24,7 +24,7 @@ $schemaGraph = [
             '@id' => $canonicalUrl . '#webpage',
             'url' => $canonicalUrl,
             'name' => $pageTitle,
-            'description' => $metaDescription
+            'description' => $pageDescription
         ],
         [
             '@type' => 'BreadcrumbList',
@@ -38,6 +38,7 @@ $schemaGraph = [
 $schemaMarkup = '<script type="application/ld+json">' . json_encode($schemaGraph, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
+echo $schemaMarkup;
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 

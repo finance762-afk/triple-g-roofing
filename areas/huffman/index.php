@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'areas';
 $pageTitle       = 'Roofing Contractor in Huffman, TX | Triple G Roofing';
-$metaDescription = 'Triple G Roofing provides trusted roof inspections, repairs, and installations in Huffman, TX. Serving neighborhoods from Lake Houston Estates to FM 1960. Call (281) 570-3325 for a free estimate.';
+$pageDescription = 'Triple G Roofing provides trusted roof inspections, repairs, and installations in Huffman, TX. Serving neighborhoods from Lake Houston Estates to FM 1960. Call (281) 570-3325 for a free estimate.';
 $canonicalUrl    = $siteUrl . '/areas/huffman/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';

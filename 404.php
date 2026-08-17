@@ -11,7 +11,7 @@ http_response_code(404);
 
 $currentPage     = '404';
 $pageTitle       = 'Page Not Found | Triple G Roofing';
-$metaDescription = 'The page you are looking for could not be found. Return to the Triple G Roofing homepage or contact us for help.';
+$pageDescription = 'The page you are looking for could not be found. Return to the Triple G Roofing homepage or contact us for help.';
 $canonicalUrl    = $siteUrl . '/404/';
 $noindex         = true;  // Signal to head.php to add noindex meta tag
 

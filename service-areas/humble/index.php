@@ -5,7 +5,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $currentPage = 'service-areas';
 $areaName = 'Humble';
 $pageTitle = 'Roofing Services in Humble, TX | Roof Replacement & Storm Repair | ' . $siteName;
-$metaDescription = 'Triple G Roofing provides professional roofing services in Humble, TX including roof replacements, storm damage repair, and inspections. Licensed contractor serving Humble homeowners.';
+$pageDescription = 'Triple G Roofing provides professional roofing services in Humble, TX including roof replacements, storm damage repair, and inspections. Licensed contractor serving Humble homeowners.';
 $canonicalUrl = $siteUrl . '/service-areas/humble/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';

@@ -5,14 +5,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 <?php
 $currentPage     = 'accessibility';
 $pageTitle       = 'Accessibility Statement | Triple G Roofing';
-$metaDescription = 'Triple G Roofing is committed to digital accessibility for all visitors. Learn about our WCAG 2.1 AA conformance efforts and how to report issues.';
+$pageDescription = 'Triple G Roofing is committed to digital accessibility for all visitors. Learn about our WCAG 2.1 AA conformance efforts and how to report issues.';
 $canonicalUrl    = $siteUrl . '/accessibility/';
 $lastUpdated     = date('F j, Y');
 
 $schemaGraph = [
     '@context' => 'https://schema.org',
     '@graph' => [
-        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $metaDescription],
+        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $pageDescription],
         ['@type' => 'BreadcrumbList', 'itemListElement' => [
             ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => $siteUrl . '/'],
             ['@type' => 'ListItem', 'position' => 2, 'name' => 'Accessibility', 'item' => $canonicalUrl]
@@ -22,6 +22,7 @@ $schemaGraph = [
 $schemaMarkup = '<script type="application/ld+json">' . json_encode($schemaGraph, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
+echo $schemaMarkup;
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 

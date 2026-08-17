@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php
-    // Each page sets its own $pageTitle, $metaDescription, $canonicalUrl before including head.php
+    // Each page sets its own $pageTitle, $pageDescription, $canonicalUrl before including head.php
     // Default fallback if not set
     if (!isset($pageTitle)) {
         $pageTitle = $siteName . ' | ' . $primaryKeyword . ' | ' . $address['city'] . ', ' . $address['state'];
     }
-    if (!isset($metaDescription)) {
-        $metaDescription = $siteName . ' provides professional ' . strtolower($primaryKeyword) . ' services in ' . $address['city'] . ', ' . $address['state'] . '. Licensed, insured, and trusted by homeowners across North Harris County.';
+    if (!isset($pageDescription)) {
+        $pageDescription = $siteName . ' provides professional ' . strtolower($primaryKeyword) . ' services in ' . $address['city'] . ', ' . $address['state'] . '. Licensed, insured, and trusted by homeowners across North Harris County.';
     }
     if (!isset($canonicalUrl)) {
         $canonicalUrl = $siteUrl . '/';
@@ -19,13 +19,13 @@
     ?>
 
     <title><?php echo htmlspecialchars($pageTitle); ?></title>
-    <meta name="description" content="<?php echo htmlspecialchars($metaDescription); ?>">
+    <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
     <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl); ?>">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
-    <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
     <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl); ?>">
     <meta property="og:image" content="<?php echo $siteUrl; ?>/assets/images/logo.png">
     <meta property="og:site_name" content="<?php echo htmlspecialchars($siteName); ?>">
@@ -62,7 +62,7 @@
         "url": "<?php echo $siteUrl; ?>",
         "logo": "<?php echo $siteUrl; ?>/assets/images/logo.png",
         "image": "<?php echo $siteUrl; ?>/assets/images/logo.png",
-        "description": "<?php echo htmlspecialchars($metaDescription); ?>",
+        "description": "<?php echo htmlspecialchars($pageDescription); ?>",
         "telephone": "<?php echo $phone; ?>",
         "email": "<?php echo $email; ?>",
         "address": {

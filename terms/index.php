@@ -5,14 +5,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 <?php
 $currentPage     = 'terms';
 $pageTitle       = 'Terms of Service | Triple G Roofing';
-$metaDescription = 'Terms and conditions governing use of the Triple G Roofing website and engagement of our roofing services in Huffman, TX.';
+$pageDescription = 'Terms and conditions governing use of the Triple G Roofing website and engagement of our roofing services in Huffman, TX.';
 $canonicalUrl    = $siteUrl . '/terms/';
 $lastUpdated     = date('F j, Y');
 
 $schemaGraph = [
     '@context' => 'https://schema.org',
     '@graph' => [
-        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $metaDescription],
+        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $pageDescription],
         ['@type' => 'BreadcrumbList', 'itemListElement' => [
             ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => $siteUrl . '/'],
             ['@type' => 'ListItem', 'position' => 2, 'name' => 'Terms of Service', 'item' => $canonicalUrl]
@@ -22,6 +22,7 @@ $schemaGraph = [
 $schemaMarkup = '<script type="application/ld+json">' . json_encode($schemaGraph, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
+echo $schemaMarkup;
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 

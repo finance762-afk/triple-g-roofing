@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'areas';
 $pageTitle       = 'Roofing Contractor in Kingwood, TX | Triple G Roofing';
-$metaDescription = 'Triple G Roofing serves Kingwood, TX—the Livable Forest—with roof inspections, repairs, and installations. Serving Woodland Hills, Kings Point, and the Greens. Call (281) 570-3325 for a free estimate.';
+$pageDescription = 'Triple G Roofing serves Kingwood, TX—the Livable Forest—with roof inspections, repairs, and installations. Serving Woodland Hills, Kings Point, and the Greens. Call (281) 570-3325 for a free estimate.';
 $canonicalUrl    = $siteUrl . '/areas/kingwood/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
@@ -187,12 +187,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="services-list">
             <?php
             $kingwoodServices = [
-                ['icon' => 'search', 'name' => 'Roof Inspections', 'desc' => 'Detailed inspections for tree damage, moss growth, and storm wear—with photo documentation for HOA submissions.'],
-                ['icon' => 'wrench', 'name' => 'Roof Repairs', 'desc' => 'Limb-damage repairs, shingle replacement, and flashing fixes—most completed within 48 hours.'],
-                ['icon' => 'home', 'name' => 'HOA-Compliant Re-Roofs', 'desc' => 'Full replacements with architectural shingles that meet Kingwood's strict color and style guidelines.'],
-                ['icon' => 'wind', 'name' => 'Storm & Limb Damage Repair', 'desc' => 'Rapid response after severe weather—we document damage, clear debris, and start repairs fast.'],
-                ['icon' => 'droplets', 'name' => 'Seamless Gutter Systems', 'desc' => 'Custom gutters designed to handle Kingwood's heavy leaf debris and frequent rainstorms.'],
-                ['icon' => 'ruler', 'name' => 'Attic Ventilation Upgrades', 'desc' => 'Ridge and soffit vents that combat humidity under Kingwood's dense tree canopy and extend shingle life.'],
+                ['icon' => 'search', 'name' => 'Roof Inspections', 'desc' => "Detailed inspections for tree damage, moss growth, and storm wear—with photo documentation for HOA submissions."],
+                ['icon' => 'wrench', 'name' => 'Roof Repairs', 'desc' => "Limb-damage repairs, shingle replacement, and flashing fixes—most completed within 48 hours."],
+                ['icon' => 'home', 'name' => 'HOA-Compliant Re-Roofs', 'desc' => "Full replacements with architectural shingles that meet Kingwood's strict color and style guidelines."],
+                ['icon' => 'wind', 'name' => 'Storm & Limb Damage Repair', 'desc' => "Rapid response after severe weather—we document damage, clear debris, and start repairs fast."],
+                ['icon' => 'droplets', 'name' => 'Seamless Gutter Systems', 'desc' => "Custom gutters designed to handle Kingwood's heavy leaf debris and frequent rainstorms."],
+                ['icon' => 'ruler', 'name' => 'Attic Ventilation Upgrades', 'desc' => "Ridge and soffit vents that combat humidity under Kingwood's dense tree canopy and extend shingle life."],
             ];
             foreach ($kingwoodServices as $index => $service):
             ?>

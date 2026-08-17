@@ -1,0 +1,41 @@
+# robots.txt — Triple G Roofing
+# Phase 5 — SEO, AEO, and Final Polish
+# Generated: 2026-08-17
+
+User-agent: *
+Allow: /
+
+# Disallow system directories
+Disallow: /includes/
+Disallow: /assets/js/
+
+# Disallow thank-you page (conversion tracking, not indexable content)
+Disallow: /thank-you/
+
+# Allow all AI crawlers (AEO strategy — ChatGPT, Perplexity, Gemini, Claude)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://triple-g-roofing.pageone.cloud/sitemap.xml

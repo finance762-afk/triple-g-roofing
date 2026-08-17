@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'areas';
 $pageTitle       = 'Roofing Contractor in Humble, TX | Triple G Roofing';
-$metaDescription = 'Triple G Roofing serves Humble, TX with roof inspections, repairs, and installations. Serving Fall Creek, Atascocita Springs, and historic downtown Humble. Call (281) 570-3325 for a free estimate.';
+$pageDescription = 'Triple G Roofing serves Humble, TX with roof inspections, repairs, and installations. Serving Fall Creek, Atascocita Springs, and historic downtown Humble. Call (281) 570-3325 for a free estimate.';
 $canonicalUrl    = $siteUrl . '/areas/humble/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
@@ -191,7 +191,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 ['icon' => 'wrench', 'name' => 'Roof Repairs', 'desc' => 'Leak repairs, shingle replacement, flashing fixes, and structural repairs—most completed within 48 hours.'],
                 ['icon' => 'home', 'name' => 'Complete Re-Roofs', 'desc' => 'Full tear-offs and installations with impact-resistant or architectural shingles built for Texas weather.'],
                 ['icon' => 'wind', 'name' => 'Storm Damage Restoration', 'desc' => 'Rapid response after hail, wind, or severe weather—we document damage and coordinate with your insurance.'],
-                ['icon' => 'droplets', 'name' => 'Seamless Gutter Systems', 'desc' => 'Custom-fitted gutters that protect your foundation from Humble's heavy rainstorms and poor drainage.'],
+                ['icon' => 'droplets', 'name' => 'Seamless Gutter Systems', 'desc' => 'Custom-fitted gutters that protect your foundation from Humble\'s heavy rainstorms and poor drainage.'],
                 ['icon' => 'ruler', 'name' => 'Attic Ventilation Upgrades', 'desc' => 'Ridge and soffit vents that lower attic temperatures and extend shingle life in our brutal summer heat.'],
             ];
             foreach ($humbleServices as $index => $service):

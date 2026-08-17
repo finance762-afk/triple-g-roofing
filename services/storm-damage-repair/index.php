@@ -12,7 +12,7 @@ $currentPage     = 'services';
 $serviceName     = 'Storm & Wind Damage Roof Repair';
 $serviceSlug     = 'storm-damage-repair';
 $pageTitle       = 'Storm & Wind Damage Roof Repair Huffman TX | Triple G Roofing';
-$metaDescription = 'Storm or wind damage in Huffman, TX? Triple G Roofing offers same-day tarping, hail inspections, and direct insurance billing across North Harris County. Call (281) 570-3325.';
+$pageDescription = 'Storm or wind damage in Huffman, TX? Triple G Roofing offers same-day tarping, hail inspections, and direct insurance billing across North Harris County. Call (281) 570-3325.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 /* --- FAQs specific to storm & wind damage in Huffman --- */

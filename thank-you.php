@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'thank-you';
 $pageTitle       = 'Thank You | Triple G Roofing';
-$metaDescription = 'Thank you for contacting Triple G Roofing. We will respond to your request within 1 business day.';
+$pageDescription = 'Thank you for contacting Triple G Roofing. We will respond to your request within 1 business day.';
 $canonicalUrl    = $siteUrl . '/thank-you/';
 $noindex         = true;  // Thank-you pages should not be indexed
 

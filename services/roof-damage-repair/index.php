@@ -12,7 +12,7 @@ $currentPage     = 'services';
 $serviceName     = 'Roof Damage Repair';
 $serviceSlug     = 'roof-damage-repair';
 $pageTitle       = 'Roof Damage Repair Huffman TX | Triple G Roofing';
-$metaDescription = 'Roof damage repair in Huffman, TX from Triple G Roofing — hail, wind, leak, and rotted-decking repairs with a 10-year workmanship warranty. Licensed & insured. Call (281) 570-3325.';
+$pageDescription = 'Roof damage repair in Huffman, TX from Triple G Roofing — hail, wind, leak, and rotted-decking repairs with a 10-year workmanship warranty. Licensed & insured. Call (281) 570-3325.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 /* --- FAQs specific to roof damage repair in Huffman --- */
