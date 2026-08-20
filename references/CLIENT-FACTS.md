@@ -21,7 +21,7 @@
   website must NOT publish a street address in footer/schema/contact — say "based in Humble, TX".
 - Hours (GBP): Mon–Sat 8:00 AM – 7:00 PM; Sunday closed. (Wix says Mon–Fri 8–8, Sat/Sun by
   appointment — GBP wins for NAP consistency; confirm on the owner call.)
-- Phone (public/GBP + Advice Local directories): **(281) 824-5463**. Tim's cell 281-570-3325
+- Phone (public/GBP + Advice Local directories + his YARD SIGNS): **(281) 824-5463**. Tim's cell 281-570-3325
   appears on his card/Wix — keep the site on 824-5463 for NAP consistency unless the owner
   says otherwise on the call. Lead notifications go to tmenn013@gmail.com.
 - Email: tmenn013@gmail.com
