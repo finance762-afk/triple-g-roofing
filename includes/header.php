@@ -39,14 +39,25 @@
                         <?php foreach ($serviceAreas as $area): ?>
                         <li role="none">
                             <a href="/service-areas/<?php echo strtolower(str_replace(' ', '-', $area)); ?>/" role="menuitem">
-                                <?php echo htmlspecialchars($area); ?> Roofing
+                                <?php echo htmlspecialchars($area); ?>, TX
                             </a>
                         </li>
                         <?php endforeach; ?>
                     </ul>
                 </li>
 
-                <li><a href="/about/" <?php if (isActivePage('about')): ?>aria-current="page"<?php endif; ?>>About</a></li>
+                <!-- About Dropdown -->
+                <li class="nav-dropdown">
+                    <a href="/about/" <?php if (isActivePage('about')): ?>aria-current="page"<?php endif; ?>>
+                        About <?php echo icon('chevron-down', 16); ?>
+                    </a>
+                    <ul class="nav-dropdown-menu" role="menu" style="display:none">
+                        <li role="none"><a href="/about/" role="menuitem">Our Story</a></li>
+                        <li role="none"><a href="/testimonials/" role="menuitem">Customer Reviews</a></li>
+                        <li role="none"><a href="/gallery/" role="menuitem">Project Gallery</a></li>
+                        <li role="none"><a href="/faq/" role="menuitem">FAQ</a></li>
+                    </ul>
+                </li>
                 <li><a href="/blog/" <?php if (isActivePage('blog')): ?>aria-current="page"<?php endif; ?>>Blog</a></li>
                 <li><a href="/contact/" <?php if (isActivePage('contact')): ?>aria-current="page"<?php endif; ?>>Contact</a></li>
             </ul>

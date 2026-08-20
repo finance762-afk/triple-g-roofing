@@ -117,6 +117,20 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
     </url>
     <?php endforeach; ?>
 
+    <!-- Reviews + Project Gallery -->
+    <url>
+        <loc><?php echo $siteUrl; ?>/testimonials/</loc>
+        <lastmod><?php echo $lastmod; ?></lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc><?php echo $siteUrl; ?>/gallery/</loc>
+        <lastmod><?php echo $lastmod; ?></lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
     <!-- Legal / Compliance Pages (v6.1 REQUIRED — priority 0.3, changefreq yearly) -->
     <url>
         <loc><?php echo $siteUrl; ?>/privacy-policy/</loc>
@@ -148,7 +162,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 
     <!-- Thank You page (noindexed on-page but included here for crawl discovery) -->
     <url>
-        <loc><?php echo $siteUrl; ?>/thank-you/</loc>
+        <loc><?php echo $siteUrl; ?>/thank-you</loc>
         <lastmod><?php echo $lastmod; ?></lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.1</priority>

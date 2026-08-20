@@ -1,0 +1,495 @@
+{
+ "source": "triplegroofing.com (client-owned photos)",
+ "pulled": "2026-08-20",
+ "note": "all photos are the client's own job photos; alt = what is actually in frame",
+ "photos": [
+  {
+   "name": "hero-roof-home-v2",
+   "source": "https://static.wixstatic.com/media/fde3b1_0238da3185304caaad9be0987bc4baff~mv2.jpg",
+   "alt": "Brick home in the Greater Houston area with a new architectural shingle roof installed by Triple G Roofing & Construction",
+   "master_w": 1600,
+   "master_h": 900,
+   "variants": [
+    480,
+    960,
+    1600
+   ],
+   "kind": "photo",
+   "orientation": "landscape"
+  },
+  {
+   "name": "roof-replacement",
+   "source": "https://static.wixstatic.com/media/fde3b1_dbfe930642ea4ce5b1f22d4060a0ca94~mv2.jpg",
+   "alt": "Triple G crew replacing the roof on a two-story brick home",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-repair-v2",
+   "source": "https://static.wixstatic.com/media/fde3b1_87c1635154534b3b9d7df7f7f46b2919~mv2.jpg",
+   "alt": "New step flashing sealed against a brick chimney during a roof repair",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-inspection-v2",
+   "source": "https://static.wixstatic.com/media/fde3b1_f17ab628331946cc873500400b6beed4~mv2.jpg",
+   "alt": "Close-up of cracked and lifted shingles found during a roof inspection",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-damage-repair-v2",
+   "source": "https://static.wixstatic.com/media/fde3b1_33bbe2a4627343ac97c476be6941454a~mv2.jpg",
+   "alt": "Roof stripped to the decking showing holes and rotted wood before repair",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "storm-damage-repair-v2",
+   "source": "https://static.wixstatic.com/media/fde3b1_68fc60b770514505a37ccc1e4176a95e~mv2.jpg",
+   "alt": "Tarped roof with a Triple G crew starting storm damage repairs",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "attic-venting-v2",
+   "source": "https://static.wixstatic.com/media/fde3b1_68310c2e690d41d790c1ab4f91e893e1~mv2.jpg",
+   "alt": "Freshly shingled roof with box vents installed for attic ventilation",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "gutter-installation-v2",
+   "source": "https://static.wixstatic.com/media/fde3b1_74fb7ba5a2784d73b6baca98a57829ed~mv2.jpg",
+   "alt": "New downspout and gutter on a brick covered patio",
+   "master_w": 720,
+   "master_h": 960,
+   "variants": [
+    480
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "siding-fascia-soffit",
+   "source": "https://static.wixstatic.com/media/fde3b1_40748c86fb3a486e86d1cdfc6053a15a~mv2.jpg",
+   "alt": "Crew member replacing siding on a dormer above a shingle roof",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "patio-covers-decks",
+   "source": "https://static.wixstatic.com/media/90a441_3d21dc0aab9a420192136c1922175b2c~mv2.jpg",
+   "alt": "Finished covered patio with ceiling fans and a concrete slab",
+   "master_w": 1000,
+   "master_h": 1333,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "fences-gates",
+   "source": "https://static.wixstatic.com/media/fde3b1_816ae0c62fe946c48e308d2622a7487b~mv2.jpg",
+   "alt": "New pine privacy fence with a Triple G Roofing yard sign",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "owner-father-v2",
+   "source": "https://static.wixstatic.com/media/fde3b1_63ca24efe1e744d6be671347c891f505~mv2.jpg",
+   "alt": "Glenn and Tim Menn, the father-and-son team behind Triple G Roofing & Construction",
+   "master_w": 1152,
+   "master_h": 1536,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "crew-underlayment",
+   "source": "https://static.wixstatic.com/media/fde3b1_ba690735559f4716b0b34c46f0fe3661~mv2.jpg",
+   "alt": "Triple G roofers installing synthetic underlayment on a steep roof",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "crew-shingles",
+   "source": "https://static.wixstatic.com/media/fde3b1_9948684d25884e7bbac7a6bcdc417f68~mv2.jpg",
+   "alt": "Roofer carrying shingles across a roof covered in new underlayment",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "metal-roof-barn",
+   "source": "https://static.wixstatic.com/media/fde3b1_d9e8032c32ca4bb092392121c8e85c2a~mv2.jpg",
+   "alt": "New corrugated metal roof on a barn with white ranch-rail fencing",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "palapa-metal",
+   "source": "https://static.wixstatic.com/media/90a441_2ffe3ec4b9ab4312899ecb9397b2fa3c~mv2.jpg",
+   "alt": "Poolside palapa converted from thatch to a metal roof",
+   "master_w": 896,
+   "master_h": 1600,
+   "variants": [
+    480
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "pergola-cedar",
+   "source": "https://static.wixstatic.com/media/fde3b1_05a3d386494e4995a031bfccbb1e64fd~mv2.jpg",
+   "alt": "Custom cedar pergola over a back patio on a brick home",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "pergola-detail",
+   "source": "https://static.wixstatic.com/media/fde3b1_2e11dd17256d4f04baa1c8195c08a88e~mv2.jpg",
+   "alt": "Cedar pergola with decorative rafter tails over a side patio",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "deck-new",
+   "source": "https://static.wixstatic.com/media/90a441_201d44b8b16540fa8358069f8b6d2b61~mv2.jpg",
+   "alt": "New pressure-treated wood deck wrapping a backyard",
+   "master_w": 896,
+   "master_h": 1600,
+   "variants": [
+    480
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "deck-railing",
+   "source": "https://static.wixstatic.com/media/90a441_97f7f8b7f7e14de08f2bd6ffb855572e~mv2.jpg",
+   "alt": "Wood deck built around a mature tree with custom railing",
+   "master_w": 896,
+   "master_h": 1600,
+   "variants": [
+    480
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "patio-enclosed",
+   "source": "https://static.wixstatic.com/media/fde3b1_762cf74bc8ca40da9fd976d1afbc85a2~mv2.jpg",
+   "alt": "Enclosed patio framed with new windows and a solid roof",
+   "master_w": 760,
+   "master_h": 1013,
+   "variants": [
+    480
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "patio-cover-fans",
+   "source": "https://static.wixstatic.com/media/fde3b1_81735fbeb4cf41ff8f20d489b6e1b0c7~mv2.jpg",
+   "alt": "Covered patio with beadboard ceiling and fans",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "fence-gate-cedar",
+   "source": "https://static.wixstatic.com/media/fde3b1_2362b0f78bed415892885068b77249ea~mv2.jpg",
+   "alt": "New cedar fence and double gate beside a brick home",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "siding-dormer",
+   "source": "https://static.wixstatic.com/media/90a441_b3ca3a10aa6d4061aae1999b9db123e2~mv2.jpg",
+   "alt": "Dormer siding replaced with new fiber-cement panels",
+   "master_w": 1000,
+   "master_h": 1333,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "screened-porch",
+   "source": "https://static.wixstatic.com/media/fde3b1_65f50df63d02420ea3f6783567988c23~mv2.jpg",
+   "alt": "Screened porch with fresh exterior paint and new screens",
+   "master_w": 491,
+   "master_h": 919,
+   "variants": [
+    480
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-finished-brick",
+   "source": "https://static.wixstatic.com/media/fde3b1_3d8bc52e2c174ee1a2c997c95a852151~mv2.jpg",
+   "alt": "Completed shingle roof replacement on a brick ranch home",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-large-home",
+   "source": "https://static.wixstatic.com/media/fde3b1_05c73baeafd445539833325c6c458314~mv2.jpg",
+   "alt": "Large two-story brick home with a completed roof replacement",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-overhead",
+   "source": "https://static.wixstatic.com/media/fde3b1_6e1d1f8ca0534465b652aba00cc1432d~mv2.jpg",
+   "alt": "Overhead view of a completed architectural shingle roof",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-tearoff",
+   "source": "https://static.wixstatic.com/media/fde3b1_c432936e03f94a668aabbc3581a12b3c~mv2.jpg",
+   "alt": "Roof tear-off in progress with a dump trailer staged in the driveway",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-underlayment",
+   "source": "https://static.wixstatic.com/media/fde3b1_23a4a71dae4a4efa9428d87299954c1a~mv2.jpg",
+   "alt": "Synthetic underlayment laid across a roof before shingles",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-metal-shop",
+   "source": "https://static.wixstatic.com/media/fde3b1_06bcf1b65a90422eabe68b8a96a1d3e8~mv2.jpg",
+   "alt": "Crew installing a new metal roof on a metal shop building",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-home-trees",
+   "source": "https://static.wixstatic.com/media/fde3b1_703565dee07f42c39e8b00361ed16cc0~mv2.jpg",
+   "alt": "Brick home with a new dark shingle roof under mature trees",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-two-story",
+   "source": "https://static.wixstatic.com/media/fde3b1_e25a3e03536d4d8b97a4c2af0c7054a6~mv2.jpg",
+   "alt": "Two-story brick home during a roof replacement",
+   "master_w": 1200,
+   "master_h": 1600,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "palapa-before",
+   "source": "https://static.wixstatic.com/media/90a441_68c05e4704f24fe0bde2508f0c8f592d~mv2.jpg",
+   "alt": "Thatched poolside palapa before conversion to a metal roof",
+   "master_w": 1000,
+   "master_h": 1000,
+   "variants": [
+    480,
+    960
+   ],
+   "kind": "photo",
+   "orientation": "landscape"
+  },
+  {
+   "name": "deck-framing",
+   "source": "https://static.wixstatic.com/media/90a441_53281b8c2327458589d9537671efa1df~mv2.jpg",
+   "alt": "New deck framing laid out in a backyard",
+   "master_w": 896,
+   "master_h": 1600,
+   "variants": [
+    480
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "roof-decking-rot",
+   "source": "https://static.wixstatic.com/media/fde3b1_596f733a95b74131aef389227f01466a~mv2.jpg",
+   "alt": "Rotted roof decking exposed during tear-off",
+   "master_w": 739,
+   "master_h": 1600,
+   "variants": [
+    480
+   ],
+   "kind": "photo",
+   "orientation": "portrait"
+  },
+  {
+   "name": "nextdoor-2022",
+   "source": "https://static.wixstatic.com/media/90a441_68369b67d2044a5299f26793e7154c3c~mv2.jpg",
+   "alt": "Nextdoor Neighborhood Favorite 2022 award badge",
+   "master_w": 391,
+   "master_h": 600,
+   "variants": [],
+   "kind": "badge"
+  },
+  {
+   "name": "nextdoor-2023",
+   "source": "https://static.wixstatic.com/media/fde3b1_0d2c14d80b4645d28652eb58d280f8ad~mv2.jpg",
+   "alt": "Nextdoor Neighborhood Faves 2023 award badge",
+   "master_w": 390,
+   "master_h": 600,
+   "variants": [],
+   "kind": "badge"
+  },
+  {
+   "name": "nextdoor-2024",
+   "source": "https://static.wixstatic.com/media/fde3b1_decc434fa0034e158ab76bce39e77cd9~mv2.jpg",
+   "alt": "Nextdoor Neighborhood Faves 2024 winner badge",
+   "master_w": 338,
+   "master_h": 600,
+   "variants": [],
+   "kind": "badge"
+  }
+ ]
+}

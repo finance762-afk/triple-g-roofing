@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'thank-you';
 $pageTitle       = 'Thank You | Triple G Roofing';
-$pageDescription = 'Thank you for contacting Triple G Roofing. We will respond to your request within 1 business day.';
+$pageDescription = 'Thank you for contacting Triple G Roofing. We will be in touch soon to set up a time to take a look.';
 $canonicalUrl    = $siteUrl . '/thank-you/';
 $noindex         = true;  // Thank-you pages should not be indexed
 
@@ -77,7 +77,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 </style>
 
-<main id="main-content">
+<div class="page-body">
 <!-- ===================== HERO ===================== -->
 <section class="thank-you-hero" aria-label="Thank you">
   <div class="container">
@@ -86,16 +86,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
     <h1>Thank you for <span class="text-accent">reaching out</span>!</h1>
     <p class="thank-you-hero__subtitle">
-      Your message has been received, and a Triple G Roofing team member will respond within 1 business day. We typically
-      reply even faster — check your email and phone for a call or text from us.
+      Your message has been received, and a Triple G Roofing team member will be in touch soon — check your email and phone for a call or text from us.
     </p>
 
     <div class="thank-you-hero__next">
       <h2>What happens next?</h2>
       <ul>
         <li><?php echo icon('mail', 20); ?> <span><strong>We review your request</strong> and match you with the right crew member for your project.</span></li>
-        <li><?php echo icon('phone', 20); ?> <span><strong>We call or text you</strong> within 1 business day to confirm details and schedule your free estimate.</span></li>
-        <li><?php echo icon('clipboard', 20); ?> <span><strong>We inspect your roof</strong> in person, photograph any damage, and provide a written estimate the same day.</span></li>
+        <li><?php echo icon('phone', 20); ?> <span><strong>We call or text you</strong> to confirm details and set up a time for your free estimate.</span></li>
+        <li><?php echo icon('clipboard', 20); ?> <span><strong>We inspect your roof</strong> in person, photograph any damage, and put a free written estimate in your hands.</span></li>
       </ul>
     </div>
 
@@ -120,7 +119,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <article class="next-step-card" data-animate>
         <div class="next-step-icon"><?php echo icon('award', 30); ?></div>
         <h3>About Us</h3>
-        <p>Meet the team and learn why Huffman families trust Triple G Roofing with their biggest home investment.</p>
+        <p>Meet Glenn and Tim Menn and learn why Greater Houston families have trusted Triple G Roofing since 1973.</p>
         <a href="/about/" class="btn btn-secondary">Learn More</a>
       </article>
 
@@ -134,12 +133,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <article class="next-step-card reveal-delay-2" data-animate>
         <div class="next-step-icon"><?php echo icon('star', 30); ?></div>
         <h3>Read Reviews</h3>
-        <p>See what your North Harris County neighbors say about working with our crew.</p>
+        <p>See what your Greater Houston neighbors say about working with our crew.</p>
         <a href="<?php echo htmlspecialchars($gbpUrl); ?>" target="_blank" rel="noopener" class="btn btn-secondary">View Reviews</a>
       </article>
     </div>
   </div>
 </section>
-</main>
+</div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

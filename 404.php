@@ -58,7 +58,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 </style>
 
-<main id="main-content" class="error-404" aria-label="Page not found">
+<div class="page-body" class="error-404" aria-label="Page not found">
   <div class="container">
     <div class="error-404__inner">
       <div class="error-404__code" aria-hidden="true">404</div>
@@ -85,6 +85,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
     </div>
   </div>
-</main>
+</div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

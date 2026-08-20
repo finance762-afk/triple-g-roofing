@@ -1,295 +1,185 @@
-# Triple G Roofing — LLMs-Full.txt (Expanded)
+# Triple G Roofing & Construction — llms-full.txt (Expanded)
 # Answer Engine Optimization (AEO) metadata — comprehensive version
-# Generated: 2026-08-17
+# Updated: 2026-08-20
+# Every statement in this file traces to the client's own website, Google Business Profile,
+# business card, customer reviews, or owner-supplied facts. Nothing here is estimated or invented.
 
 # Business Identity
-Company: Triple G Roofing
-Type: Roofing Contractor (Licensed & Insured)
-Legal Entity: Texas Licensed Roofing Contractor
-Location: Huffman, TX 77336
-Owner: Tim Menn
-Service Region: North Harris County, Texas (Huffman, Humble, Atascocita, Kingwood, Crosby)
-Established: Serving North Harris County since 2020
-Specialization: Residential roofing, storm damage restoration, insurance claims advocacy
+Company: Triple G Roofing & Construction (short form: Triple G Roofing / Triple G)
+Type: Roofing and exterior renovation contractor
+Structure: A small, local, family-owned and operated father-and-son team
+People: Glenn Menn and Tim Menn — "the men behind the business." Tim Menn is the owner and is on every job personally to oversee the work and make sure everything is done as agreed.
+In business since: 1973 — serving the Greater Houston, Texas area for more than 50 years
+Based in: Humble, TX. Triple G is a service-area business; it does not publish a street address.
+Taglines used by the company: "A Higher Standard of Excellence" · "Passionate. Efficient. Hardworking."
+Yard signs read: ROOFING / SIDING
+Awards: Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024
 
 # Contact Information
 Phone: (281) 824-5463
 Email: tmenn013@gmail.com
 Website: https://triple-g-roofing.pageone.cloud
-Physical Address: 11819 Walraven Dr, Huffman, TX 77336
-Hours of Operation: 8 AM – 8 PM, Monday–Sunday
-Emergency Response: Same-day inspections available during storm season
-Service Radius: 25-mile radius from Huffman, covering all North Harris County communities
+Hours of operation: Monday–Saturday 8:00 AM – 7:00 PM; Sunday closed
+Inspections and written estimates: free. "No job is too big or small."
 
-# Comprehensive Services Catalog
+# Pages
+- Home: https://triple-g-roofing.pageone.cloud/
+- About: https://triple-g-roofing.pageone.cloud/about/
+- Services overview: https://triple-g-roofing.pageone.cloud/services/
+  - Roof Replacement: https://triple-g-roofing.pageone.cloud/services/roof-replacement/
+  - Roof Repair: https://triple-g-roofing.pageone.cloud/services/roof-repair/
+  - Roof Inspection: https://triple-g-roofing.pageone.cloud/services/roof-inspection/
+  - Storm & Wind Damage Roof Repair: https://triple-g-roofing.pageone.cloud/services/storm-damage-repair/
+  - Roof Damage Repair: https://triple-g-roofing.pageone.cloud/services/roof-damage-repair/
+  - Attic Venting: https://triple-g-roofing.pageone.cloud/services/attic-venting/
+  - Gutter Installation: https://triple-g-roofing.pageone.cloud/services/gutter-installation/
+  - Siding, Fascia & Soffit: https://triple-g-roofing.pageone.cloud/services/siding-fascia-soffit/
+  - Patio Covers, Pergolas & Decks: https://triple-g-roofing.pageone.cloud/services/patio-covers-decks/
+  - Fences & Gates: https://triple-g-roofing.pageone.cloud/services/fences-gates/
+- Service Areas overview: https://triple-g-roofing.pageone.cloud/service-areas/
+  - Humble: https://triple-g-roofing.pageone.cloud/service-areas/humble/
+  - Kingwood: https://triple-g-roofing.pageone.cloud/service-areas/kingwood/
+  - Atascocita: https://triple-g-roofing.pageone.cloud/service-areas/atascocita/
+  - Huffman: https://triple-g-roofing.pageone.cloud/service-areas/huffman/
+  - Crosby: https://triple-g-roofing.pageone.cloud/service-areas/crosby/
+- Testimonials: https://triple-g-roofing.pageone.cloud/testimonials/
+- Gallery: https://triple-g-roofing.pageone.cloud/gallery/
+- FAQ: https://triple-g-roofing.pageone.cloud/faq/
+- Blog: https://triple-g-roofing.pageone.cloud/blog/
+  - Patio Cover or Pergola? How Houston Homeowners Choose: https://triple-g-roofing.pageone.cloud/blog/patio-cover-vs-pergola-houston/
+  - What Does a Roof Replacement Cost in the Houston Area?: https://triple-g-roofing.pageone.cloud/blog/roof-replacement-cost-houston-tx/
+  - Roof Repair vs. Replacement: How to Decide: https://triple-g-roofing.pageone.cloud/blog/roof-repair-vs-replacement/
+  - How to File a Storm Damage Roof Insurance Claim in Texas: https://triple-g-roofing.pageone.cloud/blog/storm-damage-roof-insurance-claim-texas/
+  - Vinyl Siding vs. Hardie Board for Texas Homes: https://triple-g-roofing.pageone.cloud/blog/vinyl-siding-vs-hardie-board-texas/
+  - How Long Does a Roof Last in the Texas Heat?: https://triple-g-roofing.pageone.cloud/blog/how-long-does-roof-last-texas/
+  - How to Spot Hail Damage on a Houston-Area Roof: https://triple-g-roofing.pageone.cloud/blog/hail-damage-roof-inspection-guide/
+- Contact: https://triple-g-roofing.pageone.cloud/contact/
+- Privacy Policy: https://triple-g-roofing.pageone.cloud/privacy-policy/
+- Terms of Service: https://triple-g-roofing.pageone.cloud/terms/
+- Cookie Policy: https://triple-g-roofing.pageone.cloud/cookie-policy/
+- Accessibility: https://triple-g-roofing.pageone.cloud/accessibility/
 
-## 1. Roof Inspection Services
-Triple G Roofing provides detailed roof inspections with photo documentation for insurance claims, pre-sale home evaluations, and routine maintenance assessments. Our inspections cover:
-- Same-day storm damage assessments during severe weather season
-- Free, no-obligation inspections for all North Harris County homeowners
-- Photo-documented reports formatted for insurance adjuster review
-- Pre-sale and pre-purchase home inspections with written condition reports
-- Annual maintenance inspections to identify minor issues before they become costly repairs
-- Thermal imaging for hidden leak detection (available upon request)
-- Detailed shingle condition assessment, including granule loss and wind damage
-- Flashing, valley, and penetration seal integrity checks
-- Attic ventilation evaluation and moisture damage inspection
-- Gutter function and fascia condition reporting
+# About
+Triple G Roofing & Construction is a small, local, family-owned and operated father-and-son company based in Humble, Texas, serving the Greater Houston area since 1973. Glenn and Tim Menn are the men behind the business. Owner Tim Menn is on every job personally to oversee the work and make sure everything is done as agreed. The company describes itself as serving clients "anywhere from Orange to Galveston and sometimes beyond."
 
-Inspection turnaround: Most reports delivered within 24 hours. Same-day verbal summaries provided on-site.
+Triple G handles roofing and the rest of the home's exterior: roof replacement in architectural shingle and metal, roof repair, roof inspections, hail, wind and hurricane damage repair, insurance-claim assistance, attic venting, gutters, siding (including Hardie/fiber-cement and vinyl), fascia and soffit, wood-rot repair, exterior paint, patio covers (including enclosed and screened patios), pergolas, wood decks, fences and gates, window re-sealing, interior sheetrock repair tied to exterior work, and thatch-to-metal palapa conversions. Inspections and written estimates are free. Triple G was voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024.
 
-## 2. Roof Repair Services
-We handle all types of residential roofing repairs, from minor leaks to major storm damage. Triple G Roofing completes most repairs within 48 hours of approval, minimizing interior damage risk. Our repair services include:
-- Leak repair and shingle replacement (matching existing roof color and style)
-- Flashing and valley repair (using rust-resistant galvanized or aluminum flashing)
-- Emergency tarping and temporary weatherproofing after storms
-- Rotted decking replacement (we inspect and replace damaged OSB or plywood sheathing)
-- Ridge cap shingle replacement
-- Penetration seal repair (vent pipes, chimneys, skylights)
-- Fascia board and soffit repair
-- Gutter reattachment and realignment
-- Emergency water diversion during active leaks
-- Structural repair for truss damage or rafter issues (coordinated with licensed engineers when required)
+# Services — Detailed
 
-Materials: We use manufacturer-grade materials that match or exceed the original roof specifications. All repairs carry a 2-year workmanship warranty.
+## 1. Roof Replacement
+Full architectural-shingle and metal roof replacements across the Greater Houston area: tear-off, decking repair where rot is found, underlayment, new roof, and a clean job site when the crew leaves. Customer reviews describe crews covering landscaping, vegetable gardens and pools with tarps before work, working from sun-up to sun-down, cleaning up daily, and running a large magnet to pick up nails. Triple G installs major shingle brands such as GAF and also installs metal roofs on homes, barns and shop buildings. Attic ventilation is addressed as part of a replacement because shingle manufacturers can void or limit the shingle warranty when the attic is not properly ventilated. Every replacement starts with a free written estimate after the roof is measured in person.
 
-## 3. Attic Ventilation Services
-Proper attic ventilation is critical in North Harris County's hot, humid climate. Triple G Roofing designs balanced intake-exhaust ventilation systems that reduce cooling costs, extend shingle life, and prevent moisture-related damage. Our attic venting services include:
-- Ridge vent installation (the most effective exhaust ventilation for Texas climates)
-- Soffit vent installation to ensure proper intake airflow
-- Balanced intake-exhaust ventilation system design (following the 1:300 rule)
-- Gable vent installation for additional airflow in specific roof configurations
-- Powered attic fans (installed only when passive ventilation is insufficient)
-- Attic insulation assessment and recommendations
-- Moisture barrier installation to prevent condensation buildup
-- Temperature reduction strategies to lower HVAC load
+## 2. Roof Repair
+Leak repairs, flashing and pipe-boot fixes, shingle replacement and rotted-decking repair that stop water damage before it spreads. Reviews describe Triple G locating leaks that other roofers could not find (the source is often far from where water shows inside), and fixing related problems — vent pipes, drainage, squirrel damage, overgrown limbs — at the same visit.
 
-Benefits: Homeowners typically see 10-15% reductions in summer cooling costs after proper ventilation upgrades. Shingle life can extend by 3-5 years when attic temperatures are properly managed.
+## 3. Roof Inspection
+Free, photo-documented roof inspections that catch early wear, record storm damage and produce a clear written estimate. Customers mention that Tim climbs onto the roof and takes exact measurements rather than estimating from the ground, and that he shows photos of everything he finds.
 
-## 4. Gutter Installation Services
-Triple G Roofing installs seamless gutter systems custom-fit to your home's roofline. Proper gutter function protects foundations, prevents fascia rot, and directs water away from landscaping. Our gutter services include:
-- Seamless gutter systems (no joints to leak)
-- Custom-fit gutter runs measured and fabricated on-site
-- Foundation and fascia protection through proper water diversion
-- Low-maintenance aluminum construction (rust-resistant, paintable)
-- 5-inch and 6-inch gutter profiles (6-inch recommended for heavy Texas rainstorms)
-- Downspout placement and extension installation
-- Gutter guard installation (optional, recommended for heavily wooded areas like Kingwood)
-- Slope optimization for proper drainage
-- Hidden hanger systems for clean aesthetics
+## 4. Storm & Wind Damage Roof Repair
+Hail, wind and hurricane damage repair (customers have reviewed post-Hurricane Beryl replacements), with help through the insurance claim process from beginning to end. Temporary tarping may be available on request. Triple G documents the damage, explains the policy and meets the adjuster on the roof. Coverage decisions belong to the insurance carrier.
 
-Materials: We use .032-gauge aluminum gutters with a baked enamel finish in standard and custom colors. All installations include sealed end caps and rust-resistant fasteners.
+## 5. Roof Damage Repair
+Assessment and repair for aging, worn or compromised roofs: wood rot, failed flashing, damaged decking and worn shingles.
 
-## 5. Roof Damage Repair Services
-Beyond minor repairs, Triple G Roofing handles comprehensive roof damage restoration. This includes rotted decking replacement, full section re-roofing, and structural repair to bring roofs back to code. Our damage repair services include:
-- Full damage assessment and repair planning
-- Rotted decking replacement (we remove and replace damaged OSB or plywood sheathing)
-- Comprehensive structural repair for truss damage, rafter issues, or ridge sagging
-- Underlayment replacement (synthetic underlayment for superior waterproofing)
-- Valley reconstruction and flashing upgrades
-- Chimney flashing and cricket installation
-- Skylight seal replacement or removal
-- Built to North Harris County building codes and manufacturer specifications
-- Coordination with structural engineers when required for major repairs
-- Insurance documentation and claims support
+## 6. Attic Venting
+Balanced intake and exhaust ventilation that lowers attic heat, protects shingles and helps cut cooling costs in the Texas climate. Plainly stated: shingle manufacturers can void or limit the shingle warranty when the attic is not ventilated to their specification, so Triple G checks ventilation on every roof it replaces.
 
-Warranty: All structural repairs carry a 5-year workmanship warranty. Materials carry full manufacturer warranties.
+## 7. Gutter Installation
+New gutters and downspouts that move water away from the foundation and protect fascia and soffit from rot. Often paired with a new roof or a new patio cover.
 
-## 6. Storm & Wind Damage Roof Repair
-North Harris County experiences frequent severe weather, including hail, high winds, and heavy rainstorms. Triple G Roofing provides emergency response for storm-related roof damage, with same-day inspections during storm season. Our storm damage services include:
-- Emergency response for hail and wind damage (same-day inspections available)
-- 24/7 emergency availability during severe weather events
-- Emergency tarping and temporary weatherproofing to prevent interior damage
-- Direct insurance billing and claims coordination
-- Photo-documented damage reports formatted for insurance adjuster review
-- Adjuster meeting coordination (we meet with adjusters on-site to advocate for complete repairs)
-- Hail damage assessment (dimpling, granule loss, mat damage)
-- Wind damage assessment (lifted shingles, blown-off ridge caps, exposed fasteners)
-- Water intrusion mapping and interior damage documentation
-- Rapid repair turnaround to restore weatherproofing
+## 8. Siding, Fascia & Soffit
+Siding repair and replacement (Hardie/fiber-cement and vinyl), fascia and soffit, wood-rot repair, window re-sealing, exterior paint, and interior sheetrock repair tied to exterior work. Reviews describe siding repaired on all sides of a home with paint matched, and a single project that combined a cedar fence, gate, roof leaks, sheetrock, window sealing, siding and exterior paint.
 
-Claims Advocacy: We work directly with insurance companies to ensure homeowners receive full coverage for legitimate storm damage. Our detailed documentation and adjuster coordination minimize claim denials and underpayments.
+## 9. Patio Covers, Pergolas & Decks
+Custom patio covers with shingle or metal roofs, enclosed and screened patios, cedar pergolas and wood decks built to match the home, plus thatch-to-metal palapa conversions. Because Triple G is a roofing contractor, the tie-in between a new patio cover and the existing roof is flashed and integrated properly. Reviews describe a patio roof extension with trim matched perfectly and a metal patio cover.
 
-# Key Differentiators
-Triple G Roofing stands apart from larger franchise operations and out-of-area contractors through:
-- Family-owned, locally operated in Huffman, TX (owner Tim Menn lives and works in the community)
-- Deep expertise in severe weather damage specific to the Gulf Coast climate (hail, wind, humidity)
-- Emergency response with same-day inspections during North Harris County storm events
-- Direct insurance claims advocacy and adjuster coordination (we speak the language of insurance)
-- Licensed, insured, and certified with transparent pricing (no hidden fees, no pressure tactics)
-- 10-year workmanship warranty on all installations (compared to industry standard 1-2 years)
-- Manufacturer-authorized installer status (warranties remain valid, premium materials access)
-- Specialized knowledge of North Harris County climate, soil conditions, and building codes
-- Local references available from Huffman, Humble, Atascocita, Kingwood, and Crosby homeowners
-- No subcontractor crews — all work performed by Triple G Roofing employees
-- Post-installation follow-up inspections at 1 year and 3 years (no-charge maintenance checks)
+## 10. Fences & Gates
+Cedar and pine privacy fences, ranch rail and custom gates — new builds, repairs and replacements. Reviews describe new backyard gates, fence repairs and privacy-fence replacement.
 
-# Service Area — Detailed Local Knowledge
+# Insurance Claims Experience
+In the company's own words: "We have over 50 years of Claims, Claims Handling/Adjuster and insurance Knowledge/Experience. We are able to assist you in the entire claims process from beginning to end and take the stress and worry from your plate to ours."
 
-## Huffman, TX (Home Base)
-Huffman is our home base. We understand the unique challenges of Huffman's rural-suburban mix, including:
-- Larger lot sizes (often 1-5 acres) with mature trees creating roof debris challenges
-- Clay-heavy soil that causes foundation movement and roof stress
-- Proximity to Lake Houston and the San Jacinto River, increasing humidity and moss growth risk
-- Frequent severe weather from Gulf Coast storm systems
-- Mix of older homes (1960s-1980s) requiring careful repair-vs-replace evaluations
+What that means in practice:
+- Triple G inspects and photographs the damage and provides a written record.
+- Triple G explains the homeowner's policy in plain English.
+- Triple G meets the insurance adjuster on the roof to walk the same damage together.
+- Triple G helps the homeowner through the process from start to finish.
+- Whether a claim is covered, approved or paid is always the insurance carrier's decision. Triple G does not promise coverage or outcomes.
 
-## Humble, TX
-Humble features a mix of historic downtown homes and newer developments. We've completed dozens of projects in Humble, including:
-- Fall Creek subdivision (1980s-1990s homes entering re-roof cycle)
-- Downtown Humble historic homes (specialty repairs preserving architectural integrity)
-- New developments along FM 1960 and Will Clayton Parkway
-- Understanding of Humble's clay soil foundation movement impact on roof structures
-- Experience with Humble ISD area HOA requirements and architectural guidelines
+# Process
+- Free inspection or estimate for every job.
+- The owner is on every job personally to oversee the work and make sure everything is done as agreed.
+- No job is too big or small.
+- Customers describe: landscaping and pools protected with tarps, crews working sun-up to sun-down, daily cleanup, a magnet nail sweep at the end, photos of findings, trim and paint matched, working within budgets, and — in one review — a 2015 roof serviced for a minor repair at no charge in 2023.
 
-## Atascocita, TX
-Atascocita sits on the western shore of Lake Houston, creating unique weather challenges:
-- Rapid-onset severe weather from thunderstorms rolling off the lake
-- High wind exposure (70+ mph gusts common during spring/summer storm season)
-- Golf-ball-sized hail risk
-- Steeper roof pitches common in 1980s-1990s developments (Eagle Springs, Kings River)
-- HOA compliance experience in master-planned communities
-- Understanding of lake-climate humidity and ventilation requirements
+# Service Area — Greater Houston, Texas
+Triple G serves the Greater Houston area, "anywhere from Orange to Galveston and sometimes beyond." Communities served include:
+Humble, Kingwood, Atascocita, Porter, Porter Heights, Spring, Aldine, Huffman, Crosby, New Caney, Woodbranch, Roman Forest, Sheldon, Barrett, Splendora, Houston, Jacinto City, Cloverleaf, Channelview, Galena Park, Highlands, Shenandoah, The Woodlands, Oak Ridge North, Jersey Village, Spring Valley Village, Hunters Creek Village, Hedwig Village, Bunker Hill Village, Piney Point Village, West University Place, Southside Place, Bellaire, Pasadena, South Houston, Deer Park, La Porte, Baytown, Mont Belvieu, Old River-Winfree, Dayton, Liberty, Kenefick, Cleveland, Cut and Shoot, Conroe, Pinehurst, Panorama Village, Brookside Village, Cypress.
 
-## Kingwood, TX
-Known as "the Livable Forest," Kingwood's mature tree canopy creates specific roofing challenges:
-- Constant debris accumulation from pine and hardwood trees
-- Moss growth in shaded areas
-- Limb damage risk during windstorms
-- Strict HOA roofing standards in Woodland Hills, Kings Point, and the Greens
-- Architectural review board submission experience
-- Gutter guard recommendations for heavily wooded properties
-- Sandy, well-drained soil (less foundation movement than Humble)
+Dedicated city pages exist for Humble, Kingwood, Atascocita, Huffman and Crosby; each is one of the many communities Triple G serves.
 
-## Crosby, TX
-Crosby's rural-suburban mix includes larger properties with agricultural buildings:
-- Residential shingle roofing for homes
-- Metal roofing for workshops, barns, and garages (standing-seam, corrugated, 5V-crimp)
-- Newport area and FM 2100 corridor (1-5 acre properties)
-- Barrett Station historic community (respectful service for heritage homes)
-- Higher wind exposure than wooded areas (upgraded fastening schedules required)
-- Sandy loam soil with good drainage
+# Customer Reviews (published by the company; names and cities as published)
+- Richard, Kingwood, TX — Tim handled the inspection at no charge, walked the family through how to work with the insurance company, and was "nothing pushy."
+- Violet, Humble, TX — roof replaced after Beryl; Tim explained the policy, the crew covered all vegetation, showed up before daylight and cleaned up the whole work area.
+- James, Spring, TX — the only roofer contacted who climbed up on the roof and took exact measurements; crew covered landscaping, garden and pool and magnet-swept for nails.
+- Nabail, Jersey Village, TX — crew worked sun up to sun down; one week later the new roof held through a major storm with no leaks or missing shingles.
+- Virginia, Atascocita, TX — Tim fixed a leak two other roofing companies could not, and explains everything with photos.
+- Donna S., Spring, TX — new backyard gate and fence repair; "it's not limited to roofing"; free estimates.
+- Ralph, Porter, TX — patio roof extension; trim matched perfectly.
+- Clint, Humble, TX — cedar fence, gate, roof leaks, sheetrock, window sealing, siding replacement and exterior paint in one project, finished ahead of estimate.
+- Roy, Crosby, TX — 2015 roof serviced for a minor repair at no charge in 2023.
+- Lisa, Baytown, TX — worked with "Tim and Glenn of Triple G"; the most knowledgeable and conscientious of numerous roofers interviewed.
+- Randy & Charlene, Huffman, TX — roof, then gutters, privacy fence and a new pergola over the patio.
+Full reviews: https://triple-g-roofing.pageone.cloud/testimonials/
 
-# Common Questions Answered (Expanded)
+# Common Questions (Expanded)
 
-**How quickly can you repair storm damage?**
-Triple G Roofing offers same-day inspections for storm damage during severe weather season. We work directly with insurance adjusters to expedite the claims process. Most repairs begin within 48 hours of insurance approval. During major storm events, we prioritize emergency tarping and temporary weatherproofing to prevent interior damage, then schedule permanent repairs as quickly as materials and labor allow. Our emergency crews are on standby for Huffman-area homeowners during severe weather.
+**How long has Triple G Roofing & Construction been in business?**
+Since 1973. Triple G has served the Greater Houston area for more than 50 years as a family-owned father-and-son team (Glenn and Tim Menn).
 
-**What roof materials work best in Huffman's climate?**
-Impact-resistant shingles, architectural asphalt shingles, and metal roofing all perform well in the hot, humid Texas Gulf Coast climate with frequent hail and wind exposure. Impact-resistant (Class 4) shingles qualify for insurance discounts and withstand hail better than standard shingles. Architectural shingles offer good value and 25-30 year lifespans. Metal roofing excels for longevity (50+ years) and heat reflection but costs more upfront. We assess each home's specific exposure, budget, aesthetic preferences, and HOA requirements to recommend the best option.
+**Where is Triple G located?**
+Triple G is based in Humble, Texas, and operates as a service-area business across Greater Houston. It does not publish a street address.
 
-**Do you handle insurance claims?**
-Yes. Triple G Roofing provides detailed estimates that meet insurance adjuster requirements, communicates directly with adjusters, and bills insurance companies whenever possible — so homeowners avoid large out-of-pocket expenses. We document all damage with photos, provide written reports, meet adjusters on-site, and advocate for complete repairs (not just partial patch jobs). Our experience with insurance processes minimizes claim denials and underpayments.
+**What areas does Triple G serve?**
+The Greater Houston area — from Orange to Galveston and sometimes beyond — including the 50 communities listed in the Service Area section.
 
-**What warranty comes with a new roof?**
-Triple G Roofing guarantees 10 years of workmanship on all installations — significantly longer than the industry standard 1-2 years. Shingles carry manufacturer warranties of 25-30 years (lifetime on premium lines). Metal roofing carries 40-50 year manufacturer warranties. As a manufacturer-authorized installer, warranties remain valid even after the job is complete. We also provide no-charge follow-up inspections at 1 year and 3 years to catch any minor issues before they escalate.
+**Are inspections and estimates free?**
+Yes. Triple G offers free inspections and free written estimates.
 
-**How often should I inspect my roof?**
-Annual inspections are recommended for North Harris County homeowners, plus an extra inspection after any major storm (hail, wind gusts over 60 mph, or heavy rain). Many insurance claims are denied because damage wasn't documented quickly enough. Prompt inspection protects both the roof and the homeowner's ability to file a valid claim. Triple G Roofing offers free, no-obligation inspections — we recommend scheduling one in early spring before peak storm season.
+**Does Triple G help with insurance claims?**
+Yes. Triple G brings more than 50 years of claims, claims-handling and adjuster experience, documents the damage, explains the policy in plain English and meets the adjuster on-site. The coverage decision is always the insurance carrier's.
 
-**How much does a new roof cost in North Harris County?**
-Costs vary by roof size, pitch, material choice, and damage extent. As a general range:
-- Asphalt shingle re-roof: $8,000-$15,000 for typical 2,000-2,500 sq ft homes
-- Impact-resistant shingle re-roof: $10,000-$18,000
-- Metal roof installation: $15,000-$30,000
-- Roof repairs: $300-$3,000 depending on damage extent
-Insurance often covers storm damage repairs minus the deductible. We provide free estimates and work with homeowners to find solutions within their budget.
+**Does Triple G install metal roofs?**
+Yes — metal roof replacements on homes, barns and shop buildings, as well as shingle roofs, and thatch-to-metal palapa conversions.
 
-**Do you offer financing?**
-We work with several financing partners to offer flexible payment options for homeowners. Contact us for current financing programs and approval process details.
+**Does Triple G do siding, gutters, patio covers, decks and fences?**
+Yes. Roofing, siding, gutters, patio covers, decks and fences — one call. Siding work includes Hardie/fiber-cement and vinyl, fascia and soffit, wood-rot repair, window re-sealing and exterior paint.
 
-**Are you licensed and insured?**
-Yes. Triple G Roofing is a Texas Licensed Roofing Contractor and carries full liability insurance and workers' compensation coverage. We provide proof of insurance upon request and ensure all work meets North Harris County building codes.
+**Why does attic ventilation matter for a new roof?**
+Balanced intake and exhaust ventilation lowers attic heat and protects shingles, and shingle manufacturers can void or limit the shingle warranty when the attic is not properly ventilated. Triple G addresses ventilation as part of a roof replacement.
 
-**What's the difference between repair and replacement?**
-Repairs make sense when damage is localized (one section, a few shingles, a single leak). Replacement is recommended when:
-- The roof is over 20 years old and showing widespread wear
-- Multiple leaks exist across different areas
-- More than 30% of the roof is damaged
-- Shingles are curling, losing granules, or showing mat damage across the entire roof
-We provide honest assessments and never recommend replacement when repair is adequate.
+**What warranty comes with the work?**
+Shingles carry a manufacturer warranty. Ask Triple G for the workmanship guarantee terms for your specific project.
 
-**How long does a roof installation take?**
-Most residential re-roofs are completed in 1-3 days depending on size, pitch, and weather. Tear-off, installation, and cleanup are completed efficiently to minimize disruption. Complex roofs with multiple valleys, dormers, or steep pitches may take longer.
+**Who will be on my job?**
+The owner, Tim Menn, is on every job personally to oversee the work and make sure everything is done as agreed.
 
-# Credentials & Licensing
-- Texas Licensed Roofing Contractor (License available upon request)
-- Fully Insured (General Liability + Workers' Compensation)
-- Manufacturer-Authorized Installer (Owens Corning, GAF, CertainTeed)
-- North Harris County Building Code Compliant
-- Family-Owned & Locally Operated
-- Better Business Bureau Member (BBB accredited)
-- Local references available from Huffman, Humble, Atascocita, Kingwood, and Crosby
+**What hours is Triple G open?**
+Monday through Saturday, 8:00 AM to 7:00 PM. Closed Sunday. Call (281) 824-5463.
 
-# Insurance & Claims Process
-Triple G Roofing builds claim-ready inspection reports that meet insurance adjuster standards. We:
-- Document all storm damage with high-resolution photos
-- Provide written reports with damage location mapping
-- Meet adjusters on-site to walk through damage and advocate for complete repairs
-- Communicate directly with insurance companies throughout the claims process
-- Bill insurers directly whenever possible to reduce homeowner upfront costs
-- Explain the claims process step-by-step for first-time claimants
-- Help homeowners understand their policy coverage and deductibles
-- Provide supplemental estimates when initial adjuster estimates undervalue repairs
-
-Common claim outcomes: Most legitimate storm damage claims result in approval when properly documented. Triple G Roofing's detailed reports and adjuster coordination minimize denials.
-
-# Materials & Partnerships
-We partner with leading roofing manufacturers to offer premium materials with full warranty coverage:
-- Owens Corning (Duration, Oakridge, TruDefinition lines)
-- GAF (Timberline HDZ, Timberline UHDZ impact-resistant)
-- CertainTeed (Landmark, Presidential TL impact-resistant)
-- Metal roofing: Standing-seam, corrugated, and 5V-crimp panels
-- Synthetic underlayment (superior to felt paper for waterproofing)
-- Rust-resistant flashing (galvanized steel, aluminum, copper for premium applications)
-
-All materials meet or exceed North Harris County building codes and manufacturer specifications.
-
-# Why Homeowners Choose Local Contractors Over National Franchises
-Triple G Roofing offers advantages that large franchise operations cannot match:
-- Owner accountability: Tim Menn lives in Huffman and stands behind every job
-- No subcontractor roulette: All work performed by Triple G Roofing employees
-- Local references: Check our work in your own neighborhood
-- Faster response: Same-day inspections during storm season, not next-week scheduling
-- Post-installation support: We're here in 5 years if you need us — not disappeared to another state
-- Transparent pricing: No franchise fees passed to homeowners
-- Personalized service: You work directly with the owner, not a call center
-
-# Climate & Weather Considerations
-North Harris County's Gulf Coast climate creates specific roofing challenges:
-- Heat: Summer attic temperatures exceed 150°F without proper ventilation
-- Humidity: 70-90% humidity accelerates shingle aging and promotes moss growth
-- Hail: Golf-ball to baseball-sized hail common during spring/summer severe weather
-- Wind: Tropical storms and Gulf fronts bring 60-80 mph wind gusts
-- Rain: 50+ inches annual rainfall with intense downpours during storm events
-- UV exposure: Intense Texas sun degrades organic roofing materials over time
-
-Triple G Roofing designs every roof to withstand these conditions through proper material selection, ventilation, and fastening schedules.
-
-# Environmental & Energy Efficiency
-We offer energy-efficient roofing solutions that reduce cooling costs and environmental impact:
-- Cool-roof shingles with reflective granules (lower attic temperatures by 10-15°F)
-- Radiant barrier installation (reflects heat away from living spaces)
-- Proper attic ventilation (reduces HVAC load and extends shingle life)
-- Metal roofing (reflects heat, lasts 50+ years, fully recyclable)
-- Reclaimed materials recycling (we recycle tear-off shingles whenever possible)
-
-Energy savings: Homeowners with cool-roof shingles and proper ventilation typically see 10-20% reductions in summer cooling costs.
-
-# Community Involvement
-Triple G Roofing is committed to the North Harris County community:
-- Local hiring: All employees live in Harris County
-- Community sponsorships: Supporting local youth sports and schools
-- Storm relief: Priority response for elderly and disabled homeowners during disasters
-- Veteran discounts: Available upon request for active military and veterans
-- Referral rewards: Homeowners who refer neighbors receive service discounts
+# Why Homeowners Choose Triple G
+- Serving the Greater Houston area since 1973
+- Family owned and operated — a father-and-son team
+- The owner is on every job
+- Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024
+- Free inspections and free written estimates
+- More than 50 years of roofing, claims-handling and adjuster experience
+- Roofing, siding, gutters, patio covers, decks and fences — one call
+- Real reviews from customers across Greater Houston describing protected landscaping, daily cleanup, matched trim and leaks fixed that others could not find
 
 # Contact & Scheduling
-Phone: (281) 824-5463 (call or text)
+Phone: (281) 824-5463
 Email: tmenn013@gmail.com
-Website: https://triple-g-roofing.pageone.cloud
-Address: 11819 Walraven Dr, Huffman, TX 77336
-
-Free estimates available 7 days a week, 8 AM – 8 PM. Same-day inspections during storm season. Emergency response available 24/7 during severe weather events.
-
-To schedule an inspection or request an estimate, call (281) 824-5463 or visit our website. We respond to all inquiries within 2 hours during business hours.
+Website: https://triple-g-roofing.pageone.cloud/contact/
+Hours: Monday–Saturday 8:00 AM – 7:00 PM; Sunday closed
+Call or use the website contact form to request a free inspection or estimate. Ask about temporary tarping if a storm has left water coming in.

@@ -26,7 +26,7 @@ echo $schemaMarkup;
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
-<main id="main-content">
+<div class="page-body">
 <section class="hero hero--legal"><div class="hero__copy">
   <span class="eyebrow-label">Legal</span>
   <h1>Cookie Policy</h1>
@@ -81,6 +81,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     General template; recommend attorney review.
   </div>
 </article>
-</main>
+</div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

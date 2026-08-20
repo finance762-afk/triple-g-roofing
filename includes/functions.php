@@ -51,7 +51,7 @@ function getAreaSlug($city) {
  * Generate JSON-LD Service schema for a given service
  */
 function generateServiceSchema($service) {
-    global $siteName, $siteUrl, $phone, $address;
+    global $siteName, $siteUrl, $phone, $address, $serviceAreaCities;
 
     $schema = [
         "@type" => "Service",
@@ -63,16 +63,14 @@ function generateServiceSchema($service) {
             "telephone" => $phone,
             "address" => [
                 "@type" => "PostalAddress",
-                "streetAddress" => $address['street'],
                 "addressLocality" => $address['city'],
                 "addressRegion" => $address['state'],
                 "postalCode" => $address['zip']
             ]
         ],
-        "areaServed" => [
-            "@type" => "City",
-            "name" => $address['city'] . ", " . $address['state']
-        ]
+        "areaServed" => array_map(function ($c) use ($address) {
+            return ["@type" => "City", "name" => $c . ", " . $address['state']];
+        }, $serviceAreaCities)
     ];
 
     return json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);

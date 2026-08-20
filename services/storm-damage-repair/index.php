@@ -1,85 +1,106 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/testimonials-data.php';
 ?>
 <?php
 /* ============================================================
-   Service — Storm & Wind Damage Roof Repair · Triple G Roofing (Phase 4)
+   Service — Storm & Wind Damage Roof Repair · Triple G Roofing & Construction
    Premium editorial service page (8-section structure)
+   Facts: references/CLIENT-FACTS.md (revised 2026-08-20)
    ============================================================ */
 
 $currentPage     = 'services';
 $serviceName     = 'Storm & Wind Damage Roof Repair';
 $serviceSlug     = 'storm-damage-repair';
-$pageTitle       = 'Storm & Wind Damage Roof Repair Huffman TX | Triple G Roofing';
-$pageDescription = 'Storm or wind damage in Huffman, TX? Triple G Roofing offers same-day tarping, hail inspections, and direct insurance billing across North Harris County. Call (281) 824-5463.';
+$pageTitle       = 'Storm & Wind Damage Roof Repair Houston TX | Triple G Roofing & Construction';
+$pageDescription = 'Hail, wind and hurricane roof damage repair across Greater Houston from Triple G Roofing & Construction, since 1973. 50+ years of claims experience, free inspection. Call (281) 824-5463.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
+$ogImage         = 'storm-damage-repair-v2-960.webp';
+$pageReviews     = getTestimonialsFor($serviceSlug, 3);
 
-/* --- FAQs specific to storm & wind damage in Huffman --- */
+/* --- Review excerpt helper (verbatim text, cut at a sentence boundary) --- */
+if (!function_exists('tg_review_excerpt')) {
+    function tg_review_excerpt($text, $max = 400) {
+        if (mb_strlen($text) <= $max) { return $text; }
+        $cut = mb_substr($text, 0, $max);
+        $end = max((int) mb_strrpos($cut, '. '), (int) mb_strrpos($cut, '! '));
+        if ($end < 120) {
+            $sp = mb_strrpos($cut, ' ');
+            return rtrim(mb_substr($cut, 0, $sp ?: $max), ',;:') . '…';
+        }
+        return mb_substr($cut, 0, $end + 1);
+    }
+}
+
+/* --- FAQs — storm & wind damage, Greater Houston (fact-safe) --- */
 $faqs = [
     [
-        'q' => 'How fast can you tarp my roof after a Huffman storm?',
-        'a' => 'Triple G Roofing runs same-day emergency response across Huffman and North Harris County. When wind or hail opens your roof, call us and we get a weather-tight tarp over the breach fast — usually the same day — so the next Gulf Coast downpour does not soak your insulation, drywall, and belongings.',
+        'q' => 'What should I do first if a storm damaged my roof?',
+        'a' => 'Stay off the wet roof and away from downed lines, photograph what you can see from the ground and any leaks inside, then call Triple G Roofing & Construction at (281) 824-5463. We will get you on the schedule quickly, inspect for free, and — if water is coming in — ask us about temporary tarping to protect the inside of your home.',
     ],
     [
-        'q' => 'What does homeowners insurance cover on storm damage, and what about my deductible?',
-        'a' => 'Most Texas policies cover sudden storm, wind, and hail damage minus your deductible. Triple G Roofing documents the damage, files a claim-ready report, and meets your adjuster on site. You typically pay only your deductible; we bill the approved repair cost directly to your insurer so there are no surprise invoices.',
+        'q' => 'Will my homeowners insurance pay for storm damage?',
+        'a' => 'That decision always belongs to your insurance carrier, and it depends on your policy and what the adjuster finds. What we can do is make sure the damage is documented properly: Triple G Roofing & Construction has more than 50 years of claims-handling and adjuster experience, photographs every impact, meets your adjuster on site, and explains your policy in plain English so nothing is a surprise.',
     ],
     [
-        'q' => 'My storm damage claim was denied — what can I do now?',
-        'a' => 'A denial is not always final. Triple G Roofing re-inspects your Huffman roof, photographs missed hail bruising or wind lift the first adjuster overlooked, and provides detailed documentation to support a reinspection or appeal. Many denied claims are reversed once the damage is properly captured and presented to the insurer.',
+        'q' => 'My storm damage claim was denied — is that final?',
+        'a' => 'Not always. One of our Orange, TX customers was first told her roof was not covered; after Tim re-inspected, photographed the damage, and went back to the carrier with the documentation, the insurer reversed its decision. We cannot promise that outcome, but we can make sure your damage is presented clearly and completely.',
     ],
     [
         'q' => 'How can I tell if I have hail damage on my roof?',
-        'a' => 'Hail damage is often invisible from the ground. Look for dented gutters, granules washing from downspouts, and soft, bruised spots on shingles. A Triple G Roofing inspector climbs your Huffman roof, chalks each impact, and photographs it — the documented proof an insurance adjuster needs to approve a hail claim.',
+        'a' => 'Hail damage is often invisible from the ground. Look for dented gutters and vents, granules washing from downspouts, and soft, bruised spots on shingles. Triple G Roofing & Construction inspects for free, marks each impact, and photographs it so you have a clear record — whether or not you decide to file a claim.',
     ],
     [
-        'q' => 'Do you handle full roof replacement storm claims?',
-        'a' => 'Yes. When a Huffman storm damages a roof beyond repair, Triple G Roofing manages the entire replacement claim — documentation, adjuster meeting, agreed scope, and direct insurance billing. You get a new, code-compliant roof built for North Harris County weather while we handle the paperwork with your insurer.',
+        'q' => 'Do you handle roofs damaged beyond repair?',
+        'a' => 'Yes. When hail, wind, or a hurricane damages a roof past the point of repair, Triple G Roofing & Construction handles the full replacement — architectural shingle or metal — and walks you through the claim process from documentation to final walkthrough. We install major brands such as GAF.',
     ],
     [
-        'q' => 'Will I pay out of pocket beyond my deductible?',
-        'a' => 'In most approved storm claims, your deductible is your only cost. Triple G Roofing works from your insurer\'s agreed scope and bills the balance directly to the carrier. We walk you through the numbers before any work starts, so you always know exactly what you owe — no hidden add-ons.',
+        'q' => 'What parts of the Houston area do you cover after a storm?',
+        'a' => 'Triple G Roofing & Construction is based in Humble, TX and works across the Greater Houston area — Kingwood, Atascocita, Baytown, The Woodlands, Huffman, Crosby, Pasadena, Conroe, Cypress and dozens of other communities, from Orange to Galveston and sometimes beyond. We do not set a response-area limit; call and ask.',
     ],
 ];
 
-/* --- Related services (3 cards) --- */
+/* --- Related services (3 cards) — fact-safe bullets, manifest alt text --- */
 $relatedServices = [
     [
-        'name' => 'Roof Inspection', 'slug' => 'roof-inspection', 'img' => 'roof-inspection',
-        'alt' => 'Close-up roof shingle inspection on a Huffman, TX home',
-        'desc' => 'Documented inspections that catch damage early and back up insurance claims.',
-        'bullets' => ['Same-day storm inspections', 'Photo-documented reports', 'Insurance claim–ready findings'],
-        'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>',
+        'name' => 'Roof Inspection', 'slug' => 'roof-inspection', 'img' => 'roof-inspection-v2', 'w' => 1200, 'h' => 1600,
+        'srcset' => '/assets/images/roof-inspection-v2-480.webp 480w, /assets/images/roof-inspection-v2-960.webp 960w',
+        'alt' => 'Close-up of cracked and lifted shingles found during a roof inspection',
+        'desc' => 'Free, photo-documented inspections that show you exactly what your roof needs.',
+        'bullets' => ['Free, no-obligation inspections', 'Photos of every finding', 'Owner on every job'],
+        'icon' => icon('search', 26),
     ],
     [
-        'name' => 'Roof Repair', 'slug' => 'roof-repair', 'img' => 'roof-repair',
-        'alt' => 'Roof decking exposed during a repair on a brick Huffman home',
-        'desc' => 'Leak, shingle, and flashing repairs that stop water damage fast.',
-        'bullets' => ['Leaks stopped at the source', 'Shingle & flashing replacement', 'Most repairs within 48 hours'],
-        'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>',
+        'name' => 'Roof Replacement', 'slug' => 'roof-replacement', 'img' => 'roof-replacement', 'w' => 1200, 'h' => 1600,
+        'srcset' => '/assets/images/roof-replacement-480.webp 480w, /assets/images/roof-replacement-960.webp 960w',
+        'alt' => 'Triple G crew replacing the roof on a two-story brick home',
+        'desc' => 'Architectural-shingle and metal roof replacements, tear-off to clean-up.',
+        'bullets' => ['Shingle and metal roofs', 'Major brands such as GAF', 'Magnet nail sweep after'],
+        'icon' => icon('home', 26),
     ],
     [
-        'name' => 'Roof Damage Repair', 'slug' => 'roof-damage-repair', 'img' => 'roof-damage-repair',
-        'alt' => 'Roof tear-off job with a loaded dumpster at a Huffman home',
-        'desc' => 'Full assessment and repair for aging, worn, or compromised roofs.',
-        'bullets' => ['Complete damage assessment', 'Rotted decking replaced', 'Built to North Harris County code'],
-        'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"/></svg>',
+        'name' => 'Roof Repair', 'slug' => 'roof-repair', 'img' => 'roof-repair-v2', 'w' => 1200, 'h' => 1600,
+        'srcset' => '/assets/images/roof-repair-v2-480.webp 480w, /assets/images/roof-repair-v2-960.webp 960w',
+        'alt' => 'New step flashing sealed against a brick chimney during a roof repair',
+        'desc' => 'Leak, flashing, pipe-boot, and decking repairs that stop water at the source.',
+        'bullets' => ['Leaks traced to the source', 'Flashing and pipe boots', 'Free written estimate'],
+        'icon' => icon('wrench', 26),
     ],
 ];
 
-/* --- Schema: Service + FAQPage + BreadcrumbList --- */
+/* --- Schema: Service + FAQPage + BreadcrumbList (all 50 communities as areaServed) --- */
 $serviceSchema = [
     "@context" => "https://schema.org",
     "@type"    => "Service",
     "@id"      => $canonicalUrl . '#service-' . $serviceSlug,
     "serviceType" => $serviceName,
-    "name"     => $serviceName . ' in ' . $address['city'] . ', ' . $address['state'],
-    "description" => 'Emergency storm and wind damage roof repair in Huffman, TX — same-day tarping, hail and wind inspections, and direct insurance claim coordination across North Harris County.',
+    "name"     => $serviceName . ' — Greater Houston, ' . $address['state'],
+    "description" => 'Hail, wind, and hurricane roof damage repair across the Greater Houston area from Triple G Roofing & Construction, a family-owned father-and-son company based in Humble, TX since 1973 — free inspections, photo documentation, adjuster meetings, and repair or replacement.',
     "provider" => ["@id" => $siteUrl . '#organization'],
-    "areaServed" => array_map(function ($a) use ($address) {
-        return ["@type" => "City", "name" => $a . ', ' . $address['state']];
-    }, $serviceAreas),
+    "areaServed" => array_map(function ($c) use ($address) {
+        return ["@type" => "City", "name" => $c . ', ' . $address['state']];
+    }, $serviceAreaCities),
     "url" => $canonicalUrl,
 ];
 $breadcrumbSchema = [
@@ -161,7 +182,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .st-problem { background:var(--color-white); }
 .st-pullquote { font-family:var(--font-heading); font-weight:800; font-size:clamp(1.6rem,3.4vw,2.5rem); line-height:1.25; color:var(--color-dark); max-width:24ch; margin:var(--space-8) 0 var(--space-4); }
 .st-pullquote span { color:var(--svc-accent); }
-.signs-bento { display:grid; grid-template-columns:repeat(4,1fr); gap:var(--space-5); margin-top:var(--space-10); }
+.signs-bento { display:grid; grid-template-columns:repeat(5,1fr); gap:var(--space-5); margin-top:var(--space-10); }
 .sign-card { position:relative; overflow:hidden; background:var(--color-light); border:1px solid var(--color-gray-light); border-radius:var(--radius-lg); padding:var(--space-6); transition:transform var(--transition-base), box-shadow var(--transition-base); }
 .sign-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); }
 .sign-card:first-child { grid-column:span 2; background:linear-gradient(135deg, var(--svc-accent-soft), var(--color-white)); }
@@ -216,7 +237,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .claim-step__card p { font-size:var(--font-size-sm); color:var(--color-gray-dark); line-height:1.6; margin:0; }
 
 /* =====================================================
-   5 · PROCESS / EMERGENCY TIMELINE
+   5 · PROCESS / AFTER-THE-STORM TIMELINE
    ===================================================== */
 .st-process { background:var(--color-white); }
 .timeline { max-width:820px; margin:var(--space-12) auto 0; position:relative; }
@@ -269,7 +290,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
    ===================================================== */
 .st-faq { background:var(--color-white); }
 .faq-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--space-6); align-items:start; margin-top:var(--space-10); }
-.faq-item { background:var(--color-light); border-radius:var(--radius-lg); border:1px solid var(--color-gray-light); overflow:hidden; transition:box-shadow var(--transition-base), border-color var(--transition-base); }
+.faq-item { display:block; padding:0; background:var(--color-light); border-radius:var(--radius-lg); border:1px solid var(--color-gray-light); overflow:hidden; transition:box-shadow var(--transition-base), border-color var(--transition-base); }
 .faq-item[open] { box-shadow:var(--shadow-md); }
 .faq-item:not([open]):hover { box-shadow:var(--shadow-sm); border-color:color-mix(in srgb, var(--svc-accent) 30%, var(--color-gray-light)); }
 .faq-item:not([open]):hover summary { color:var(--svc-accent); }
@@ -360,7 +381,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 @media (max-width:1024px) {
   .expert-grid { grid-template-columns:1fr; gap:var(--space-10); }
   .signs-bento { grid-template-columns:1fr 1fr; }
-  .sign-card:first-child { grid-column:span 2; }
+  .sign-card:first-child, .sign-card:last-child { grid-column:span 2; }
   .services-grid { grid-template-columns:repeat(2,1fr); }
 }
 @media (max-width:900px) {
@@ -379,7 +400,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 @media (max-width:600px) {
   .signs-bento { grid-template-columns:1fr; }
-  .sign-card:first-child { grid-column:auto; }
+  .sign-card:first-child, .sign-card:last-child { grid-column:auto; }
   .proof-photos { grid-template-columns:1fr; }
   .services-grid { grid-template-columns:1fr; }
   .st-hero h1 { font-size:clamp(2rem,8vw,2.6rem); }
@@ -396,6 +417,156 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   .faq-item, .sign-card, .claim-step__card { break-inside:avoid; }
   [data-animate] { opacity:1 !important; transform:none !important; }
 }
+
+/* =====================================================
+   REAL REVIEWS — client-published quotes (name + city)
+   Dark proof-section cards with oversized opening quote mark,
+   accent-on-hover border, and a 3→2→1 responsive grid.
+   ===================================================== */
+.st-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}
+.st-review {
+  position: relative;
+  margin: 0;
+  padding: var(--space-8) var(--space-6) var(--space-6);
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: transform var(--transition-base),
+              border-color var(--transition-base),
+              background var(--transition-base);
+}
+.st-review:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--svc-accent) 55%, transparent);
+  background: rgba(var(--color-primary-rgb), .08);
+}
+.st-review::before {
+  content: '\201C';
+  position: absolute;
+  top: var(--space-1);
+  left: var(--space-5);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-5xl);
+  line-height: 1;
+  color: rgba(var(--color-primary-rgb), .4);
+  pointer-events: none;
+}
+.st-review:first-child {
+  background: linear-gradient(160deg, rgba(var(--color-primary-rgb), .14), rgba(255, 255, 255, .04));
+}
+.st-review p {
+  position: relative;
+  color: rgba(255, 255, 255, .86);
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+.st-review footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.st-review cite {
+  font-style: normal;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-white);
+}
+.st-review footer span {
+  font-size: var(--font-size-xs);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* =====================================================
+   LAST-UPDATED STAMP — lives in the breadcrumb bar
+   ===================================================== */
+.st-breadcrumb .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.st-updated {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray);
+  white-space: nowrap;
+  padding: var(--space-3) 0;
+  letter-spacing: .5px;
+}
+
+/* =====================================================
+   PORTRAIT JOB PHOTOS — aspect-ratio frames + object-fit
+   so the 1200×1600 client photos never stretch.
+   ===================================================== */
+.st-portrait {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+.st-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+.st-square img {
+  aspect-ratio: 1 / 1;
+  object-position: center 45%;
+}
+.st-hero__bg {
+  object-position: center 38%;
+}
+
+/* ---- Responsive + motion + print for the additions ---- */
+@media (max-width: 1024px) {
+  .st-review-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .st-review-grid {
+    grid-template-columns: 1fr;
+  }
+  .st-updated {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media (max-width: 600px) {
+  .st-portrait {
+    aspect-ratio: 4 / 5;
+    max-height: 70vh;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .st-review:hover {
+    transform: none;
+  }
+}
+@media print {
+  .st-review {
+    border-color: var(--color-gray-light);
+    break-inside: avoid;
+  }
+  .st-review p,
+  .st-review cite {
+    color: var(--color-dark) !important;
+  }
+}
 </style>
 
 <div class="st-page">
@@ -410,34 +581,36 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <li class="st-breadcrumb-sep" aria-hidden="true">/</li>
       <li><a href="<?php echo $canonicalUrl; ?>" aria-current="page">Storm &amp; Wind Damage Roof Repair</a></li>
     </ol>
+    <span class="st-updated">Last Updated: <?php echo date('F Y'); ?></span>
   </div>
 </nav>
 
 <!-- ===================== 1 · HERO ===================== -->
-<section class="st-hero" aria-label="Storm and wind damage roof repair in Huffman, TX">
+<section class="st-hero" aria-label="Storm and wind damage roof repair across the Greater Houston area">
   <img class="st-hero__bg"
-       src="/assets/images/storm-damage-repair.jpg"
-       srcset="/assets/images/storm-damage-repair-480.webp 480w, /assets/images/storm-damage-repair-960.webp 960w, /assets/images/storm-damage-repair-1600.webp 1600w"
+       src="/assets/images/storm-damage-repair-v2.jpg"
+       srcset="/assets/images/storm-damage-repair-v2-480.webp 480w, /assets/images/storm-damage-repair-v2-960.webp 960w"
        sizes="100vw"
-       alt="Storm-damaged tree fallen against a Huffman, TX home needing emergency roof repair"
-       width="1600" height="900" loading="eager" fetchpriority="high">
+       alt="Tarped roof with a Triple G crew starting storm damage repairs"
+       width="1200" height="1600" loading="eager" fetchpriority="high">
   <div class="container st-hero__inner">
-    <span class="st-hero__eyebrow"><?php echo icon('shield', 16); ?> Storm &amp; Wind Damage · Huffman, TX</span>
-    <h1>Storm &amp; Wind Damage Roof Repair in <span class="text-accent">Huffman</span>, TX</h1>
+    <span class="st-hero__eyebrow"><?php echo icon('shield', 16); ?> Storm &amp; Wind Damage · Humble, TX &amp; Greater Houston</span>
+    <h1>Storm &amp; Wind Damage Roof Repair in the <span class="text-accent">Greater Houston</span> Area</h1>
     <p class="hero-answer">
-      Triple G Roofing is a licensed, insured Texas roofing contractor based in Huffman serving North Harris County.
-      When hail or Gulf Coast wind hits, we respond the same day — tarping the breach, documenting every impact for
-      your adjuster, and billing your insurer directly so repairs start fast and your home stays dry.
+      Triple G Roofing &amp; Construction is a family-owned roofing and exterior contractor based in Humble, TX, serving
+      the Greater Houston area since 1973. When hail, straight-line wind, or a hurricane hits, we inspect for free,
+      photograph every impact, meet your adjuster, and explain your policy in plain English — then repair or replace
+      the roof. Ask about temporary tarping if water is coming in.
     </p>
     <div class="st-hero__actions">
-      <a href="/contact/" class="btn btn-primary btn-lg">Get Same-Day Emergency Help</a>
+      <a href="/contact/" class="btn btn-primary btn-lg">Get a Free Storm Inspection</a>
       <a href="tel:+<?php echo $phoneRaw; ?>" class="btn btn-outline-white btn-lg"><?php echo icon('phone', 18); ?> <?php echo $phone; ?></a>
     </div>
     <div class="st-hero__trust">
-      <span class="st-hero__trust-item"><?php echo icon('clock', 18); ?> Same-day emergency tarping</span>
-      <span class="st-hero__trust-item"><?php echo icon('shield', 18); ?> Licensed &amp; insured</span>
-      <span class="st-hero__trust-item"><?php echo icon('wind', 18); ?> Hail &amp; wind experts</span>
-      <span class="st-hero__trust-item"><?php echo icon('award', 18); ?> We bill your insurer</span>
+      <span class="st-hero__trust-item"><?php echo icon('award', 18); ?> 50+ years of claims &amp; adjuster experience</span>
+      <span class="st-hero__trust-item"><?php echo icon('wind', 18); ?> Hail, wind &amp; hurricane damage</span>
+      <span class="st-hero__trust-item"><?php echo icon('check-circle', 18); ?> Free, photo-documented inspections</span>
+      <span class="st-hero__trust-item"><?php echo icon('hard-hat', 18); ?> Owner on every job since 1973</span>
     </div>
   </div>
 </section>
@@ -447,11 +620,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="section-header" style="text-align:left; max-width:820px; margin-inline:0;">
       <span class="eyebrow" style="color:var(--color-primary);">After The Storm</span>
-      <h2>How do you spot storm and wind damage on a Huffman roof?</h2>
+      <h2>How do you spot storm and wind damage on a roof?</h2>
       <p class="answer-block">
         Look for missing or lifted shingles after high wind, dents and bruising from hail, granules collecting in your
-        gutters, and limb or debris impact with fresh leaks inside. Much of this damage in Huffman hides from the
-        ground, so a documented roof inspection is the only sure way to catch it before the next Gulf Coast rain.
+        gutters, and limb or debris impact with fresh leaks inside. Much of this damage hides from the ground, so a
+        free, documented roof inspection is the only sure way to catch it before the next Gulf Coast rain.
       </p>
     </div>
     <p class="st-pullquote">Wind and hail rarely leave an obvious hole — <span>they leave damage that only shows up when it rains.</span></p>
@@ -459,7 +632,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="sign-card st-rv-left" data-animate>
         <div class="sign-card__ico"><?php echo icon('wind', 24); ?></div>
         <h3>Missing or lifted shingles after wind</h3>
-        <p>Straight-line wind and gusts off the Gulf Coast peel back tabs and tear shingles off entirely. Even shingles that only lifted and reset have broken their seal — leaving your Huffman roof open to wind-driven rain at the next storm.</p>
+        <p>Straight-line wind and hurricane gusts peel back tabs and tear shingles off entirely. Even shingles that only lifted and reset have broken their seal — leaving the roof open to wind-driven rain at the next storm. One Spring customer's roof was shedding shingles after every windstorm before we replaced it.</p>
       </div>
       <div class="sign-card st-rv-scale" data-animate>
         <div class="sign-card__ico"><?php echo icon('droplets', 24); ?></div>
@@ -492,27 +665,28 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <span class="eyebrow">The Triple G Standard</span>
         <h2>Why call Triple G Roofing after a storm?</h2>
         <p class="answer-block">
-          Triple G Roofing answers the phone the day the storm passes, tarps the damage, and documents every impact
-          the way an adjuster needs to see it. Because owner Tim Menn&rsquo;s crew lives with Gulf Coast hail and wind,
-          we know what real storm damage looks like — and we bill your insurer directly so you are not fronting the cost.
+          Triple G Roofing &amp; Construction brings more than 50 years of claims, claims-handling, and adjuster experience
+          to every storm job. We inspect for free, photograph every impact, meet your adjuster on the roof, and explain
+          your policy in plain English — taking the stress of the claims process from your plate to ours. The coverage
+          decision is always your carrier&rsquo;s; making sure the damage is documented properly is our job.
         </p>
         <div class="expert-stats">
-          <div class="expert-stat"><div class="num">Same&nbsp;day</div><div class="lbl">Emergency response</div></div>
-          <div class="expert-stat"><div class="num">Direct</div><div class="lbl">Insurance billing</div></div>
-          <div class="expert-stat"><div class="num">25&nbsp;mi</div><div class="lbl">Service radius</div></div>
+          <div class="expert-stat"><div class="num">50+</div><div class="lbl">Years claims experience</div></div>
+          <div class="expert-stat"><div class="num">1973</div><div class="lbl">Serving Greater Houston since</div></div>
+          <div class="expert-stat"><div class="num">Free</div><div class="lbl">Storm inspection</div></div>
         </div>
         <ul class="expert-diffs">
-          <li><?php echo icon('check-circle', 22); ?> Emergency tarping to stop the leak before more damage sets in</li>
-          <li><?php echo icon('check-circle', 22); ?> Every hail hit and wind lift photographed for your claim file</li>
-          <li><?php echo icon('check-circle', 22); ?> We meet your adjuster on site and bill the insurer directly</li>
+          <li><?php echo icon('check-circle', 22); ?> Ask about temporary tarping to keep water out while the claim moves forward</li>
+          <li><?php echo icon('check-circle', 22); ?> Every hail hit and wind lift photographed and documented for your file</li>
+          <li><?php echo icon('check-circle', 22); ?> We meet your adjuster on site and walk you through the whole process</li>
         </ul>
       </div>
-      <div class="expert-figure st-rv-right" data-animate>
-        <img src="/assets/images/roof-damage-repair.jpg"
-             srcset="/assets/images/roof-damage-repair-480.webp 480w, /assets/images/roof-damage-repair-960.webp 960w, /assets/images/roof-damage-repair-1600.webp 1600w"
+      <div class="expert-figure st-portrait st-rv-right" data-animate>
+        <img src="/assets/images/roof-tearoff.jpg"
+             srcset="/assets/images/roof-tearoff-480.webp 480w, /assets/images/roof-tearoff-960.webp 960w"
              sizes="(max-width: 1024px) 100vw, 520px"
-             alt="Triple G Roofing crew repairing storm damage on a Huffman, TX roof"
-             width="600" height="700" loading="lazy">
+             alt="Roof tear-off in progress with a dump trailer staged in the driveway"
+             width="1200" height="1600" loading="lazy">
       </div>
     </div>
   </div>
@@ -526,45 +700,45 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <span class="eyebrow" style="color:var(--color-primary);">From Damage To Done</span>
       <h2>How does a storm damage insurance claim work?</h2>
       <p class="answer-block">
-        Triple G Roofing walks your claim through five clear steps in Huffman: a same-day inspection and emergency tarp,
-        claim-ready photo documentation, an on-site meeting with your adjuster, approval of an agreed scope, and the
-        repair itself — billed directly to your insurer. You handle your deductible; we handle the rest.
+        Triple G Roofing &amp; Construction walks your claim through five clear steps: a free inspection, photo
+        documentation, an on-site meeting with your adjuster, a plain-English review of what the carrier approves, and
+        the repair or replacement itself. You make the decisions; we make sure you understand each one.
       </p>
     </div>
     <div class="claim-rail">
       <div class="claim-step st-rv-right" data-animate>
         <div class="claim-step__marker">1</div>
         <div class="claim-step__card">
-          <h3><?php echo icon('clock', 22); ?> Same-day inspection &amp; emergency tarp</h3>
-          <p>We climb your Huffman roof the day you call, stop active leaks with a weather-tight tarp, and assess the full extent of the storm damage before water spreads.</p>
+          <h3><?php echo icon('search', 22); ?> Free inspection (and tarping if needed)</h3>
+          <p>We climb the roof, assess the full extent of the storm damage, and — if water is coming in — talk with you about temporary tarping to protect the inside of the home.</p>
         </div>
       </div>
       <div class="claim-step st-rv-right reveal-delay-1" data-animate>
         <div class="claim-step__marker">2</div>
         <div class="claim-step__card">
-          <h3><?php echo icon('search', 22); ?> Claim-ready photo documentation</h3>
-          <p>Every hail bruise, wind lift, and debris strike is chalked, photographed, and captioned into a report built the way insurance adjusters need to see it.</p>
+          <h3><?php echo icon('check-circle', 22); ?> Photo documentation</h3>
+          <p>Every hail bruise, wind lift, and debris strike is marked and photographed into a clear record — built the way adjusters are used to seeing it.</p>
         </div>
       </div>
       <div class="claim-step st-rv-right reveal-delay-2" data-animate>
         <div class="claim-step__marker">3</div>
         <div class="claim-step__card">
           <h3><?php echo icon('hard-hat', 22); ?> We meet your adjuster on site</h3>
-          <p>Triple G Roofing stands on the roof with your insurance adjuster in Huffman, pointing out every documented impact so nothing legitimate gets missed or denied.</p>
+          <p>Tim stands on the roof with your insurance adjuster and points out every documented impact so nothing legitimate gets overlooked.</p>
         </div>
       </div>
       <div class="claim-step st-rv-right reveal-delay-3" data-animate>
         <div class="claim-step__marker">4</div>
         <div class="claim-step__card">
-          <h3><?php echo icon('check-circle', 22); ?> Approval &amp; agreed scope</h3>
-          <p>Once your carrier approves the claim, we review the agreed scope with you line by line — materials, labor, and cost — so you know exactly what is covered.</p>
+          <h3><?php echo icon('shield', 22); ?> Your policy, in plain English</h3>
+          <p>Once your carrier makes its decision, we go through the approved scope with you line by line — materials, labor, deductible — so you know exactly where you stand.</p>
         </div>
       </div>
       <div class="claim-step st-rv-right reveal-delay-4" data-animate>
         <div class="claim-step__marker">5</div>
         <div class="claim-step__card">
-          <h3><?php echo icon('wrench', 22); ?> Repair + direct insurance billing</h3>
-          <p>Our crew completes the repair or replacement to North Harris County code and bills the approved amount straight to your insurer — you pay only your deductible.</p>
+          <h3><?php echo icon('wrench', 22); ?> Repair or replacement</h3>
+          <p>Our crew completes the work with the owner on site, protects your landscaping, sweeps for nails, and walks the finished roof with you.</p>
         </div>
       </div>
     </div>
@@ -575,16 +749,16 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <svg viewBox="0 0 1200 72" preserveAspectRatio="none"><path d="M0,36 C300,0 900,72 1200,36 L1200,72 L0,72 Z" fill="var(--color-white)"/></svg>
 </div>
 
-<!-- ===================== 5 · PROCESS / EMERGENCY ===================== -->
+<!-- ===================== 5 · PROCESS / AFTER THE STORM ===================== -->
 <section class="section st-process" aria-label="What to do right after a storm">
   <div class="container">
     <div class="section-header" style="max-width:720px; margin-inline:auto;">
       <span class="eyebrow" style="color:var(--color-primary);">Do This First</span>
-      <h2>What should you do right after a storm hits your Huffman home?</h2>
+      <h2>What should you do right after a storm hits your home?</h2>
       <p class="answer-block">
-        Stay safe first, then document everything and call a local roofer fast. Searching &ldquo;storm damage roof
-        repair near me in Huffman&rdquo; after the wind dies down is smart — but avoid out-of-town storm chasers.
-        Triple G Roofing offers same-day tarping across North Harris County to protect your home before the next rain.
+        Stay safe first, then document everything and call a local roofer. Searching &ldquo;storm damage roof repair
+        near me&rdquo; in Humble, Baytown, or The Woodlands after the wind dies down is smart — but avoid out-of-town
+        storm chasers. Triple G Roofing &amp; Construction has been here since 1973 and will still be here next year.
       </p>
     </div>
     <div class="timeline">
@@ -596,17 +770,17 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="timeline-step" data-animate>
         <div class="timeline-step__num">2</div>
         <h3>Document the damage</h3>
-        <p>Photograph fallen limbs, interior leaks, and anything the storm damaged. Timestamped photos strengthen your Huffman insurance claim later.</p>
+        <p>Photograph fallen limbs, interior leaks, and anything the storm damaged. Dated photos help tell the story later if you file a claim.</p>
       </div>
       <div class="timeline-step" data-animate>
         <div class="timeline-step__num">3</div>
-        <h3>Call Triple G for same-day tarp</h3>
-        <p>Reach us and we get a weather-tight tarp over the breach the same day, stopping water damage while your claim is still fresh.</p>
+        <h3>Call Triple G for a free inspection</h3>
+        <p>Reach us at <?php echo $phone; ?> — we will get you on the schedule quickly. If water is coming in, ask about temporary tarping.</p>
       </div>
       <div class="timeline-step" data-animate>
         <div class="timeline-step__num">4</div>
         <h3>Avoid door-knocking storm chasers</h3>
-        <p>Skip the out-of-town crews going door to door after every North Harris County storm. Work with a local roofer who will still be here next year.</p>
+        <p>Skip the out-of-town crews going door to door after every Houston-area storm. Work with a local, family-owned roofer who has a track record you can check.</p>
       </div>
     </div>
   </div>
@@ -616,29 +790,38 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <section class="section st-proof" aria-label="Reviews and recent storm work">
   <div class="container">
     <div class="section-header" style="max-width:760px; margin-inline:auto;">
-      <span class="eyebrow">Trusted Locally</span>
-      <h2>What do Huffman homeowners say after a storm repair?</h2>
+      <span class="eyebrow">Real Reviews</span>
+      <h2>What do Greater Houston homeowners say after a storm repair?</h2>
       <p class="answer-block">
-        Triple G Roofing has earned its reputation across Huffman, Humble, Atascocita, Kingwood, and Crosby the
-        old-fashioned way — by showing up fast after the storm, telling the truth, and standing behind the work. Read
-        our verified Google reviews below and see recent storm repairs from around North Harris County.
+        From Humble to Baytown to The Woodlands, homeowners have trusted Triple G Roofing &amp; Construction with storm
+        claims and the roofs that followed. These are real reviews our customers published, name and city as written —
+        including a Humble homeowner whose roof we replaced after Hurricane Beryl.
       </p>
     </div>
 
-    <div class="proof-photos" data-animate>
+    <div class="st-review-grid">
+      <?php foreach ($pageReviews as $i => $r): ?>
+      <blockquote class="st-review st-rv-up reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
+        <p><?php echo htmlspecialchars(tg_review_excerpt($r['text'])); ?></p>
+        <footer><cite><?php echo htmlspecialchars($r['name']); ?></cite><span><?php echo htmlspecialchars($r['city']); ?></span></footer>
+      </blockquote>
+      <?php endforeach; ?>
+    </div>
+
+    <div class="proof-photos st-square" data-animate>
       <figure>
-        <img src="/assets/images/roof-repair.jpg"
-             srcset="/assets/images/roof-repair-480.webp 480w, /assets/images/roof-repair-960.webp 960w, /assets/images/roof-repair-1600.webp 1600w"
+        <img src="/assets/images/crew-shingles.jpg"
+             srcset="/assets/images/crew-shingles-480.webp 480w, /assets/images/crew-shingles-960.webp 960w"
              sizes="(max-width: 600px) 100vw, 560px"
-             alt="Triple G Roofing repairing storm-damaged shingles on a Huffman home"
-             width="600" height="450" loading="lazy">
+             alt="Roofer carrying shingles across a roof covered in new underlayment"
+             width="1200" height="1600" loading="lazy">
       </figure>
       <figure>
-        <img src="/assets/images/hero-roof-home.jpg"
-             srcset="/assets/images/hero-roof-home-480.webp 480w, /assets/images/hero-roof-home-960.webp 960w, /assets/images/hero-roof-home-1600.webp 1600w"
+        <img src="/assets/images/roof-home-trees.jpg"
+             srcset="/assets/images/roof-home-trees-480.webp 480w, /assets/images/roof-home-trees-960.webp 960w"
              sizes="(max-width: 600px) 100vw, 560px"
-             alt="Completed architectural shingle roof after storm repair by Triple G Roofing in Huffman, TX"
-             width="600" height="450" loading="lazy">
+             alt="Brick home with a new dark shingle roof under mature trees"
+             width="1200" height="1600" loading="lazy">
       </figure>
     </div>
 
@@ -660,9 +843,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <span class="eyebrow" style="color:var(--color-primary);">Know The Difference</span>
       <h2>Storm chaser or local roofer — who should you trust?</h2>
       <p class="answer-block">
-        For a Huffman storm repair, trust a local roofer over an out-of-town storm chaser almost every time. Triple G
-        Roofing lives in the same Gulf Coast weather you do, answers the phone directly, and honors its warranty long
-        after the crews that flood in after a storm have left the county. Here is the honest comparison.
+        For a Houston-area storm repair, trust a local roofer over an out-of-town storm chaser almost every time.
+        Triple G Roofing &amp; Construction lives in the same Gulf Coast weather you do, the owner answers for the work
+        personally, and we have been here since 1973 — long after the crews that flood in after a storm have left the
+        county. Here is the honest comparison.
       </p>
     </div>
     <div class="compare-grid">
@@ -670,18 +854,18 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <h3><?php echo icon('external-link', 22); ?> Out-of-town storm chasers</h3>
         <ul>
           <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> Here today, gone the moment the next storm hits another town</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> A warranty from a company you can&rsquo;t find in six months</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> A guarantee from a company you can&rsquo;t find in six months</li>
           <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> High-pressure door-knocking and rushed contracts to sign now</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> No stake in the Huffman community or your long-term roof</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> Promises about what your insurance &ldquo;will&rdquo; pay that they cannot keep</li>
         </ul>
       </div>
       <div class="compare-col compare-col--us">
-        <h3><?php echo icon('shield', 22); ?> Triple G Roofing</h3>
+        <h3><?php echo icon('shield', 22); ?> Triple G Roofing &amp; Construction</h3>
         <ul>
-          <li><?php echo icon('check-circle', 20); ?> A local Huffman crew that answers when you call, year-round</li>
-          <li><?php echo icon('check-circle', 20); ?> A workmanship warranty backed by a company that stays put</li>
-          <li><?php echo icon('check-circle', 20); ?> Honest documentation and direct billing to your insurer</li>
-          <li><?php echo icon('check-circle', 20); ?> Built around Texas weather and North Harris County codes</li>
+          <li><?php echo icon('check-circle', 20); ?> A Humble-based family company serving Greater Houston since 1973</li>
+          <li><?php echo icon('check-circle', 20); ?> Ask about the workmanship guarantee for your project — from a company that stays put</li>
+          <li><?php echo icon('check-circle', 20); ?> Honest documentation and more than 50 years of claims-handling experience</li>
+          <li><?php echo icon('check-circle', 20); ?> Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024</li>
         </ul>
       </div>
     </div>
@@ -697,8 +881,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="section-header" style="max-width:760px; margin-inline:auto;">
       <span class="eyebrow" style="color:var(--color-primary);">Good Questions</span>
-      <h2>What else do Huffman homeowners ask about storm and wind damage?</h2>
-      <p class="hero-answer" style="color:var(--color-gray-dark);">Straight answers on emergency tarping, deductibles, denied claims, and insurance — before you file for storm damage in Huffman.</p>
+      <h2>What else do Houston-area homeowners ask about storm damage?</h2>
+      <p class="hero-answer" style="color:var(--color-gray-dark);">Straight answers on tarping, hail, denied claims, and insurance — before you file for storm damage anywhere around Greater Houston.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $i => $f): ?>
@@ -715,26 +899,27 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </section>
 
 <!-- ===================== FINAL CTA ===================== -->
-<section class="st-cta" aria-label="Get emergency storm damage help">
+<section class="st-cta" aria-label="Get storm damage help">
   <div class="container">
-    <h2>Storm just hit your Huffman roof? Need same-day help now?</h2>
-    <p>Don&rsquo;t wait for the next rain to find the damage. Triple G Roofing tarps the breach today, documents your
-      claim, and bills your insurer directly — same-day emergency response across Huffman and North Harris County.</p>
+    <h2>Storm just hit your roof? Let&rsquo;s take a look.</h2>
+    <p>Don&rsquo;t wait for the next rain to find the damage. Triple G Roofing &amp; Construction inspects for free,
+      documents everything, and walks you through the claim — across Humble, Kingwood, Baytown, Pasadena and the whole
+      Greater Houston area. Ask about temporary tarping if water is coming in.</p>
     <div class="st-cta__actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get Emergency Storm Help</a>
+      <a href="/contact/" class="btn btn-accent btn-lg">Get My Free Storm Inspection</a>
       <a href="tel:+<?php echo $phoneRaw; ?>" class="btn btn-outline-white btn-lg"><?php echo icon('phone', 18); ?> Call <?php echo $phone; ?></a>
     </div>
-    <p class="phone-line">Roof leaking right now? Call <a href="tel:+<?php echo $phoneRaw; ?>"><?php echo $phone; ?></a> — 8am to 8pm, 7 days a week.</p>
+    <p class="phone-line">Roof leaking right now? Call <a href="tel:+<?php echo $phoneRaw; ?>"><?php echo $phone; ?></a> — <?php echo $businessHours; ?>.</p>
   </div>
 </section>
 
 <!-- ===================== RELATED SERVICES ===================== -->
-<section class="section st-related" aria-label="Other roofing services">
+<section class="section st-related" aria-label="Other services you may need">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow">Keep Exploring</span>
-      <h2>What other roofing services might your Huffman home need?</h2>
-      <p class="hero-answer" style="color:var(--color-gray-dark);">Before, during, or after a storm, here&rsquo;s how Triple G Roofing keeps your Huffman roof sound.</p>
+      <span class="eyebrow">What We Do</span>
+      <h2>What other roofing services might your home need?</h2>
+      <p class="hero-answer" style="color:var(--color-gray-dark);">Before, during, or after a storm, here&rsquo;s how Triple G Roofing &amp; Construction keeps Greater Houston roofs sound.</p>
     </div>
     <div class="services-grid">
       <?php foreach ($relatedServices as $i => $s):
@@ -743,9 +928,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <article class="service-card-with-image card-tint-<?php echo $tint; ?> reveal-delay-<?php echo $tint; ?>" data-animate>
         <div class="service-card__image">
           <img src="/assets/images/<?php echo $s['img']; ?>.jpg"
-               srcset="/assets/images/<?php echo $s['img']; ?>-480.webp 480w, /assets/images/<?php echo $s['img']; ?>-960.webp 960w, /assets/images/<?php echo $s['img']; ?>-1600.webp 1600w"
+               srcset="<?php echo $s['srcset']; ?>"
                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 380px"
-               alt="<?php echo htmlspecialchars($s['alt']); ?>" width="600" height="360" loading="lazy">
+               alt="<?php echo htmlspecialchars($s['alt']); ?>" width="<?php echo $s['w']; ?>" height="<?php echo $s['h']; ?>" loading="lazy">
         </div>
         <div class="service-card__body">
           <div class="service-card__icon"><?php echo $s['icon']; ?></div>

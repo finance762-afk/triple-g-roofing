@@ -5,7 +5,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 <?php
 $currentPage     = 'terms';
 $pageTitle       = 'Terms of Service | Triple G Roofing';
-$pageDescription = 'Terms and conditions governing use of the Triple G Roofing website and engagement of our roofing services in Huffman, TX.';
+$pageDescription = 'Terms and conditions governing use of the Triple G Roofing website and engagement of our roofing and exterior services across the Greater Houston area.';
 $canonicalUrl    = $siteUrl . '/terms/';
 $lastUpdated     = date('F j, Y');
 
@@ -26,7 +26,7 @@ echo $schemaMarkup;
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
-<main id="main-content">
+<div class="page-body">
 <section class="hero hero--legal"><div class="hero__copy">
   <span class="eyebrow-label">Legal</span>
   <h1>Terms of Service</h1>
@@ -68,8 +68,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <li>Work is governed by a written contract specific to each job.</li>
     <li>We comply with applicable Texas state and local building codes.</li>
     <li>Work is performed by <?php echo $siteName; ?> employees and qualified subcontractors.</li>
-    <li>All workers carry workers' compensation insurance as required by Texas law.</li>
-    <li>We are licensed and insured to operate in the state of Texas.</li>
+    <li>We are a family-owned business based in Humble, Texas, serving the Greater Houston area since 1973.</li>
   </ul>
 
   <h2>5. Warranties</h2>
@@ -81,21 +80,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   </ul>
 
   <h2>6. Payment Terms</h2>
-  <p>Payment terms are specified in your project contract. Standard terms include:</p>
-  <ul>
-    <li>A deposit at contract signing</li>
-    <li>Progress payments at milestones where applicable</li>
-    <li>Final balance due upon project completion</li>
-  </ul>
-  <p>We accept check, electronic transfer, and financing through approved third-party providers. Past-due balances may accrue interest as permitted by Texas law.</p>
+  <p>Payment schedule, any deposit, and the final balance are specified in your written project contract. We accept check and electronic transfer. Past-due balances may accrue interest as permitted by Texas law.</p>
 
   <h2>7. Cancellation</h2>
-  <p>Cancellation terms are specified in your contract. Generally:</p>
-  <ul>
-    <li>Cancellation prior to materials ordered: deposit refunded minus administrative costs</li>
-    <li>Cancellation after materials ordered: deposit forfeited; materials become customer property</li>
-    <li>Cancellation after work begins: payment due for work completed plus materials</li>
-  </ul>
+  <p>Cancellation terms — including the treatment of any deposit and of materials already ordered — are specified in your written project contract.</p>
 
   <h2>8. Insurance Claim Work</h2>
   <p>For insurance restoration projects, payment terms are typically structured around your insurance carrier's payment schedule. We do NOT serve as a public adjuster or legal representative. We provide repair estimates and complete approved repairs only. Negotiation of claim values and policy interpretation is the homeowner's responsibility.</p>
@@ -116,12 +104,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <p><strong><?php echo $siteName; ?></strong><br>
   Email: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a><br>
   Phone: <a href="tel:+<?php echo $phoneRaw; ?>"><?php echo $phone; ?></a><br>
-  Address: <?php echo $address['street']; ?>, <?php echo $address['city']; ?>, <?php echo $address['state']; ?> <?php echo $address['zip']; ?></p>
+  Based in: <?php echo $address["city"]; ?>, <?php echo $address["state"]; ?> <?php echo $address["zip"]; ?> (service-area business — we come to you)</p>
 
   <div class="legal-disclaimer">
     This document is provided as a general template. We recommend reviewing with a licensed Texas attorney before publication.
   </div>
 </article>
-</main>
+</div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

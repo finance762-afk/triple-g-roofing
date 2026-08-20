@@ -1,85 +1,106 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/testimonials-data.php';
 ?>
 <?php
 /* ============================================================
-   Service — Gutter Installation · Triple G Roofing (Phase 4)
+   Service — Gutter Installation · Triple G Roofing & Construction
    Premium editorial service page (8-section structure)
+   Facts: references/CLIENT-FACTS.md (revised 2026-08-20)
    ============================================================ */
 
 $currentPage     = 'services';
 $serviceName     = 'Gutter Installation';
 $serviceSlug     = 'gutter-installation';
-$pageTitle       = 'Seamless Gutter Installation Huffman TX | Triple G Roofing';
-$pageDescription = 'Seamless gutter installation in Huffman, TX from Triple G Roofing — custom on-site runs and proper pitch that route water away from your foundation. Call (281) 824-5463.';
+$pageTitle       = 'Gutter Installation Houston TX | Triple G Roofing & Construction';
+$pageDescription = 'New gutters and downspouts across the Greater Houston area from Triple G Roofing & Construction, family-owned since 1973. Fascia and soffit repair too. Free inspection. Call (281) 824-5463.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
+$ogImage         = 'gutter-installation-v2-480.webp';
+$pageReviews     = getTestimonialsFor($serviceSlug, 3);
 
-/* --- FAQs specific to gutter installation in Huffman --- */
+/* --- Review excerpt helper (verbatim text, cut at a sentence boundary) --- */
+if (!function_exists('tg_review_excerpt')) {
+    function tg_review_excerpt($text, $max = 400) {
+        if (mb_strlen($text) <= $max) { return $text; }
+        $cut = mb_substr($text, 0, $max);
+        $end = max((int) mb_strrpos($cut, '. '), (int) mb_strrpos($cut, '! '));
+        if ($end < 120) {
+            $sp = mb_strrpos($cut, ' ');
+            return rtrim(mb_substr($cut, 0, $sp ?: $max), ',;:') . '…';
+        }
+        return mb_substr($cut, 0, $end + 1);
+    }
+}
+
+/* --- FAQs — gutter installation, Greater Houston (fact-safe) --- */
 $faqs = [
     [
-        'q' => 'How much does gutter installation cost in Huffman, TX?',
-        'a' => 'Most seamless gutter installations in Huffman run roughly $6 to $12 per linear foot for aluminum, so an average home lands somewhere between $1,200 and $2,800 depending on stories, roof pitch, and downspout count. Triple G Roofing measures your home and hands you a written, no-obligation price before any work begins.',
+        'q' => 'How much does gutter installation cost in the Houston area?',
+        'a' => 'It depends on the length of your roofline, the number of corners and downspouts, how many stories the home has, and whether any fascia behind the gutter needs repair first. Triple G Roofing & Construction measures your home for free and gives you a written estimate before any work begins.',
     ],
     [
-        'q' => 'Are seamless gutters better than sectional gutters?',
-        'a' => 'Yes. Seamless gutters are rolled to your exact roofline on-site, so the only joints are at corners and downspouts — the spots where sectional gutters leak first. For Huffman homes that face heavy Gulf Coast downpours, seamless runs mean fewer leaks, less sagging, and far less maintenance over the life of the system.',
+        'q' => 'Can you fix the rotted fascia behind my old gutters at the same time?',
+        'a' => 'Yes — and you should. Gutters hang from the fascia board, so new gutters on rotted wood will sag and pull loose. Triple G Roofing & Construction repairs or replaces fascia and soffit, handles the wood rot, and paints to match before the new gutters go up. One call covers the whole edge of the roof.',
     ],
     [
-        'q' => 'Are gutter guards worth it in Huffman?',
-        'a' => 'For homes shaded by pines and oaks — common across Huffman, Atascocita, and Kingwood — gutter guards are usually worth it. They keep leaves and pine needles out so water flows freely and you climb the ladder far less often. Triple G Roofing will tell you honestly whether your tree cover justifies the added cost.',
+        'q' => 'Are gutter guards worth it around Houston?',
+        'a' => 'For homes shaded by pines and oaks — common across Humble, Atascocita, Kingwood and The Woodlands — gutter guards are often worth it. They keep leaves and pine needles out so water flows freely and you climb the ladder far less often. We will tell you honestly whether your tree cover justifies the added cost.',
     ],
     [
-        'q' => 'Should I get 5-inch or 6-inch gutters for Gulf Coast downpours?',
-        'a' => 'For most Huffman homes we recommend 6-inch gutters with 3x4-inch downspouts. The larger channel moves noticeably more water than standard 5-inch K-style gutters, which matters when a Gulf Coast storm dumps two or three inches of rain in an hour. Bigger gutters overflow less and protect your fascia and foundation better.',
+        'q' => 'Should I get bigger gutters for Gulf Coast downpours?',
+        'a' => 'Often, yes. Larger gutters and downspouts move noticeably more water than standard sizes, which matters when a Gulf Coast storm dumps inches of rain in an hour. Triple G Roofing & Construction sizes the system to your roof area and pitch so it overflows less and protects your fascia and foundation better.',
     ],
     [
         'q' => 'How often do gutters need cleaning or maintenance?',
-        'a' => 'Plan to clean gutters at least twice a year — spring and late fall — and after major North Harris County storms. Homes with heavy tree cover may need more frequent cleaning unless guards are installed. Clogged gutters overflow, rot the fascia, and dump water at your foundation, undoing the whole point of the system.',
+        'a' => 'Plan to clean gutters at least twice a year — spring and late fall — and after major storms. Homes with heavy tree cover may need more frequent cleaning unless guards are installed. Clogged gutters overflow, rot the fascia, and dump water at your foundation, undoing the whole point of the system.',
     ],
     [
         'q' => 'Do gutters really protect my foundation?',
-        'a' => 'Absolutely. Gutters catch roof runoff and route it through downspouts several feet away from the slab. Without them, rain sheets straight off the eaves and pools against your foundation, where Huffman clay soils swell and shrink and can crack a slab. Properly pitched gutters are one of the cheapest forms of foundation protection you can buy.',
+        'a' => 'Yes. Gutters catch roof runoff and route it through downspouts away from the slab. Without them, rain sheets straight off the eaves and pools against your foundation, where Houston-area clay soils swell and shrink and can stress a slab. Properly pitched gutters are one of the simplest forms of foundation protection you can buy.',
     ],
 ];
 
-/* --- Related services (3 cards) --- */
+/* --- Related services (3 cards) — fact-safe bullets, manifest alt text --- */
 $relatedServices = [
     [
-        'name' => 'Roof Inspection', 'slug' => 'roof-inspection', 'img' => 'roof-inspection',
-        'alt' => 'Close-up roof shingle inspection on a Huffman, TX home',
-        'desc' => 'Documented inspections that catch damage early and back up insurance claims.',
-        'bullets' => ['Same-day storm inspections', 'Photo-documented reports', 'Insurance claim-ready findings'],
-        'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>',
+        'name' => 'Siding, Fascia & Soffit', 'slug' => 'siding-fascia-soffit', 'img' => 'siding-fascia-soffit', 'w' => 1200, 'h' => 1600,
+        'srcset' => '/assets/images/siding-fascia-soffit-480.webp 480w, /assets/images/siding-fascia-soffit-960.webp 960w',
+        'alt' => 'Crew member replacing siding on a dormer above a shingle roof',
+        'desc' => 'Siding, fascia, soffit, and wood-rot repair with exterior paint to finish.',
+        'bullets' => ['Hardie and vinyl siding', 'Wood-rot repair', 'Matched trim and paint'],
+        'icon' => icon('ruler', 26),
     ],
     [
-        'name' => 'Roof Repair', 'slug' => 'roof-repair', 'img' => 'roof-repair',
-        'alt' => 'Roof decking exposed during a repair on a brick Huffman home',
-        'desc' => 'Leak, shingle, and flashing repairs that stop water damage fast.',
-        'bullets' => ['Leaks stopped at the source', 'Shingle & flashing replacement', 'Most repairs within 48 hours'],
-        'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>',
+        'name' => 'Roof Repair', 'slug' => 'roof-repair', 'img' => 'roof-repair-v2', 'w' => 1200, 'h' => 1600,
+        'srcset' => '/assets/images/roof-repair-v2-480.webp 480w, /assets/images/roof-repair-v2-960.webp 960w',
+        'alt' => 'New step flashing sealed against a brick chimney during a roof repair',
+        'desc' => 'Leak, flashing, pipe-boot, and decking repairs that stop water at the source.',
+        'bullets' => ['Leaks traced to the source', 'Flashing and pipe boots', 'Free written estimate'],
+        'icon' => icon('wrench', 26),
     ],
     [
-        'name' => 'Attic Venting', 'slug' => 'attic-venting', 'img' => 'attic-venting',
-        'alt' => 'New roof framing and ridge line during an attic ventilation upgrade',
-        'desc' => 'Balanced intake-and-exhaust venting that cools your attic and saves shingles.',
-        'bullets' => ['Lower attic heat & energy bills', 'Ridge and soffit vent systems', 'Longer shingle service life'],
-        'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 12h4"/><path d="M10 8h4"/><path d="M14 21v-3a2 2 0 0 0-4 0v3"/><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/></svg>',
+        'name' => 'Roof Inspection', 'slug' => 'roof-inspection', 'img' => 'roof-inspection-v2', 'w' => 1200, 'h' => 1600,
+        'srcset' => '/assets/images/roof-inspection-v2-480.webp 480w, /assets/images/roof-inspection-v2-960.webp 960w',
+        'alt' => 'Close-up of cracked and lifted shingles found during a roof inspection',
+        'desc' => 'Free, photo-documented inspections that show you exactly what your roof needs.',
+        'bullets' => ['Free, no-obligation inspections', 'Photos of every finding', 'Owner on every job'],
+        'icon' => icon('search', 26),
     ],
 ];
 
-/* --- Schema: Service + FAQPage + BreadcrumbList --- */
+/* --- Schema: Service + FAQPage + BreadcrumbList (all 50 communities as areaServed) --- */
 $serviceSchema = [
     "@context" => "https://schema.org",
     "@type"    => "Service",
     "@id"      => $canonicalUrl . '#service-' . $serviceSlug,
     "serviceType" => $serviceName,
-    "name"     => $serviceName . ' in ' . $address['city'] . ', ' . $address['state'],
-    "description" => 'Seamless gutter installation in Huffman, TX with custom on-site fabrication, proper pitch, and hidden hangers that route water away from your foundation.',
+    "name"     => $serviceName . ' — Greater Houston, ' . $address['state'],
+    "description" => 'New gutters and downspouts across the Greater Houston area from Triple G Roofing & Construction, a family-owned father-and-son company based in Humble, TX since 1973 — measured and pitched to your roofline, with fascia and soffit repair available in the same visit and free written estimates.',
     "provider" => ["@id" => $siteUrl . '#organization'],
-    "areaServed" => array_map(function ($a) use ($address) {
-        return ["@type" => "City", "name" => $a . ', ' . $address['state']];
-    }, $serviceAreas),
+    "areaServed" => array_map(function ($c) use ($address) {
+        return ["@type" => "City", "name" => $c . ', ' . $address['state']];
+    }, $serviceAreaCities),
     "url" => $canonicalUrl,
 ];
 $breadcrumbSchema = [
@@ -161,7 +182,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .gi-problem { background:var(--color-white); }
 .gi-pullquote { font-family:var(--font-heading); font-weight:800; font-size:clamp(1.6rem,3.4vw,2.5rem); line-height:1.25; color:var(--color-dark); max-width:22ch; margin:var(--space-8) 0 var(--space-4); }
 .gi-pullquote span { color:var(--svc-accent); }
-.gi-bento { display:grid; grid-template-columns:repeat(4,1fr); gap:var(--space-5); margin-top:var(--space-10); }
+.gi-bento { display:grid; grid-template-columns:repeat(5,1fr); gap:var(--space-5); margin-top:var(--space-10); }
 .gi-harm-card { background:var(--color-light); border:1px solid var(--color-gray-light); border-radius:var(--radius-lg); padding:var(--space-6); position:relative; overflow:hidden; transition:transform var(--transition-base), box-shadow var(--transition-base); }
 .gi-harm-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); }
 .gi-harm-card:first-child { grid-column:span 2; background:linear-gradient(135deg, var(--svc-accent-soft), var(--color-white)); }
@@ -267,7 +288,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
    ===================================================== */
 .gi-faq { background:var(--color-light); }
 .gi-faq-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--space-6); align-items:start; margin-top:var(--space-10); }
-.faq-item { background:var(--color-white); border-radius:var(--radius-lg); border:1px solid var(--color-gray-light); overflow:hidden; transition:box-shadow var(--transition-base); }
+.faq-item { display:block; padding:0; background:var(--color-white); border-radius:var(--radius-lg); border:1px solid var(--color-gray-light); overflow:hidden; transition:box-shadow var(--transition-base); }
 .faq-item[open] { box-shadow:var(--shadow-md); }
 .faq-item:not([open]):hover { box-shadow:var(--shadow-sm); border-color:color-mix(in srgb, var(--svc-accent) 30%, var(--color-gray-light)); }
 .faq-item:not([open]):hover summary { color:var(--svc-accent); }
@@ -354,7 +375,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 @media (max-width:1024px) {
   .gi-expert-grid { grid-template-columns:1fr; gap:var(--space-10); }
   .gi-bento { grid-template-columns:1fr 1fr; }
-  .gi-harm-card:first-child { grid-column:span 2; }
+  .gi-harm-card:first-child, .gi-harm-card:last-child { grid-column:span 2; }
   .services-grid { grid-template-columns:repeat(2,1fr); }
 }
 @media (max-width:900px) {
@@ -372,7 +393,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 @media (max-width:600px) {
   .gi-bento { grid-template-columns:1fr; }
-  .gi-harm-card:first-child { grid-column:auto; }
+  .gi-harm-card:first-child, .gi-harm-card:last-child { grid-column:auto; }
   .gi-proof-photos { grid-template-columns:1fr; }
   .services-grid { grid-template-columns:1fr; }
   .gi-hero h1 { font-size:clamp(2rem,8vw,2.6rem); }
@@ -389,6 +410,156 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   .faq-item, .gi-harm-card, .gi-timeline-step { break-inside:avoid; }
   [data-animate] { opacity:1 !important; transform:none !important; }
 }
+
+/* =====================================================
+   REAL REVIEWS — client-published quotes (name + city)
+   Dark proof-section cards with oversized opening quote mark,
+   accent-on-hover border, and a 3→2→1 responsive grid.
+   ===================================================== */
+.gi-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}
+.gi-review {
+  position: relative;
+  margin: 0;
+  padding: var(--space-8) var(--space-6) var(--space-6);
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: transform var(--transition-base),
+              border-color var(--transition-base),
+              background var(--transition-base);
+}
+.gi-review:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--svc-accent) 55%, transparent);
+  background: rgba(var(--color-primary-rgb), .08);
+}
+.gi-review::before {
+  content: '\201C';
+  position: absolute;
+  top: var(--space-1);
+  left: var(--space-5);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-5xl);
+  line-height: 1;
+  color: rgba(var(--color-primary-rgb), .4);
+  pointer-events: none;
+}
+.gi-review:first-child {
+  background: linear-gradient(160deg, rgba(var(--color-primary-rgb), .14), rgba(255, 255, 255, .04));
+}
+.gi-review p {
+  position: relative;
+  color: rgba(255, 255, 255, .86);
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+.gi-review footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.gi-review cite {
+  font-style: normal;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-white);
+}
+.gi-review footer span {
+  font-size: var(--font-size-xs);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* =====================================================
+   LAST-UPDATED STAMP — lives in the breadcrumb bar
+   ===================================================== */
+.gi-breadcrumb .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.gi-updated {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray);
+  white-space: nowrap;
+  padding: var(--space-3) 0;
+  letter-spacing: .5px;
+}
+
+/* =====================================================
+   PORTRAIT JOB PHOTOS — aspect-ratio frames + object-fit
+   so the 1200×1600 client photos never stretch.
+   ===================================================== */
+.gi-portrait {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+.gi-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+.gi-square img {
+  aspect-ratio: 1 / 1;
+  object-position: center 45%;
+}
+.gi-hero__bg {
+  object-position: center 38%;
+}
+
+/* ---- Responsive + motion + print for the additions ---- */
+@media (max-width: 1024px) {
+  .gi-review-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .gi-review-grid {
+    grid-template-columns: 1fr;
+  }
+  .gi-updated {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media (max-width: 600px) {
+  .gi-portrait {
+    aspect-ratio: 4 / 5;
+    max-height: 70vh;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gi-review:hover {
+    transform: none;
+  }
+}
+@media print {
+  .gi-review {
+    border-color: var(--color-gray-light);
+    break-inside: avoid;
+  }
+  .gi-review p,
+  .gi-review cite {
+    color: var(--color-dark) !important;
+  }
+}
 </style>
 
 <div class="gi-page">
@@ -403,33 +574,35 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <li class="gi-breadcrumb-sep" aria-hidden="true">/</li>
       <li><a href="<?php echo $canonicalUrl; ?>" aria-current="page">Gutter Installation</a></li>
     </ol>
+    <span class="gi-updated">Last Updated: <?php echo date('F Y'); ?></span>
   </div>
 </nav>
 
 <!-- ===================== 1 · HERO ===================== -->
-<section class="gi-hero" aria-label="Seamless gutter installation in Huffman, TX">
+<section class="gi-hero" aria-label="Gutter installation across the Greater Houston area">
   <img class="gi-hero__bg"
-       src="/assets/images/gutter-installation.jpg"
-       srcset="/assets/images/gutter-installation-480.webp 480w, /assets/images/gutter-installation-960.webp 960w, /assets/images/gutter-installation-1600.webp 1600w"
+       src="/assets/images/hero-roof-home-v2.jpg"
+       srcset="/assets/images/hero-roof-home-v2-480.webp 480w, /assets/images/hero-roof-home-v2-960.webp 960w, /assets/images/hero-roof-home-v2-1600.webp 1600w"
        sizes="100vw"
-       alt="Seamless gutters installed along the roofline of a Huffman, TX home"
-       width="1600" height="900" loading="eager" fetchpriority="high">
+       alt="Brick home in the Greater Houston area with a new architectural shingle roof installed by Triple G Roofing &amp; Construction"
+       width="1600" height="1333" loading="eager" fetchpriority="high">
   <div class="container gi-hero__inner">
-    <span class="gi-hero__eyebrow"><?php echo icon('droplets', 16); ?> Gutter Installation · Huffman, TX</span>
-    <h1>Seamless <span class="text-accent">Gutter</span> Installation in Huffman, TX</h1>
+    <span class="gi-hero__eyebrow"><?php echo icon('droplets', 16); ?> Gutter Installation · Humble, TX &amp; Greater Houston</span>
+    <h1>New <span class="text-accent">Gutters</span> &amp; Downspouts in the Greater Houston Area</h1>
     <p class="hero-answer">
-      Triple G Roofing is a licensed, insured Texas roofing contractor based in Huffman serving North Harris County.
-      We fabricate seamless gutters on-site to fit your exact roofline, set the right pitch, and route every downspout
-      so Gulf Coast downpours drain away from your foundation instead of pooling against it.
+      Triple G Roofing &amp; Construction is a family-owned roofing and exterior contractor based in Humble, TX, serving
+      the Greater Houston area since 1973. We install new gutters and downspouts measured to your roofline, set the
+      right pitch, route every downspout so Gulf Coast downpours drain away from your foundation — and repair the
+      fascia and soffit behind them in the same visit. Free inspection and written estimate.
     </p>
     <div class="gi-hero__actions">
-      <a href="/contact/" class="btn btn-primary btn-lg">Get a Free Gutter Quote</a>
+      <a href="/contact/" class="btn btn-primary btn-lg">Get a Free Gutter Estimate</a>
       <a href="tel:+<?php echo $phoneRaw; ?>" class="btn btn-outline-white btn-lg"><?php echo icon('phone', 18); ?> <?php echo $phone; ?></a>
     </div>
     <div class="gi-hero__trust">
-      <span class="gi-hero__trust-item"><?php echo icon('ruler', 18); ?> Custom on-site fabrication</span>
-      <span class="gi-hero__trust-item"><?php echo icon('shield', 18); ?> Licensed &amp; insured</span>
-      <span class="gi-hero__trust-item"><?php echo icon('droplets', 18); ?> Seamless &amp; leak-resistant</span>
+      <span class="gi-hero__trust-item"><?php echo icon('ruler', 18); ?> Measured to your roofline</span>
+      <span class="gi-hero__trust-item"><?php echo icon('hammer', 18); ?> Fascia &amp; soffit repair, one call</span>
+      <span class="gi-hero__trust-item"><?php echo icon('award', 18); ?> Serving Greater Houston since 1973</span>
       <span class="gi-hero__trust-item"><?php echo icon('home', 18); ?> Foundation protection</span>
     </div>
   </div>
@@ -440,35 +613,35 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="section-header" style="text-align:left; max-width:820px; margin-inline:0;">
       <span class="eyebrow" style="color:var(--color-primary);">Why It Matters</span>
-      <h2>Why do Huffman homes need properly installed gutters?</h2>
+      <h2>Why do Houston-area homes need properly installed gutters?</h2>
       <p class="answer-block">
-        Without gutters, roof runoff sheets straight off your eaves and pools against the slab, where Huffman&rsquo;s
-        clay soils swell and crack foundations. Properly installed seamless gutters catch that water and carry it
-        away, protecting your fascia, soffits, siding, and foundation from the heavy Gulf Coast rain that rolls
-        through North Harris County.
+        Without gutters, roof runoff sheets straight off your eaves and pools against the slab, where Houston-area clay
+        soils swell, shrink, and stress foundations. Properly installed gutters catch that water and carry it away,
+        protecting your fascia, soffits, siding, and foundation from the heavy Gulf Coast rain that rolls through
+        Greater Houston.
       </p>
     </div>
-    <p class="gi-pullquote">Every inch of rain on a Huffman roof has to go somewhere — <span>gutters decide whether it&rsquo;s away from your house or into it.</span></p>
+    <p class="gi-pullquote">Every inch of rain on your roof has to go somewhere — <span>gutters decide whether it&rsquo;s away from your house or into it.</span></p>
     <div class="gi-bento">
       <div class="gi-harm-card gi-rv-left" data-animate>
         <div class="gi-harm-card__ico"><?php echo icon('home', 24); ?></div>
         <h3>Foundation erosion &amp; slab cracks</h3>
-        <p>When rain dumps at the base of your Huffman home, the clay soil swells, shrinks, and shifts. Over a few seasons that movement erodes the grade and stresses the slab — one of the most expensive repairs a homeowner can face.</p>
+        <p>When rain dumps at the base of your home, the clay soil swells, shrinks, and shifts. Over a few seasons that movement erodes the grade and stresses the slab — one of the most expensive repairs a homeowner can face, whether you are in Humble, Deer Park, or Cypress.</p>
       </div>
       <div class="gi-harm-card gi-rv-scale" data-animate>
         <div class="gi-harm-card__ico"><?php echo icon('droplets', 24); ?></div>
         <h3>Fascia &amp; soffit rot</h3>
-        <p>Water running off the roof edge soaks the fascia board and soffit until the wood rots and paint peels.</p>
+        <p>Water running off the roof edge soaks the fascia board and soffit until the wood rots and paint peels — we <a href="/services/siding-fascia-soffit/">repair that too</a>.</p>
       </div>
       <div class="gi-harm-card gi-rv-scale" data-animate>
         <div class="gi-harm-card__ico"><?php echo icon('wind', 24); ?></div>
-        <h3>Pooling &amp; basement seepage</h3>
-        <p>Standing water beside the foundation finds its way into crawl spaces, garages, and low-slab living areas.</p>
+        <h3>Pooling &amp; seepage</h3>
+        <p>Standing water beside the foundation finds its way into garages, crawl spaces, and low-slab living areas.</p>
       </div>
       <div class="gi-harm-card gi-rv-right" data-animate>
         <div class="gi-harm-card__ico"><?php echo icon('minus', 24); ?></div>
-        <h3>Overflowing sectional gutters</h3>
-        <p>Old sectional gutters leak at every seam and clog at the corners, so they overflow exactly when a Gulf Coast storm hits hardest.</p>
+        <h3>Overflowing, sagging gutters</h3>
+        <p>Old gutters leak at the seams, pull loose from rotted fascia, and overflow exactly when a Gulf Coast storm hits hardest.</p>
       </div>
     </div>
   </div>
@@ -484,29 +657,29 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="gi-expert-grid">
       <div class="gi-expert-copy">
         <span class="eyebrow">The Triple G Standard</span>
-        <h2>Why choose Triple G Roofing for seamless gutters?</h2>
+        <h2>Why choose Triple G Roofing for new gutters?</h2>
         <p class="answer-block">
-          Triple G Roofing installs seamless gutters as part of a complete roof-and-drainage system, not a bolt-on
-          afterthought. Owner Tim Menn&rsquo;s local crew fabricates each run on-site, sets proper pitch, and hides the
-          hangers for a clean finish — all sized for the Gulf Coast downpours that regularly soak Huffman.
+          Triple G Roofing &amp; Construction installs gutters as part of a complete roof-and-drainage system, not a bolt-on
+          afterthought. Because we also do roofing, fascia, soffit, and wood-rot repair, the whole edge of your roof gets
+          fixed in one visit — by a father-and-son team serving Greater Houston since 1973, with the owner on every job.
         </p>
         <div class="gi-expert-stats">
-          <div class="gi-expert-stat"><div class="num">Same&nbsp;day</div><div class="lbl">Free quotes</div></div>
-          <div class="gi-expert-stat"><div class="num">6&nbsp;in</div><div class="lbl">Oversized channels</div></div>
-          <div class="gi-expert-stat"><div class="num">25&nbsp;mi</div><div class="lbl">Service radius</div></div>
+          <div class="gi-expert-stat"><div class="num">1973</div><div class="lbl">Serving Greater Houston since</div></div>
+          <div class="gi-expert-stat"><div class="num">Free</div><div class="lbl">Measure &amp; estimate</div></div>
+          <div class="gi-expert-stat"><div class="num">1 call</div><div class="lbl">Gutters, fascia &amp; soffit</div></div>
         </div>
         <ul class="gi-expert-diffs">
-          <li><?php echo icon('check-circle', 22); ?> Gutters fabricated on-site to your exact roofline, not pre-cut sections</li>
+          <li><?php echo icon('check-circle', 22); ?> Gutters measured and pitched to your roofline, not guessed from the ground</li>
           <li><?php echo icon('check-circle', 22); ?> Downspouts routed to discharge water well clear of the foundation</li>
-          <li><?php echo icon('check-circle', 22); ?> The same local Huffman crew from measurement to final water test</li>
+          <li><?php echo icon('check-circle', 22); ?> Rotted fascia and soffit replaced and painted to match before the gutters go up</li>
         </ul>
       </div>
-      <div class="gi-expert-figure gi-rv-right" data-animate>
-        <img src="/assets/images/hero-roof-home.jpg"
-             srcset="/assets/images/hero-roof-home-480.webp 480w, /assets/images/hero-roof-home-960.webp 960w, /assets/images/hero-roof-home-1600.webp 1600w"
+      <div class="gi-expert-figure gi-portrait gi-rv-right" data-animate>
+        <img src="/assets/images/gutter-installation-v2.jpg"
+             srcset="/assets/images/gutter-installation-v2-480.webp 480w"
              sizes="(max-width: 1024px) 100vw, 520px"
-             alt="Huffman home with a finished shingle roof and clean seamless gutter line by Triple G Roofing"
-             width="600" height="700" loading="lazy">
+             alt="New downspout and gutter on a brick covered patio"
+             width="720" height="960" loading="lazy">
       </div>
     </div>
   </div>
@@ -520,9 +693,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <span class="eyebrow" style="color:var(--color-primary);">Follow The Water</span>
       <h2>Where does your roof water actually go?</h2>
       <p class="answer-block">
-        On a Huffman home with a working gutter system, rain travels a simple, deliberate path: off the roof surface,
-        into the seamless gutter channel, down the downspout, and out several feet from the foundation. Break any link
-        in that chain and the water ends up against your slab instead.
+        On a home with a working gutter system, rain travels a simple, deliberate path: off the roof surface, into the
+        gutter channel, down the downspout, and out away from the foundation. Break any link in that chain and the water
+        ends up against your slab — or inside your fascia — instead.
       </p>
     </div>
     <div class="gi-flow">
@@ -538,8 +711,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="gi-flow-step gi-rv-scale reveal-delay-1" data-animate>
         <span class="gi-flow-step__num">2</span>
         <span class="gi-flow-step__ico"><?php echo icon('droplets', 30); ?></span>
-        <h3>Seamless gutter channel</h3>
-        <p>The pitched, jointless trough catches every gallon and steers it toward the corners.</p>
+        <h3>Gutter channel</h3>
+        <p>The pitched trough catches the water and steers it toward the corners and outlets.</p>
       </div>
       <div class="gi-flow-arrow" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -548,7 +721,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <span class="gi-flow-step__num">3</span>
         <span class="gi-flow-step__ico"><?php echo icon('wind', 30); ?></span>
         <h3>Downspout</h3>
-        <p>Oversized 3x4-inch downspouts carry the water straight down without clogging.</p>
+        <p>Downspouts carry the water straight down the wall without backing up.</p>
       </div>
       <div class="gi-flow-arrow" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -556,8 +729,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="gi-flow-step gi-rv-scale reveal-delay-3" data-animate>
         <span class="gi-flow-step__num">4</span>
         <span class="gi-flow-step__ico"><?php echo icon('check-circle', 30); ?></span>
-        <h3>Discharged from the foundation</h3>
-        <p>Extensions release the water several feet out, safe from the slab and soil.</p>
+        <h3>Away from the foundation</h3>
+        <p>Extensions release the water out past the slab and the soil that moves with it.</p>
       </div>
     </div>
   </div>
@@ -572,33 +745,33 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="section-header" style="max-width:760px; margin-inline:auto;">
       <span class="eyebrow" style="color:var(--color-primary);">On Every Install</span>
-      <h2>What&rsquo;s included in a Triple G Roofing seamless gutter installation?</h2>
+      <h2>What&rsquo;s included in a Triple G Roofing gutter installation?</h2>
       <p class="answer-block">
-        A Triple G Roofing seamless gutter installation includes precise measurement, on-site custom fabrication,
-        proper drainage pitch, hidden hanger mounting, and complete downspout routing. We finish every Huffman job
-        with sealed corners and a live water test, so you see the whole system draining before we pack up.
+        A Triple G Roofing &amp; Construction gutter installation includes careful measurement, a check of the fascia and
+        soffit behind the old gutters, proper drainage pitch, secure hangers, and complete downspout routing. We finish
+        with sealed corners and a walkthrough, so you see the whole system before we pack up.
       </p>
     </div>
     <div class="gi-timeline">
       <div class="gi-timeline-step" data-animate>
         <div class="gi-timeline-step__num"><?php echo icon('ruler', 22); ?></div>
         <h3>Measure &amp; plan your roofline</h3>
-        <p>We measure every run, count the corners, and map downspout locations so the finished system fits your Huffman home exactly and drains where it should.</p>
+        <p>We measure every run, count the corners, and map downspout locations so the finished system fits your home exactly and drains where it should.</p>
       </div>
       <div class="gi-timeline-step" data-animate>
-        <div class="gi-timeline-step__num"><?php echo icon('hard-hat', 22); ?></div>
-        <h3>Fabricate seamless runs on-site</h3>
-        <p>Gutters are rolled to length right in your driveway, so each run is one continuous, jointless piece with no mid-span seams to leak.</p>
+        <div class="gi-timeline-step__num"><?php echo icon('hammer', 22); ?></div>
+        <h3>Repair the fascia &amp; soffit first</h3>
+        <p>Rotted fascia or soffit gets replaced and painted to match before anything hangs from it — see our <a href="/services/siding-fascia-soffit/">siding, fascia &amp; soffit</a> work.</p>
       </div>
       <div class="gi-timeline-step" data-animate>
         <div class="gi-timeline-step__num"><?php echo icon('wrench', 22); ?></div>
-        <h3>Set the pitch &amp; hidden hangers</h3>
-        <p>We hang each run on concealed brackets with a slight, deliberate slope toward the downspouts for fast, quiet drainage and a clean, bracket-free look.</p>
+        <h3>Set the pitch &amp; hangers</h3>
+        <p>We hang each run with a slight, deliberate slope toward the downspouts for fast, quiet drainage and a clean look.</p>
       </div>
       <div class="gi-timeline-step" data-animate>
         <div class="gi-timeline-step__num"><?php echo icon('droplets', 22); ?></div>
-        <h3>Route downspouts &amp; water-test</h3>
-        <p>Downspouts and extensions carry water clear of the foundation, then we run water through the whole system and seal every corner before we leave.</p>
+        <h3>Route downspouts &amp; walk through</h3>
+        <p>Downspouts and extensions carry water clear of the foundation; we seal every corner, clean up, and walk the finished system with you.</p>
       </div>
     </div>
   </div>
@@ -608,29 +781,38 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <section class="section gi-proof" aria-label="Reviews and recent gutter work">
   <div class="container">
     <div class="section-header" style="max-width:760px; margin-inline:auto;">
-      <span class="eyebrow">Trusted Locally</span>
-      <h2>What do Huffman homeowners say about Triple G Roofing?</h2>
+      <span class="eyebrow">Real Reviews</span>
+      <h2>What do Greater Houston homeowners say about Triple G Roofing?</h2>
       <p class="answer-block">
-        Triple G Roofing has earned its reputation across Huffman, Humble, Atascocita, Kingwood, and Crosby the
-        old-fashioned way — by showing up, doing clean work, and standing behind it. Read our verified Google reviews
-        below and see recent roofs and gutter lines from around North Harris County.
+        Triple G Roofing &amp; Construction has earned its reputation across Humble, Kingwood, Atascocita, Spring, and the
+        rest of the Greater Houston area the old-fashioned way — by showing up, doing clean work, and standing behind it.
+        These are real reviews our customers published, name and city as written.
       </p>
     </div>
 
-    <div class="gi-proof-photos" data-animate>
+    <div class="gi-review-grid">
+      <?php foreach ($pageReviews as $i => $r): ?>
+      <blockquote class="gi-review gi-rv-up reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
+        <p><?php echo htmlspecialchars(tg_review_excerpt($r['text'])); ?></p>
+        <footer><cite><?php echo htmlspecialchars($r['name']); ?></cite><span><?php echo htmlspecialchars($r['city']); ?></span></footer>
+      </blockquote>
+      <?php endforeach; ?>
+    </div>
+
+    <div class="gi-proof-photos gi-square" data-animate>
       <figure>
-        <img src="/assets/images/roof-inspection.jpg"
-             srcset="/assets/images/roof-inspection-480.webp 480w, /assets/images/roof-inspection-960.webp 960w, /assets/images/roof-inspection-1600.webp 1600w"
+        <img src="/assets/images/roof-finished-brick.jpg"
+             srcset="/assets/images/roof-finished-brick-480.webp 480w, /assets/images/roof-finished-brick-960.webp 960w"
              sizes="(max-width: 600px) 100vw, 560px"
-             alt="Triple G Roofing crew working along the roof edge and gutter line of a Huffman home"
-             width="600" height="450" loading="lazy">
+             alt="Completed shingle roof replacement on a brick ranch home"
+             width="1200" height="1600" loading="lazy">
       </figure>
       <figure>
-        <img src="/assets/images/roof-damage-repair.jpg"
-             srcset="/assets/images/roof-damage-repair-480.webp 480w, /assets/images/roof-damage-repair-960.webp 960w, /assets/images/roof-damage-repair-1600.webp 1600w"
+        <img src="/assets/images/roof-large-home.jpg"
+             srcset="/assets/images/roof-large-home-480.webp 480w, /assets/images/roof-large-home-960.webp 960w"
              sizes="(max-width: 600px) 100vw, 560px"
-             alt="Completed roof and drainage project by Triple G Roofing on a Huffman, TX home"
-             width="600" height="450" loading="lazy">
+             alt="Large two-story brick home with a completed roof replacement"
+             width="1200" height="1600" loading="lazy">
       </figure>
     </div>
 
@@ -646,34 +828,34 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </section>
 
 <!-- ===================== 7 · COMPARISON ===================== -->
-<section class="section gi-compare" aria-label="Seamless versus sectional gutters">
+<section class="section gi-compare" aria-label="New gutters alone versus gutters with fascia repair">
   <div class="container">
     <div class="section-header" style="max-width:760px; margin-inline:auto;">
       <span class="eyebrow" style="color:var(--color-primary);">Know The Difference</span>
-      <h2>Seamless or sectional gutters — which last longer?</h2>
+      <h2>New gutters alone, or gutters with the fascia fixed too?</h2>
       <p class="answer-block">
-        Seamless gutters last longer than sectional gutters, plain and simple. With joints only at the corners and
-        downspouts, there are far fewer places to leak, sag, or clog. On a Huffman home facing heavy Gulf Coast rain,
-        that means a system that stays tight and drains clean for years instead of failing seam by seam.
+        Gutters are only as good as the board they hang from. A gutter-only installer screws new gutters into rotted
+        fascia and leaves; a roofing and exterior contractor fixes the wood first. On a Houston-area home facing heavy
+        Gulf Coast rain, that difference decides whether the system stays tight for years or sags within a few seasons.
       </p>
     </div>
     <div class="gi-compare-grid">
       <div class="gi-compare-col gi-compare-col--them">
-        <h3><?php echo icon('minus', 22); ?> Sectional gutters</h3>
+        <h3><?php echo icon('minus', 22); ?> Gutter-only installer</h3>
         <ul>
-          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> A joint every few feet — each one a future leak point</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> Seams trap debris and clog faster in tree-heavy neighborhoods</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> Sealant fails over time, so they drip and sag within a few seasons</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> Store-bought lengths rarely match your exact roofline</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> New gutters screwed into soft, rotted fascia that cannot hold them</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> Nobody looks at the drip edge, shingles, or soffit while they are up there</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> A second contractor — and a second bill — for the wood rot and paint</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg> Sagging and pulled hangers within a few seasons</li>
         </ul>
       </div>
       <div class="gi-compare-col gi-compare-col--us">
-        <h3><?php echo icon('droplets', 22); ?> Seamless gutters by Triple G Roofing</h3>
+        <h3><?php echo icon('droplets', 22); ?> Gutters by Triple G Roofing &amp; Construction</h3>
         <ul>
-          <li><?php echo icon('check-circle', 20); ?> One continuous run per side — joints only at corners and downspouts</li>
-          <li><?php echo icon('check-circle', 20); ?> Fabricated on-site to your Huffman home&rsquo;s exact measurements</li>
-          <li><?php echo icon('check-circle', 20); ?> Fewer seams means fewer leaks, less sag, and less cleaning</li>
-          <li><?php echo icon('check-circle', 20); ?> Sized 6-inch with 3x4-inch downspouts for Gulf Coast downpours</li>
+          <li><?php echo icon('check-circle', 20); ?> Fascia and soffit repaired, replaced, and painted to match before the gutters go up</li>
+          <li><?php echo icon('check-circle', 20); ?> The roof edge, drip edge, and shingles checked in the same visit — free</li>
+          <li><?php echo icon('check-circle', 20); ?> Roofing, siding, gutters, patio covers, decks and fences — one call since 1973</li>
+          <li><?php echo icon('check-circle', 20); ?> Owner on every job; ask about the workmanship guarantee for your project</li>
         </ul>
       </div>
     </div>
@@ -689,8 +871,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="section-header" style="max-width:760px; margin-inline:auto;">
       <span class="eyebrow" style="color:var(--color-primary);">Good Questions</span>
-      <h2>What else do Huffman homeowners ask about gutter installation?</h2>
-      <p class="hero-answer" style="color:var(--color-gray-dark);">Straight answers on cost, sizing, guards, and upkeep — before you search for seamless gutters near me in Huffman and start collecting quotes.</p>
+      <h2>What else do Houston-area homeowners ask about gutters?</h2>
+      <p class="hero-answer" style="color:var(--color-gray-dark);">Straight answers on cost, fascia rot, guards, sizing, and upkeep — before you search for gutter installation near me in Humble, Atascocita, Deer Park, or anywhere else around Greater Houston.</p>
     </div>
     <div class="gi-faq-grid">
       <?php foreach ($faqs as $i => $f): ?>
@@ -707,38 +889,38 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </section>
 
 <!-- ===================== FINAL CTA ===================== -->
-<section class="gi-cta" aria-label="Get a free gutter installation quote">
+<section class="gi-cta" aria-label="Get a free gutter installation estimate">
   <div class="container">
-    <h2>Ready for seamless gutters that protect your Huffman home?</h2>
-    <p>Stop letting rain pound your foundation. Triple G Roofing will measure your roofline, fabricate seamless
-      gutters on-site, and route every downspout away from the slab — with same-day free quotes across Huffman and
-      North Harris County.</p>
+    <h2>Ready for gutters that protect your home — fascia included?</h2>
+    <p>Stop letting rain pound your foundation. Triple G Roofing &amp; Construction will measure your roofline, fix the
+      fascia and soffit behind the old gutters, and route every downspout away from the slab — free written estimates
+      across Humble, Kingwood, Pasadena, La Porte and the whole Greater Houston area.</p>
     <div class="gi-cta__actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get My Free Gutter Quote</a>
+      <a href="/contact/" class="btn btn-accent btn-lg">Get My Free Gutter Estimate</a>
       <a href="tel:+<?php echo $phoneRaw; ?>" class="btn btn-outline-white btn-lg"><?php echo icon('phone', 18); ?> Call <?php echo $phone; ?></a>
     </div>
-    <p class="phone-line">Prefer to talk? Call <a href="tel:+<?php echo $phoneRaw; ?>"><?php echo $phone; ?></a> — 8am to 8pm, 7 days a week.</p>
+    <p class="phone-line">Prefer to talk? Call <a href="tel:+<?php echo $phoneRaw; ?>"><?php echo $phone; ?></a> — <?php echo $businessHours; ?>.</p>
   </div>
 </section>
 
 <!-- ===================== RELATED SERVICES ===================== -->
-<section class="section gi-related" aria-label="Other roofing services">
+<section class="section gi-related" aria-label="Other services you may need">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow">Keep Exploring</span>
-      <h2>What other roofing services might your Huffman home need?</h2>
-      <p class="hero-answer" style="color:var(--color-gray-dark);">Gutters work best as part of a healthy roof system — here&rsquo;s how Triple G Roofing keeps the rest in shape.</p>
+      <span class="eyebrow">What We Do</span>
+      <h2>What other exterior services might your home need?</h2>
+      <p class="hero-answer" style="color:var(--color-gray-dark);">Gutters work best as part of a healthy roof edge — here&rsquo;s how Triple G Roofing &amp; Construction keeps the rest in shape across Greater Houston.</p>
     </div>
     <div class="services-grid">
       <?php foreach ($relatedServices as $i => $s):
         $tint = ($i % 3) + 1;
       ?>
-      <article class="service-card-with-image card-tint-<?php echo $tint; ?>" data-animate>
+      <article class="service-card-with-image card-tint-<?php echo $tint; ?> reveal-delay-<?php echo $tint; ?>" data-animate>
         <div class="service-card__image">
           <img src="/assets/images/<?php echo $s['img']; ?>.jpg"
-               srcset="/assets/images/<?php echo $s['img']; ?>-480.webp 480w, /assets/images/<?php echo $s['img']; ?>-960.webp 960w, /assets/images/<?php echo $s['img']; ?>-1600.webp 1600w"
+               srcset="<?php echo $s['srcset']; ?>"
                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 380px"
-               alt="<?php echo htmlspecialchars($s['alt']); ?>" width="600" height="360" loading="lazy">
+               alt="<?php echo htmlspecialchars($s['alt']); ?>" width="<?php echo $s['w']; ?>" height="<?php echo $s['h']; ?>" loading="lazy">
         </div>
         <div class="service-card__body">
           <div class="service-card__icon"><?php echo $s['icon']; ?></div>

@@ -11,7 +11,7 @@
         $pageTitle = $siteName . ' | ' . $primaryKeyword . ' | ' . $address['city'] . ', ' . $address['state'];
     }
     if (!isset($pageDescription)) {
-        $pageDescription = $siteName . ' provides professional ' . strtolower($primaryKeyword) . ' services in ' . $address['city'] . ', ' . $address['state'] . '. Licensed, insured, and trusted by homeowners across North Harris County.';
+        $pageDescription = $siteName . ' — family-owned roofing, siding, gutter, patio cover and fence contractor serving the Greater Houston area since 1973. Free inspections and estimates. Call ' . $phone . '.';
     }
     if (!isset($canonicalUrl)) {
         $canonicalUrl = $siteUrl . '/';
@@ -30,7 +30,7 @@
     <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
     <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl); ?>">
-    <meta property="og:image" content="<?php echo $siteUrl; ?>/assets/images/logo.png">
+    <meta property="og:image" content="<?php echo $siteUrl; ?>/assets/images/<?php echo isset($ogImage) ? $ogImage : 'hero-roof-home-v2-1600.webp'; ?>">
     <meta property="og:site_name" content="<?php echo htmlspecialchars($siteName); ?>">
     <meta property="og:locale" content="en_US">
 
@@ -64,7 +64,14 @@
         "name": "<?php echo htmlspecialchars($siteName); ?>",
         "url": "<?php echo $siteUrl; ?>",
         "logo": "<?php echo $siteUrl; ?>/assets/images/logo.png",
-        "image": "<?php echo $siteUrl; ?>/assets/images/logo.png",
+        "image": "<?php echo $siteUrl; ?>/assets/images/hero-roof-home-v2-1600.webp",
+        "foundingDate": "<?php echo $yearEstablished; ?>",
+        "founder": [
+            { "@type": "Person", "name": "<?php echo htmlspecialchars($founderName); ?>" },
+            { "@type": "Person", "name": "<?php echo htmlspecialchars($ownerName); ?>" }
+        ],
+        "slogan": "<?php echo htmlspecialchars($tagline); ?>",
+        "award": <?php echo json_encode($awards); ?>,
         "description": "<?php echo htmlspecialchars($pageDescription); ?>",
         "telephone": "<?php echo $phone; ?>",
         "email": "<?php echo $email; ?>",
@@ -80,14 +87,14 @@
             "longitude": <?php echo $geo['lng']; ?>
         },
         "hasMap": "<?php echo $gbpUrl; ?>",
-        "openingHours": "Mo-Su 08:00-20:00",
+        "openingHours": "<?php echo $businessHoursSchema; ?>",
         "priceRange": "$$",
         "areaServed": [
-            <?php foreach ($serviceAreas as $index => $area): ?>
+            <?php foreach ($serviceAreaCities as $index => $area): ?>
             {
                 "@type": "City",
                 "name": "<?php echo htmlspecialchars($area); ?>, <?php echo $address['state']; ?>"
-            }<?php if ($index < count($serviceAreas) - 1): ?>,<?php endif; ?>
+            }<?php if ($index < count($serviceAreaCities) - 1): ?>,<?php endif; ?>
             <?php endforeach; ?>
         ],
         "serviceOffered": [

@@ -26,7 +26,7 @@ echo $schemaMarkup;
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
-<main id="main-content">
+<div class="page-body">
 <section class="hero hero--legal"><div class="hero__copy">
   <span class="eyebrow-label">Commitment</span>
   <h1>Accessibility Statement</h1>
@@ -79,12 +79,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <p><strong><?php echo $siteName; ?></strong><br>
   Email: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a><br>
   Phone: <a href="tel:+<?php echo $phoneRaw; ?>"><?php echo $phone; ?></a><br>
-  Address: <?php echo $address['street']; ?>, <?php echo $address['city']; ?>, <?php echo $address['state']; ?> <?php echo $address['zip']; ?></p>
+  Based in: <?php echo $address["city"]; ?>, <?php echo $address["state"]; ?> <?php echo $address["zip"]; ?> (service-area business — we come to you)</p>
 
   <div class="legal-disclaimer">
     General template; recommend attorney review.
   </div>
 </article>
-</main>
+</div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

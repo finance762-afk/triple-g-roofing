@@ -1,86 +1,107 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/testimonials-data.php';
 ?>
 <?php
 /* ============================================================
-   Service — Attic Venting · Triple G Roofing (Phase 4)
+   Service — Attic Venting · Triple G Roofing & Construction
    Premium editorial service page (8-section structure)
    Signature section: balanced-airflow intake/exhaust diagram
+   Facts: references/CLIENT-FACTS.md (revised 2026-08-20)
    ============================================================ */
 
 $currentPage     = 'services';
 $serviceName     = 'Attic Venting';
 $serviceSlug     = 'attic-venting';
-$pageTitle       = 'Attic Venting & Roof Ventilation Huffman TX | Triple G Roofing';
-$pageDescription = 'Balanced attic ventilation in Huffman, TX from Triple G Roofing — soffit intake and ridge exhaust that cool your attic, protect shingles, and cut cooling bills. Call (281) 824-5463.';
+$pageTitle       = 'Attic Venting & Roof Ventilation Houston TX | Triple G Roofing & Construction';
+$pageDescription = 'Balanced attic ventilation across the Greater Houston area from Triple G Roofing & Construction, family-owned since 1973. Protect your shingle warranty — free inspection. Call (281) 824-5463.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
+$ogImage         = 'attic-venting-v2-960.webp';
+$pageReviews     = getTestimonialsFor($serviceSlug, 3);
 
-/* --- FAQs specific to attic venting in Huffman --- */
+/* --- Review excerpt helper (verbatim text, cut at a sentence boundary) --- */
+if (!function_exists('tg_review_excerpt')) {
+    function tg_review_excerpt($text, $max = 400) {
+        if (mb_strlen($text) <= $max) { return $text; }
+        $cut = mb_substr($text, 0, $max);
+        $end = max((int) mb_strrpos($cut, '. '), (int) mb_strrpos($cut, '! '));
+        if ($end < 120) {
+            $sp = mb_strrpos($cut, ' ');
+            return rtrim(mb_substr($cut, 0, $sp ?: $max), ',;:') . '…';
+        }
+        return mb_substr($cut, 0, $end + 1);
+    }
+}
+
+/* --- FAQs — attic venting, Greater Houston (fact-safe) --- */
 $faqs = [
     [
-        'q' => 'How much does attic ventilation cost in Huffman, TX?',
-        'a' => 'Most attic ventilation upgrades in Huffman run from a few hundred to a couple thousand dollars, depending on your roof size and whether you are adding ridge vents, soffit intake, or both. Triple G Roofing gives you a firm, itemized quote after inspecting your attic — no vague estimates and no obligation.',
+        'q' => 'Can poor attic ventilation void my shingle warranty?',
+        'a' => 'It can. Most shingle manufacturers require balanced attic ventilation — intake at the eaves paired with exhaust near the ridge, sized to their specification — and they can void or limit the shingle warranty, or deny a warranty claim, when the attic is not properly ventilated. Triple G Roofing & Construction checks intake and exhaust on every roof we inspect or replace.',
+    ],
+    [
+        'q' => 'How much does attic ventilation cost in the Houston area?',
+        'a' => 'It depends on your roof size and whether you need ridge or box vents, soffit intake, or both. Triple G Roofing & Construction checks your attic for free and gives you a written estimate for exactly the intake and exhaust your roof needs — no guesswork and no obligation.',
     ],
     [
         'q' => 'Does better attic ventilation lower my summer energy bills?',
-        'a' => 'Yes. When hot air is trapped in your attic, it radiates down into your living space and forces your AC to run longer. A balanced intake-and-exhaust system lets that heat escape, easing the load on your cooling system through long Gulf Coast summers and often trimming your monthly bill.',
+        'a' => 'It helps. When hot air is trapped in your attic, it radiates down into your living space and forces your AC to run longer. A balanced intake-and-exhaust system lets that heat escape, easing the load on your cooling system through long Gulf Coast summers.',
     ],
     [
         'q' => 'What is the difference between ridge, soffit, and box vents?',
-        'a' => 'Soffit vents sit under your eaves and pull cool air in; ridge vents run along the peak and let hot air out; box vents are individual exhaust units set near the ridge. A balanced system always pairs intake with exhaust — Triple G Roofing sizes the mix to your specific Huffman roof.',
+        'a' => 'Soffit vents sit under your eaves and pull cool air in; ridge vents run along the peak and let hot air out; box vents are individual exhaust units set near the ridge. A balanced system always pairs intake with exhaust — Triple G Roofing & Construction sizes the mix to your specific roof.',
     ],
     [
         'q' => 'What are the signs of poor attic ventilation?',
-        'a' => 'Telltale signs include a scorching-hot attic, rising cooling bills, curling or blistering shingles, and a musty, mildew smell upstairs. You may also spot rusted nail heads or damp insulation. If you are searching for attic ventilation near me in Huffman, any of these means it is worth a free attic check.',
-    ],
-    [
-        'q' => 'Does attic ventilation extend shingle life or protect my warranty?',
-        'a' => 'It does both. Excess attic heat cooks shingles from below and can void the manufacturer warranty, which usually requires adequate ventilation. Keeping your attic cool and dry helps your Huffman roof reach its full service life and keeps that warranty intact for years to come.',
+        'a' => 'A scorching-hot attic, rising cooling bills, curling or blistering shingles, and a musty, mildew smell upstairs. You may also spot rusted nail heads or damp insulation. Any of these is worth a free attic check — and they are the same things a shingle manufacturer looks at when reviewing a warranty claim.',
     ],
     [
         'q' => 'Does venting help with attic moisture and mildew in our humid climate?',
-        'a' => 'Absolutely. Gulf Coast humidity drives warm, moist air into your attic, where it condenses on cool framing and feeds mildew and wood rot. Balanced ventilation flushes that damp air out continuously, protecting your decking, insulation, and indoor air quality across North Harris County.',
+        'a' => 'Yes. Gulf Coast humidity drives warm, moist air into your attic, where it condenses on cool framing and feeds mildew and wood rot. Balanced ventilation flushes that damp air out continuously, protecting your decking and insulation anywhere around Greater Houston.',
     ],
 ];
 
-/* --- Related services (3 cards) — pulled from services/index.php $serviceCards --- */
+/* --- Related services (3 cards) — fact-safe bullets, manifest alt text --- */
 $relatedServices = [
     [
-        'name' => 'Roof Inspection', 'slug' => 'roof-inspection', 'img' => 'roof-inspection',
-        'alt' => 'Close-up roof shingle inspection on a Huffman, TX home',
-        'desc' => 'Documented inspections that catch damage early and back up insurance claims.',
-        'bullets' => ['Same-day storm inspections', 'Photo-documented reports', 'Insurance claim–ready findings'],
-        'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>',
+        'name' => 'Roof Replacement', 'slug' => 'roof-replacement', 'img' => 'roof-replacement', 'w' => 1200, 'h' => 1600,
+        'srcset' => '/assets/images/roof-replacement-480.webp 480w, /assets/images/roof-replacement-960.webp 960w',
+        'alt' => 'Triple G crew replacing the roof on a two-story brick home',
+        'desc' => 'Architectural-shingle and metal roof replacements, tear-off to clean-up.',
+        'bullets' => ['Shingle and metal roofs', 'Major brands such as GAF', 'Magnet nail sweep after'],
+        'icon' => icon('home', 26),
     ],
     [
-        'name' => 'Roof Repair', 'slug' => 'roof-repair', 'img' => 'roof-repair',
-        'alt' => 'Roof decking exposed during a repair on a brick Huffman home',
-        'desc' => 'Leak, shingle, and flashing repairs that stop water damage fast.',
-        'bullets' => ['Leaks stopped at the source', 'Shingle & flashing replacement', 'Most repairs within 48 hours'],
-        'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>',
+        'name' => 'Roof Inspection', 'slug' => 'roof-inspection', 'img' => 'roof-inspection-v2', 'w' => 1200, 'h' => 1600,
+        'srcset' => '/assets/images/roof-inspection-v2-480.webp 480w, /assets/images/roof-inspection-v2-960.webp 960w',
+        'alt' => 'Close-up of cracked and lifted shingles found during a roof inspection',
+        'desc' => 'Free, photo-documented inspections that show you exactly what your roof needs.',
+        'bullets' => ['Free, no-obligation inspections', 'Photos of every finding', 'Owner on every job'],
+        'icon' => icon('search', 26),
     ],
     [
-        'name' => 'Roof Damage Repair', 'slug' => 'roof-damage-repair', 'img' => 'roof-damage-repair',
-        'alt' => 'Roof tear-off job with a loaded dumpster at a Huffman home',
-        'desc' => 'Full assessment and repair for aging, worn, or compromised roofs.',
-        'bullets' => ['Complete damage assessment', 'Rotted decking replaced', 'Built to North Harris County code'],
-        'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"/></svg>',
+        'name' => 'Roof Repair', 'slug' => 'roof-repair', 'img' => 'roof-repair-v2', 'w' => 1200, 'h' => 1600,
+        'srcset' => '/assets/images/roof-repair-v2-480.webp 480w, /assets/images/roof-repair-v2-960.webp 960w',
+        'alt' => 'New step flashing sealed against a brick chimney during a roof repair',
+        'desc' => 'Leak, flashing, pipe-boot, and decking repairs that stop water at the source.',
+        'bullets' => ['Leaks traced to the source', 'Flashing and pipe boots', 'Free written estimate'],
+        'icon' => icon('wrench', 26),
     ],
 ];
 
-/* --- Schema: Service + FAQPage + BreadcrumbList --- */
+/* --- Schema: Service + FAQPage + BreadcrumbList (all 50 communities as areaServed) --- */
 $serviceSchema = [
     "@context" => "https://schema.org",
     "@type"    => "Service",
     "@id"      => $canonicalUrl . '#service-' . $serviceSlug,
     "serviceType" => $serviceName,
-    "name"     => $serviceName . ' in ' . $address['city'] . ', ' . $address['state'],
-    "description" => 'Balanced attic ventilation in Huffman, TX — soffit intake and ridge exhaust that lower attic heat, protect shingles, and cut cooling costs in the Gulf Coast climate.',
+    "name"     => $serviceName . ' — Greater Houston, ' . $address['state'],
+    "description" => 'Balanced attic ventilation across the Greater Houston area from Triple G Roofing & Construction, a family-owned father-and-son company based in Humble, TX since 1973 — soffit intake and ridge or box exhaust that lower attic heat, protect shingles, and help keep the shingle manufacturer warranty intact.',
     "provider" => ["@id" => $siteUrl . '#organization'],
-    "areaServed" => array_map(function ($a) use ($address) {
-        return ["@type" => "City", "name" => $a . ', ' . $address['state']];
-    }, $serviceAreas),
+    "areaServed" => array_map(function ($c) use ($address) {
+        return ["@type" => "City", "name" => $c . ', ' . $address['state']];
+    }, $serviceAreaCities),
     "url" => $canonicalUrl,
 ];
 $breadcrumbSchema = [
@@ -161,7 +182,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .av-problem { background:var(--color-white); }
 .av-pullquote { font-family:var(--font-heading); font-weight:800; font-size:clamp(1.6rem,3.4vw,2.5rem); line-height:1.25; color:var(--color-dark); max-width:24ch; margin:var(--space-8) 0 var(--space-4); }
 .av-pullquote span { color:var(--svc-accent); }
-.av-signs { display:grid; grid-template-columns:repeat(4,1fr); gap:var(--space-5); margin-top:var(--space-10); }
+.av-signs { display:grid; grid-template-columns:repeat(5,1fr); gap:var(--space-5); margin-top:var(--space-10); }
 .av-sign { position:relative; overflow:hidden; background:var(--color-light); border:1px solid var(--color-gray-light); border-radius:var(--radius-lg); padding:var(--space-6); transition:transform var(--transition-base), box-shadow var(--transition-base); }
 .av-sign:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); }
 .av-sign:first-child { grid-column:span 2; background:linear-gradient(135deg, var(--svc-accent-soft), var(--color-white)); }
@@ -291,7 +312,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
    ===================================================== */
 .av-faq { background:var(--color-light); }
 .av-faq-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--space-6); align-items:start; margin-top:var(--space-10); }
-.faq-item { background:var(--color-white); border-radius:var(--radius-lg); border:1px solid var(--color-gray-light); overflow:hidden; transition:box-shadow var(--transition-base), border-color var(--transition-base); }
+.faq-item { display:block; padding:0; background:var(--color-white); border-radius:var(--radius-lg); border:1px solid var(--color-gray-light); overflow:hidden; transition:box-shadow var(--transition-base), border-color var(--transition-base); }
 .faq-item[open] { box-shadow:var(--shadow-md); }
 .faq-item:not([open]):hover { box-shadow:var(--shadow-sm); border-color:color-mix(in srgb, var(--svc-accent) 30%, var(--color-gray-light)); }
 .faq-item:not([open]):hover summary { color:var(--svc-accent); }
@@ -379,7 +400,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 @media (max-width:1024px) {
   .av-expert-grid { grid-template-columns:1fr; gap:var(--space-10); }
   .av-signs { grid-template-columns:1fr 1fr; }
-  .av-sign:first-child { grid-column:span 2; }
+  .av-sign:first-child, .av-sign:last-child { grid-column:span 2; }
   .av-check-grid { grid-template-columns:1fr 1fr; }
   .services-grid { grid-template-columns:repeat(2,1fr); }
 }
@@ -398,7 +419,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 @media (max-width:600px) {
   .av-signs { grid-template-columns:1fr; }
-  .av-sign:first-child { grid-column:auto; }
+  .av-sign:first-child, .av-sign:last-child { grid-column:auto; }
   .av-check-grid { grid-template-columns:1fr; }
   .av-proof-photos { grid-template-columns:1fr; }
   .services-grid { grid-template-columns:1fr; }
@@ -418,6 +439,175 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   .faq-item, .av-sign, .av-check { break-inside:avoid; }
   [data-animate] { opacity:1 !important; transform:none !important; }
 }
+
+/* =====================================================
+   SHINGLE-WARRANTY CALLOUT — owner-requested talking point
+   Split card: statement on the left, what-we-check list on the right.
+   ===================================================== */
+.av-warranty { background:var(--color-white); position:relative; }
+.av-warranty__card { display:grid; grid-template-columns:1.1fr 1fr; gap:var(--space-8); margin-top:var(--space-10); border-radius:var(--radius-lg); overflow:hidden; border:1px solid color-mix(in srgb, var(--svc-accent) 30%, var(--color-gray-light)); box-shadow:var(--shadow-lg); }
+.av-warranty__statement { position:relative; padding:var(--space-8); background:linear-gradient(150deg, var(--color-secondary), color-mix(in srgb, var(--color-secondary) 80%, var(--color-primary))); color:var(--color-white); }
+.av-warranty__statement::after { content:''; position:absolute; right:-40px; bottom:-40px; width:180px; height:180px; border-radius:50%; background:radial-gradient(circle, rgba(var(--color-primary-rgb),.35), transparent 70%); pointer-events:none; }
+.av-warranty__statement .eyebrow { display:inline-block; font-family:var(--font-heading); font-size:var(--font-size-xs); font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--color-accent); margin-bottom:var(--space-3); }
+.av-warranty__statement h3 { color:var(--color-white); font-size:var(--font-size-2xl); line-height:1.2; margin-bottom:var(--space-4); text-wrap:balance; }
+.av-warranty__statement p { color:rgba(255,255,255,.86); font-size:var(--font-size-base); line-height:1.7; margin:0; position:relative; z-index:1; }
+.av-warranty__checks { padding:var(--space-8); background:var(--svc-accent-soft); display:flex; flex-direction:column; justify-content:center; gap:var(--space-4); }
+.av-warranty__checks h4 { font-size:var(--font-size-lg); color:var(--color-dark); margin:0; }
+.av-warranty__checks ul { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:var(--space-3); }
+.av-warranty__checks li { display:flex; gap:var(--space-3); font-size:var(--font-size-sm); color:var(--color-gray-dark); line-height:1.55; }
+.av-warranty__checks li svg { width:20px; height:20px; flex-shrink:0; color:var(--svc-accent); margin-top:2px; }
+@media (max-width:900px) { .av-warranty__card { grid-template-columns:1fr; } }
+@media print { .av-warranty__statement { background:none !important; color:var(--color-dark) !important; } .av-warranty__statement h3, .av-warranty__statement p { color:var(--color-dark) !important; } }
+
+/* =====================================================
+   REAL REVIEWS — client-published quotes (name + city)
+   Dark proof-section cards with oversized opening quote mark,
+   accent-on-hover border, and a 3→2→1 responsive grid.
+   ===================================================== */
+.av-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}
+.av-review {
+  position: relative;
+  margin: 0;
+  padding: var(--space-8) var(--space-6) var(--space-6);
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: transform var(--transition-base),
+              border-color var(--transition-base),
+              background var(--transition-base);
+}
+.av-review:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--svc-accent) 55%, transparent);
+  background: rgba(var(--color-primary-rgb), .08);
+}
+.av-review::before {
+  content: '\201C';
+  position: absolute;
+  top: var(--space-1);
+  left: var(--space-5);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-5xl);
+  line-height: 1;
+  color: rgba(var(--color-primary-rgb), .4);
+  pointer-events: none;
+}
+.av-review:first-child {
+  background: linear-gradient(160deg, rgba(var(--color-primary-rgb), .14), rgba(255, 255, 255, .04));
+}
+.av-review p {
+  position: relative;
+  color: rgba(255, 255, 255, .86);
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+.av-review footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.av-review cite {
+  font-style: normal;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-white);
+}
+.av-review footer span {
+  font-size: var(--font-size-xs);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* =====================================================
+   LAST-UPDATED STAMP — lives in the breadcrumb bar
+   ===================================================== */
+.av-breadcrumb .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.av-updated {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray);
+  white-space: nowrap;
+  padding: var(--space-3) 0;
+  letter-spacing: .5px;
+}
+
+/* =====================================================
+   PORTRAIT JOB PHOTOS — aspect-ratio frames + object-fit
+   so the 1200×1600 client photos never stretch.
+   ===================================================== */
+.av-portrait {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+.av-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+.av-square img {
+  aspect-ratio: 1 / 1;
+  object-position: center 45%;
+}
+.av-hero__bg {
+  object-position: center 38%;
+}
+
+/* ---- Responsive + motion + print for the additions ---- */
+@media (max-width: 1024px) {
+  .av-review-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .av-review-grid {
+    grid-template-columns: 1fr;
+  }
+  .av-updated {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media (max-width: 600px) {
+  .av-portrait {
+    aspect-ratio: 4 / 5;
+    max-height: 70vh;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .av-review:hover {
+    transform: none;
+  }
+}
+@media print {
+  .av-review {
+    border-color: var(--color-gray-light);
+    break-inside: avoid;
+  }
+  .av-review p,
+  .av-review cite {
+    color: var(--color-dark) !important;
+  }
+}
 </style>
 
 <div class="av-page">
@@ -432,34 +622,36 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <li class="av-breadcrumb-sep" aria-hidden="true">/</li>
       <li><a href="<?php echo $canonicalUrl; ?>" aria-current="page">Attic Venting</a></li>
     </ol>
+    <span class="av-updated">Last Updated: <?php echo date('F Y'); ?></span>
   </div>
 </nav>
 
 <!-- ===================== 1 · HERO ===================== -->
-<section class="av-hero" aria-label="Attic venting in Huffman, TX">
+<section class="av-hero" aria-label="Attic venting across the Greater Houston area">
   <img class="av-hero__bg"
-       src="/assets/images/attic-venting.jpg"
-       srcset="/assets/images/attic-venting-480.webp 480w, /assets/images/attic-venting-960.webp 960w, /assets/images/attic-venting-1600.webp 1600w"
+       src="/assets/images/attic-venting-v2.jpg"
+       srcset="/assets/images/attic-venting-v2-480.webp 480w, /assets/images/attic-venting-v2-960.webp 960w"
        sizes="100vw"
-       alt="Ridge line and fresh framing during an attic ventilation upgrade on a Huffman, TX roof"
-       width="1600" height="900" loading="eager" fetchpriority="high">
+       alt="Freshly shingled roof with box vents installed for attic ventilation"
+       width="1200" height="1600" loading="eager" fetchpriority="high">
   <div class="container av-hero__inner">
-    <span class="av-hero__eyebrow"><?php echo icon('wind', 16); ?> Attic Venting · Huffman, TX</span>
-    <h1>Attic Venting &amp; Roof Ventilation in <span class="text-accent">Huffman</span>, TX</h1>
+    <span class="av-hero__eyebrow"><?php echo icon('wind', 16); ?> Attic Venting · Humble, TX &amp; Greater Houston</span>
+    <h1>Attic Venting &amp; Roof Ventilation in the <span class="text-accent">Greater Houston</span> Area</h1>
     <p class="hero-answer">
-      Triple G Roofing is a licensed, insured Texas roofing contractor based in Huffman serving North Harris County.
-      We install balanced attic ventilation — soffit intake paired with ridge exhaust — that pulls Gulf Coast heat out
-      of your attic, protects your shingles, and trims summer cooling bills for Huffman homeowners.
+      Triple G Roofing &amp; Construction is a family-owned roofing and exterior contractor based in Humble, TX, serving
+      the Greater Houston area since 1973. We install balanced attic ventilation — soffit intake paired with ridge or
+      box exhaust — that pulls Gulf Coast heat out of your attic, protects your shingles, and helps keep your shingle
+      manufacturer warranty intact. Free inspection and written estimate.
     </p>
     <div class="av-hero__actions">
-      <a href="/contact/" class="btn btn-primary btn-lg">Get a Free Ventilation Quote</a>
+      <a href="/contact/" class="btn btn-primary btn-lg">Get a Free Ventilation Check</a>
       <a href="tel:+<?php echo $phoneRaw; ?>" class="btn btn-outline-white btn-lg"><?php echo icon('phone', 18); ?> <?php echo $phone; ?></a>
     </div>
     <div class="av-hero__trust">
       <span class="av-hero__trust-item"><?php echo icon('wind', 18); ?> Balanced intake &amp; exhaust</span>
-      <span class="av-hero__trust-item"><?php echo icon('shield', 18); ?> Licensed &amp; insured</span>
-      <span class="av-hero__trust-item"><?php echo icon('check-circle', 18); ?> Protects your shingle warranty</span>
-      <span class="av-hero__trust-item"><?php echo icon('clock', 18); ?> 8am&ndash;8pm, 7 days</span>
+      <span class="av-hero__trust-item"><?php echo icon('shield', 18); ?> Protects your shingle warranty</span>
+      <span class="av-hero__trust-item"><?php echo icon('award', 18); ?> Serving Greater Houston since 1973</span>
+      <span class="av-hero__trust-item"><?php echo icon('hard-hat', 18); ?> Owner on every job</span>
     </div>
   </div>
 </section>
@@ -469,11 +661,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="section-header" style="text-align:left; max-width:820px; margin-inline:0;">
       <span class="eyebrow" style="color:var(--color-primary);">Why It Matters</span>
-      <h2>Is your Huffman attic telling you it needs better ventilation?</h2>
+      <h2>Is your attic telling you it needs better ventilation?</h2>
       <p class="answer-block">
         If your upstairs rooms feel like an oven, your summer energy bills keep climbing, or your shingles are curling
-        early, your Huffman attic is likely trapping heat and moisture. Poor ventilation bakes the underside of your
-        roof — and in the Gulf Coast climate, that trapped heat shortens shingle life fast.
+        early, your attic is likely trapping heat and moisture. Poor ventilation bakes the underside of your roof — and
+        in the Gulf Coast climate, that trapped heat shortens shingle life fast.
       </p>
     </div>
     <p class="av-pullquote">A hot, stuffy attic doesn&rsquo;t stay in the attic — <span>it drives up your bills and ages your roof from the inside out.</span></p>
@@ -481,7 +673,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="av-sign av-rv-left" data-animate>
         <div class="av-sign__ico"><?php echo icon('wind', 24); ?></div>
         <h3>Your attic feels like an oven</h3>
-        <p>Step into your attic on a summer afternoon and it feels like a furnace. In a poorly vented Huffman home, that trapped heat radiates straight down into your living space — and your air conditioner never catches up.</p>
+        <p>Step into your attic on a summer afternoon in Spring or The Woodlands and it feels like a furnace. In a poorly vented home, that trapped heat radiates straight down into your living space — and your air conditioner never catches up.</p>
       </div>
       <div class="av-sign av-rv-scale" data-animate>
         <div class="av-sign__ico"><?php echo icon('arrow-up', 24); ?></div>
@@ -514,28 +706,28 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <span class="eyebrow">The Triple G Standard</span>
         <h2>What makes Triple G Roofing&rsquo;s attic venting different?</h2>
         <p class="answer-block">
-          Triple G Roofing treats ventilation as a system, not an afterthought. We size intake and exhaust to your
-          roof&rsquo;s square footage, clear the blocked soffits most crews ignore, and verify real airflow before we
-          leave. Because owner Tim Menn&rsquo;s team works in this Gulf Coast heat daily, we build for how Huffman
-          summers actually behave.
+          Triple G Roofing &amp; Construction treats ventilation as part of the roof system, not an afterthought. We
+          check intake and exhaust on every roof we inspect or replace, clear the blocked soffits most crews ignore, and
+          size the vents to the shingle manufacturer&rsquo;s specification. A father-and-son team serving Greater Houston
+          since 1973 — the owner is on every job.
         </p>
         <div class="av-expert-stats">
           <div class="av-expert-stat"><div class="num">Balanced</div><div class="lbl">Intake + exhaust</div></div>
-          <div class="av-expert-stat"><div class="num">10&nbsp;yr</div><div class="lbl">Workmanship warranty</div></div>
-          <div class="av-expert-stat"><div class="num">25&nbsp;mi</div><div class="lbl">Service radius</div></div>
+          <div class="av-expert-stat"><div class="num">1973</div><div class="lbl">Serving Greater Houston since</div></div>
+          <div class="av-expert-stat"><div class="num">Free</div><div class="lbl">Attic &amp; roof check</div></div>
         </div>
         <ul class="av-expert-diffs">
-          <li><?php echo icon('check-circle', 22); ?> Every system sized to your roof&rsquo;s square footage, not a one-size guess</li>
-          <li><?php echo icon('check-circle', 22); ?> Soffits cleared and sealed so intake actually flows, not just added exhaust</li>
-          <li><?php echo icon('check-circle', 22); ?> The same local Huffman crew from attic assessment to final airflow check</li>
+          <li><?php echo icon('check-circle', 22); ?> Every system sized to your roof and the manufacturer&rsquo;s spec, not a one-size guess</li>
+          <li><?php echo icon('check-circle', 22); ?> Soffits cleared and baffled so intake actually flows — not just more exhaust</li>
+          <li><?php echo icon('check-circle', 22); ?> Ventilation checked on every inspection and built into every roof replacement</li>
         </ul>
       </div>
-      <div class="av-expert-figure av-rv-right" data-animate>
-        <img src="/assets/images/roof-inspection.jpg"
-             srcset="/assets/images/roof-inspection-480.webp 480w, /assets/images/roof-inspection-960.webp 960w, /assets/images/roof-inspection-1600.webp 1600w"
+      <div class="av-expert-figure av-portrait av-rv-right" data-animate>
+        <img src="/assets/images/roof-overhead.jpg"
+             srcset="/assets/images/roof-overhead-480.webp 480w, /assets/images/roof-overhead-960.webp 960w"
              sizes="(max-width: 1024px) 100vw, 520px"
-             alt="Triple G Roofing inspecting the ridge and vents on a Huffman, TX roof"
-             width="600" height="700" loading="lazy">
+             alt="Overhead view of a completed architectural shingle roof"
+             width="1200" height="1600" loading="lazy">
       </div>
     </div>
   </div>
@@ -550,8 +742,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <h2>How does balanced attic ventilation work?</h2>
       <p class="answer-block">
         Balanced attic ventilation pairs low intake with high exhaust. Cool outside air enters through soffit and eave
-        vents near the roof&rsquo;s edge, then rises as it warms and pushes hot, humid air out through ridge vents at the
-        peak. That continuous loop keeps your Huffman attic cooler and drier all year.
+        vents near the roof&rsquo;s edge, then rises as it warms and pushes hot, humid air out through ridge or box vents
+        at the peak. That continuous loop keeps your attic cooler and drier all year.
       </p>
     </div>
     <div class="av-airflow__stage">
@@ -573,9 +765,40 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="av-flow av-flow--exhaust av-rv-right" data-animate>
         <span class="av-flow__badge">Exhaust</span>
         <div class="av-flow__ico"><?php echo icon('arrow-up', 26); ?></div>
-        <h3>Ridge vents</h3>
-        <p>Running the length of the peak, ridge vents let the hottest, most humid air escape naturally as it rises. Paired with soffit intake, they create the steady convection loop your Huffman attic needs.</p>
+        <h3>Ridge &amp; box vents</h3>
+        <p>Set at or near the peak, exhaust vents let the hottest, most humid air escape naturally as it rises. Paired with soffit intake, they create the steady convection loop your attic needs.</p>
         <div class="av-flow__arrows" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 4b · SHINGLE WARRANTY CALLOUT ===================== -->
+<section class="section av-warranty" aria-label="Ventilation and your shingle warranty">
+  <div class="container">
+    <div class="section-header" style="max-width:760px; margin-inline:auto;">
+      <span class="eyebrow" style="color:var(--color-primary);">Read The Fine Print</span>
+      <h2>Can poor attic ventilation void your shingle warranty?</h2>
+      <p class="answer-block">
+        Yes — shingle manufacturers can void or limit the shingle warranty when the attic isn&rsquo;t properly ventilated
+        with balanced intake and exhaust. That is why Triple G Roofing &amp; Construction checks intake and exhaust on
+        every roof we inspect or replace, not just when you ask about venting.
+      </p>
+    </div>
+    <div class="av-warranty__card av-rv-scale" data-animate>
+      <div class="av-warranty__statement">
+        <span class="eyebrow">Why it matters</span>
+        <h3>A new roof with a starved attic can mean a warranty claim that gets denied.</h3>
+        <p>Manufacturer warranties are written around their ventilation specification — so much intake and exhaust per square foot of attic. When a roof runs hot because the soffits are blocked or the exhaust is undersized, the shingles age early, and the manufacturer may point to the ventilation rather than the product. Getting the balance right protects the roof and the paperwork behind it.</p>
+      </div>
+      <div class="av-warranty__checks">
+        <h4>What we check on every roof</h4>
+        <ul>
+          <li><?php echo icon('check-circle', 20); ?> Soffit and eave intake — present, open, and not buried under insulation</li>
+          <li><?php echo icon('check-circle', 20); ?> Ridge or box exhaust sized to the attic, not just what was there before</li>
+          <li><?php echo icon('check-circle', 20); ?> Baffles keeping the airflow path clear from eave to peak</li>
+          <li><?php echo icon('check-circle', 20); ?> Intake and exhaust in balance with the shingle manufacturer&rsquo;s spec</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -586,45 +809,45 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </div>
 
 <!-- ===================== 5 · BREAKDOWN ===================== -->
-<section class="section av-breakdown" aria-label="What is included in an attic ventilation upgrade">
+<section class="section av-breakdown" aria-label="What is included in an attic ventilation upgrade" style="background:var(--color-light);">
   <div class="container">
     <div class="section-header" style="max-width:760px; margin-inline:auto;">
       <span class="eyebrow" style="color:var(--color-primary);">On Every Job</span>
       <h2>What&rsquo;s included in a Triple G Roofing attic ventilation upgrade?</h2>
       <p class="answer-block">
-        Every Triple G Roofing ventilation upgrade starts with a full attic assessment, then a right-sized mix of intake
-        and exhaust matched to your roof&rsquo;s square footage. We seal gaps, clear blocked soffits, install ridge or
-        box vents, and verify real airflow before we leave your Huffman home.
+        Every Triple G Roofing &amp; Construction ventilation upgrade starts with a free attic and roof assessment, then a
+        right-sized mix of intake and exhaust matched to your roof. We clear blocked soffits, set baffles, install ridge
+        or box vents, and walk you through the finished system.
       </p>
     </div>
     <div class="av-check-grid">
-      <div class="av-check"><h3>Attic assessment</h3><p>We measure your attic square footage and check what intake and exhaust already exist.</p></div>
-      <div class="av-check"><h3>Balanced venting plan</h3><p>A right-sized mix of intake and exhaust matched to your roof and built to code.</p></div>
+      <div class="av-check"><h3>Attic assessment</h3><p>We measure your attic and check what intake and exhaust already exist — and whether they actually flow.</p></div>
+      <div class="av-check"><h3>Balanced venting plan</h3><p>A right-sized mix of intake and exhaust matched to your roof and the shingle manufacturer&rsquo;s spec.</p></div>
       <div class="av-check"><h3>Ridge or box exhaust</h3><p>Continuous ridge vents or box vents installed near the peak to release trapped hot air.</p></div>
       <div class="av-check"><h3>Soffit &amp; eave intake</h3><p>Blocked or missing soffit vents opened and added so cool air can actually enter.</p></div>
       <div class="av-check"><h3>Air sealing &amp; baffles</h3><p>Gaps sealed and baffles set so insulation never chokes the airflow path.</p></div>
-      <div class="av-check"><h3>Final airflow check</h3><p>We confirm the system draws properly, then clean up and leave your attic breathing.</p></div>
+      <div class="av-check"><h3>Walkthrough</h3><p>We show you what changed, clean up, and leave your attic breathing.</p></div>
     </div>
     <div class="av-timeline">
       <div class="av-tl-step" data-animate>
         <div class="av-tl-step__num">1</div>
         <h3>Free attic evaluation</h3>
-        <p>We inspect your attic and roofline across Huffman and North Harris County, then explain what your venting is doing today.</p>
+        <p>We inspect your attic and roofline anywhere around Greater Houston — Humble, Spring, Jersey Village, The Woodlands — and explain what your venting is doing today.</p>
       </div>
       <div class="av-tl-step" data-animate>
         <div class="av-tl-step__num">2</div>
         <h3>Right-sized vent plan</h3>
-        <p>You get a clear, itemized quote with the exact intake and exhaust your roof needs — no upsells, no guesswork.</p>
+        <p>You get a clear written estimate with the exact intake and exhaust your roof needs — no upsells, no guesswork.</p>
       </div>
       <div class="av-tl-step" data-animate>
         <div class="av-tl-step__num">3</div>
-        <h3>Clean, code-built install</h3>
-        <p>Our crew installs soffit intake and ridge or box exhaust, seals gaps, and sets baffles to protect your insulation.</p>
+        <h3>Clean install</h3>
+        <p>Our crew installs soffit intake and ridge or box exhaust, seals gaps, and sets baffles to protect your insulation — owner on site.</p>
       </div>
       <div class="av-tl-step" data-animate>
         <div class="av-tl-step__num">4</div>
-        <h3>Airflow verified</h3>
-        <p>We confirm the system pulls cool air in and hot air out, then walk you through everything before we pack up.</p>
+        <h3>Walkthrough</h3>
+        <p>We show you the finished system and answer your questions before we pack up. Ask about the workmanship guarantee for your project.</p>
       </div>
     </div>
   </div>
@@ -634,29 +857,38 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <section class="section av-proof" aria-label="Reviews and recent work">
   <div class="container">
     <div class="section-header" style="max-width:760px; margin-inline:auto;">
-      <span class="eyebrow">Trusted Locally</span>
-      <h2>What do Huffman homeowners say about Triple G Roofing?</h2>
+      <span class="eyebrow">Real Reviews</span>
+      <h2>What do Greater Houston homeowners say about Triple G Roofing?</h2>
       <p class="answer-block">
-        Triple G Roofing has earned its reputation across Huffman, Humble, Atascocita, Kingwood, and Crosby the
-        old-fashioned way — by showing up, doing the work right, and standing behind it. Read our verified Google
-        reviews below and see recent roofing projects from around North Harris County.
+        Triple G Roofing &amp; Construction has earned its reputation across Humble, Kingwood, Spring, Jersey Village, and
+        the rest of the Greater Houston area the old-fashioned way — by showing up, doing the work right, and standing
+        behind it. These are real reviews our customers published, name and city as written.
       </p>
     </div>
 
-    <div class="av-proof-photos" data-animate>
+    <div class="av-review-grid">
+      <?php foreach ($pageReviews as $i => $r): ?>
+      <blockquote class="av-review av-rv-up reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
+        <p><?php echo htmlspecialchars(tg_review_excerpt($r['text'])); ?></p>
+        <footer><cite><?php echo htmlspecialchars($r['name']); ?></cite><span><?php echo htmlspecialchars($r['city']); ?></span></footer>
+      </blockquote>
+      <?php endforeach; ?>
+    </div>
+
+    <div class="av-proof-photos av-square" data-animate>
       <figure>
-        <img src="/assets/images/roof-repair.jpg"
-             srcset="/assets/images/roof-repair-480.webp 480w, /assets/images/roof-repair-960.webp 960w, /assets/images/roof-repair-1600.webp 1600w"
+        <img src="/assets/images/roof-underlayment.jpg"
+             srcset="/assets/images/roof-underlayment-480.webp 480w, /assets/images/roof-underlayment-960.webp 960w"
              sizes="(max-width: 600px) 100vw, 560px"
-             alt="Triple G Roofing crew reworking the roof deck and vents on a Huffman home"
-             width="600" height="450" loading="lazy">
+             alt="Synthetic underlayment laid across a roof before shingles"
+             width="1200" height="1600" loading="lazy">
       </figure>
       <figure>
-        <img src="/assets/images/hero-roof-home.jpg"
-             srcset="/assets/images/hero-roof-home-480.webp 480w, /assets/images/hero-roof-home-960.webp 960w, /assets/images/hero-roof-home-1600.webp 1600w"
+        <img src="/assets/images/roof-two-story.jpg"
+             srcset="/assets/images/roof-two-story-480.webp 480w, /assets/images/roof-two-story-960.webp 960w"
              sizes="(max-width: 600px) 100vw, 560px"
-             alt="Completed architectural shingle roof with balanced ridge ventilation in Huffman, TX"
-             width="600" height="450" loading="lazy">
+             alt="Two-story brick home during a roof replacement"
+             width="1200" height="1600" loading="lazy">
       </figure>
     </div>
 
@@ -676,11 +908,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="section-header" style="max-width:760px; margin-inline:auto;">
       <span class="eyebrow" style="color:var(--color-primary);">Know The Difference</span>
-      <h2>Ridge vents or box vents &mdash; which is right for your Huffman roof?</h2>
+      <h2>Ridge vents or box vents &mdash; which is right for your roof?</h2>
       <p class="answer-block">
-        For most Huffman homes, continuous ridge vents move more hot air more evenly than scattered box vents, because
-        they exhaust along the entire peak. Box vents still make sense on complex or short-ridge roofs. Triple G Roofing
-        recommends whichever design actually fits your roofline and airflow needs.
+        For most homes, continuous ridge vents move more hot air more evenly than scattered box vents, because they
+        exhaust along the entire peak. Box vents still make sense on complex or short-ridge roofs. Triple G Roofing &amp;
+        Construction recommends whichever design actually fits your roofline and the manufacturer&rsquo;s spec.
       </p>
     </div>
     <div class="av-compare-grid">
@@ -690,7 +922,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><?php echo icon('check-circle', 20); ?> Exhaust hot air evenly along the entire peak</li>
           <li><?php echo icon('check-circle', 20); ?> Low profile that blends cleanly into the roofline</li>
           <li><?php echo icon('check-circle', 20); ?> Ideal for homes with long, continuous ridge lines</li>
-          <li><?php echo icon('check-circle', 20); ?> Pairs perfectly with soffit intake for balanced flow</li>
+          <li><?php echo icon('check-circle', 20); ?> Pairs well with soffit intake for balanced flow</li>
         </ul>
       </div>
       <div class="av-compare-col av-compare-col--alt">
@@ -715,10 +947,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="section-header" style="max-width:760px; margin-inline:auto;">
       <span class="eyebrow" style="color:var(--color-primary);">Good Questions</span>
-      <h2>What else do Huffman homeowners ask about attic ventilation?</h2>
+      <h2>What else do Houston-area homeowners ask about attic ventilation?</h2>
       <p class="answer-block">
-        Straight answers on cost, energy savings, vent types, and Gulf Coast humidity — everything Huffman homeowners
-        want to know before they upgrade the ventilation on their roof.
+        Straight answers on warranties, cost, energy savings, vent types, and Gulf Coast humidity — everything homeowners
+        searching for attic ventilation near me in Humble, Cypress, or The Woodlands want to know first.
       </p>
     </div>
     <div class="av-faq-grid">
@@ -736,42 +968,40 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </section>
 
 <!-- ===================== FINAL CTA ===================== -->
-<section class="av-cta" aria-label="Book an attic ventilation quote">
+<section class="av-cta" aria-label="Book an attic ventilation check">
   <div class="container">
-    <h2>Ready to cool down your Huffman attic for good?</h2>
+    <h2>Ready to cool down your attic — and protect your shingle warranty?</h2>
     <p class="answer-block">
-      Triple G Roofing will inspect your attic, size the right intake-and-exhaust system for your roof, and give you a
-      firm quote — same-day response across Huffman and North Harris County, 8am to 8pm, seven days a week.
+      Triple G Roofing &amp; Construction will inspect your attic for free, size the right intake-and-exhaust system for
+      your roof, and give you a written estimate — across Humble, Spring, The Woodlands, Bellaire and the whole Greater
+      Houston area.
     </p>
     <div class="av-cta__actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get My Free Ventilation Quote</a>
+      <a href="/contact/" class="btn btn-accent btn-lg">Get My Free Ventilation Check</a>
       <a href="tel:+<?php echo $phoneRaw; ?>" class="btn btn-outline-white btn-lg"><?php echo icon('phone', 18); ?> Call <?php echo $phone; ?></a>
     </div>
-    <p class="phone-line">Prefer to talk? Call <a href="tel:+<?php echo $phoneRaw; ?>"><?php echo $phone; ?></a> — 8am to 8pm, 7 days a week.</p>
+    <p class="phone-line">Prefer to talk? Call <a href="tel:+<?php echo $phoneRaw; ?>"><?php echo $phone; ?></a> — <?php echo $businessHours; ?>.</p>
   </div>
 </section>
 
 <!-- ===================== RELATED SERVICES ===================== -->
-<section class="section av-related" aria-label="Other roofing services">
+<section class="section av-related" aria-label="Other services you may need">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow">Keep Exploring</span>
-      <h2>What other roofing services might your Huffman home need?</h2>
-      <p class="answer-block" style="margin-inline:auto;">
-        Ventilation works best as part of a healthy roof system. If Triple G Roofing spots wear or damage while we are
-        up there, here is how we handle the rest for Huffman homeowners.
-      </p>
+      <span class="eyebrow">What We Do</span>
+      <h2>What other roofing services might your home need?</h2>
+      <p class="hero-answer" style="color:var(--color-gray-dark);">Ventilation works best as part of a healthy roof system. If Triple G Roofing &amp; Construction spots wear or damage while we are up there, here is how we handle the rest.</p>
     </div>
     <div class="services-grid">
       <?php foreach ($relatedServices as $i => $s):
         $tint = ($i % 3) + 1;
       ?>
-      <article class="service-card-with-image card-tint-<?php echo $tint; ?>" data-animate>
+      <article class="service-card-with-image card-tint-<?php echo $tint; ?> reveal-delay-<?php echo $tint; ?>" data-animate>
         <div class="service-card__image">
           <img src="/assets/images/<?php echo $s['img']; ?>.jpg"
-               srcset="/assets/images/<?php echo $s['img']; ?>-480.webp 480w, /assets/images/<?php echo $s['img']; ?>-960.webp 960w, /assets/images/<?php echo $s['img']; ?>-1600.webp 1600w"
+               srcset="<?php echo $s['srcset']; ?>"
                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 380px"
-               alt="<?php echo htmlspecialchars($s['alt']); ?>" width="600" height="360" loading="lazy">
+               alt="<?php echo htmlspecialchars($s['alt']); ?>" width="<?php echo $s['w']; ?>" height="<?php echo $s['h']; ?>" loading="lazy">
         </div>
         <div class="service-card__body">
           <div class="service-card__icon"><?php echo $s['icon']; ?></div>

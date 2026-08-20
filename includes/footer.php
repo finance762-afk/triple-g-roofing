@@ -12,12 +12,12 @@
                 </div>
                 <p><?php echo htmlspecialchars($tagline); ?></p>
                 <p style="font-size: var(--font-size-sm); margin-top: var(--space-3);">
-                    <?php echo htmlspecialchars($siteName); ?> is a licensed roofing contractor serving <?php echo $address['city']; ?> and the surrounding North Harris County area. We specialize in storm damage repair, roof replacements, and emergency roofing services.
+                    <?php echo htmlspecialchars($siteName); ?> is a family-owned, father-and-son roofing and exterior contractor based in <?php echo $address['city']; ?>, <?php echo $address['state']; ?>, serving the Greater Houston area since <?php echo $yearEstablished; ?>. Roof replacement and repair, storm damage, siding, gutters, patio covers, decks and fences — the owner is on every job.
                 </p>
                 <div class="footer-trust">
-                    <span class="trust-badge"><?php echo icon('shield', 16); ?> Licensed</span>
-                    <span class="trust-badge"><?php echo icon('check-circle', 16); ?> Insured</span>
-                    <span class="trust-badge"><?php echo icon('award', 16); ?> Trusted</span>
+                    <span class="trust-badge"><?php echo icon('award', 16); ?> Since 1973</span>
+                    <span class="trust-badge"><?php echo icon('check-circle', 16); ?> Family Owned</span>
+                    <span class="trust-badge"><?php echo icon('shield', 16); ?> Nextdoor Favorite 2022–24</span>
                 </div>
             </div>
 
@@ -47,16 +47,16 @@
             <div class="footer-col">
                 <h4>Service Areas</h4>
                 <ul>
-                    <?php foreach (array_slice($serviceAreas, 0, 5) as $area): ?>
+                    <?php foreach ($serviceAreas as $area): ?>
                     <li>
                         <a href="/service-areas/<?php echo getAreaSlug($area); ?>/">
                             <?php echo htmlspecialchars($area); ?>
                         </a>
                     </li>
                     <?php endforeach; ?>
-                    <?php if (count($serviceAreas) > 5): ?>
-                    <li><a href="/service-areas/">View All Areas</a></li>
-                    <?php endif; ?>
+                    <li><a href="/service-areas/">All <?php echo count($serviceAreaCities); ?> Communities We Serve</a></li>
+                    <li><a href="/testimonials/">Reviews</a></li>
+                    <li><a href="/gallery/">Project Gallery</a></li>
                     <li><a href="/faq/">FAQ</a></li>
                     <li><a href="/blog/">Blog</a></li>
                 </ul>
@@ -76,7 +76,7 @@
                 <div class="contact-item">
                     <?php echo icon('map-pin', 18); ?>
                     <span><?php /* service-area business — street withheld to match the GBP listing */ ?>
-                    <?php echo $address['city']; ?>, <?php echo $address['state']; ?> <?php echo $address['zip']; ?></span>
+                    Based in <?php echo $address['city']; ?>, <?php echo $address['state']; ?> · Serving the Greater Houston area</span>
                 </div>
                 <div class="contact-item">
                     <?php echo icon('clock', 18); ?>
@@ -93,7 +93,7 @@
             <meta itemprop="telephone" content="<?php echo $phone; ?>">
             <h4>About <?php echo htmlspecialchars($siteName); ?></h4>
             <p style="font-size: var(--font-size-sm); line-height: 1.7;">
-                <?php echo htmlspecialchars($siteName); ?> is a licensed roofing contractor based in <?php echo $address['city']; ?>, <?php echo $address['state']; ?>. We serve homeowners across North Harris County with professional roofing services including <?php echo implode(', ', array_slice(array_column($services, 'name'), 0, 3)); ?>, and more. Family-owned and locally operated, we're committed to protecting your home with expert craftsmanship and transparent service.
+                <?php echo htmlspecialchars($siteName); ?> is a family-owned roofing and exterior renovation contractor based in <?php echo $address['city']; ?>, <?php echo $address['state']; ?>, serving the Greater Houston area since <?php echo $yearEstablished; ?>. Owner <?php echo htmlspecialchars($ownerName); ?> and his father <?php echo htmlspecialchars($founderName); ?> run a father-and-son team offering <?php echo implode(', ', array_slice(array_column($services, 'name'), 0, 4)); ?>, siding, patio covers, decks and fences, with free inspections and written estimates. Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024. Communities served include <?php echo implode(', ', array_slice($serviceAreaCities, 0, 12)); ?> and <?php echo count($serviceAreaCities) - 12; ?> more across the region.
             </p>
         </div>
 

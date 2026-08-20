@@ -42,7 +42,7 @@ echo $schemaMarkup;
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
-<main id="main-content">
+<div class="page-body">
   <section class="hero hero--legal" aria-label="Privacy Policy">
     <div class="hero__copy">
       <span class="eyebrow-label">Legal</span>
@@ -81,7 +81,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <li>Communicate during active projects</li>
       <li>Send service-related communications (including phone calls and SMS messages where you have consented)</li>
       <li>Improve our website and services</li>
-      <li>Comply with legal obligations (licensing, insurance, tax)</li>
+      <li>Comply with legal obligations (tax, contract and other legal requirements)</li>
     </ul>
 
     <h2>4. How We Share Your Information</h2>
@@ -138,13 +138,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <strong><?php echo $siteName; ?></strong><br>
       Email: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a><br>
       Phone: <a href="tel:+<?php echo $phoneRaw; ?>"><?php echo $phone; ?></a><br>
-      Address: <?php echo $address['street']; ?>, <?php echo $address['city']; ?>, <?php echo $address['state']; ?> <?php echo $address['zip']; ?>
+      Based in: <?php echo $address["city"]; ?>, <?php echo $address["state"]; ?> <?php echo $address["zip"]; ?> (service-area business — we come to you)
     </p>
 
     <div class="legal-disclaimer">
       This Privacy Policy is provided as a general template. We recommend reviewing this document with a licensed <?php echo $companyState; ?> attorney before publication to ensure compliance with current state and federal privacy laws.
     </div>
   </article>
-</main>
+</div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

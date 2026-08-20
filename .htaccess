@@ -43,6 +43,9 @@ DirectoryIndex index.php index.html
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    # Retired slug (pre-launch rename) — keep the old URL alive
+    RewriteRule ^blog/roof-replacement-cost-huffman-tx/?$ /blog/roof-replacement-cost-houston-tx/ [R=301,L]
+
     # Dynamic sitemap — /sitemap.xml is served by sitemap.php
     RewriteRule ^sitemap\.xml$ /sitemap.php [L]
 

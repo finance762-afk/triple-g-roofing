@@ -4,21 +4,21 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 $currentPage = 'blog';
-$pageTitle = 'Roofing & Siding Tips for North Harris County | Triple G Roofing Blog';
-$pageDescription = 'Expert roofing and siding advice for Huffman, Humble, Atascocita, Kingwood, and Crosby homeowners — costs, storm damage, insurance claims, and Gulf Coast maintenance guides.';
+$pageTitle = 'Roofing & Exterior Tips for Greater Houston | Triple G Roofing Blog';
+$pageDescription = 'Plain-English roofing, siding, patio cover and storm-claim guides for Greater Houston homeowners — from a family-owned father-and-son company serving the area since 1973.';
 $canonicalUrl = $siteUrl . '/blog/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
-<main id="main-content">
+<div class="page-body">
     <!-- Page Header -->
     <section class="blog-post__header">
         <div class="container">
             <span class="blog-post__category">Roofing Knowledge</span>
             <h1>Triple G Roofing <span class="text-accent">Blog</span></h1>
-            <p style="color: var(--color-gray); max-width: 60ch; margin: 0 auto;">Roofing and siding answers for Huffman, Humble, Atascocita, Kingwood, and Crosby homeowners — written by the crew that works these neighborhoods.</p>
+            <p style="color: var(--color-gray); max-width: 60ch; margin: 0 auto;">Roofing, siding, patio cover and insurance-claim answers for Greater Houston homeowners — from Humble and Kingwood to Baytown, Spring, Cypress and The Woodlands — written by a father-and-son team that has worked these neighborhoods since 1973.</p>
         </div>
     </section>
 
@@ -54,10 +54,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <section class="section cta-banner">
         <div class="container" style="text-align:center">
             <h2>Have a roofing question we haven't answered?</h2>
-            <p>Call the Triple G Roofing team — real answers from a local roofer, no runaround.</p>
+            <p>Call Triple G Roofing &amp; Construction — straight answers from a family-owned company that has served the Greater Houston area since 1973. Free inspections and free written estimates.</p>
             <a href="tel:+<?php echo $phoneRaw; ?>" class="btn btn-primary btn-lg"><?php echo $phone; ?></a>
         </div>
     </section>
-</main>
+</div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
