@@ -125,11 +125,11 @@ $services = [
    $serviceAreaCities = the FULL owner-supplied list (2026-08-20). Show ALL of these wherever
                         the service area is described (home, footer, /service-areas/, schema). */
 $serviceAreas = [
-    'Humble',
-    'Kingwood',
-    'Atascocita',
-    'Huffman',
-    'Crosby',
+    'Humble', 'Kingwood', 'Atascocita', 'Huffman', 'Crosby',
+    // 15 added 2026-08-20 (owner call)
+    'Spring', 'The Woodlands', 'Conroe', 'Porter', 'New Caney', 'Splendora',
+    'Cypress', 'Jersey Village', 'Houston', 'Bellaire',
+    'Pasadena', 'Deer Park', 'La Porte', 'Baytown', 'Channelview',
 ];
 $serviceAreaCities = [
     'Humble', 'Kingwood', 'Atascocita', 'Porter', 'Porter Heights', 'Spring', 'Aldine', 'Huffman',
@@ -185,7 +185,7 @@ $yearsInBusiness = (int) date('Y') - 1973;
 $tier = 'premium';
 
 /* --- CSS cache-bust — SINGLE source of truth. Bump on every framework.css change. --- */
-$cssVersion = '6';                        // pages must NEVER set their own $cssVersion
+$cssVersion = '7';                        // pages must NEVER set their own $cssVersion
 
 /* --- Forms --- */
 $formAction = 'https://formsubmit.co/tmenn013@gmail.com';

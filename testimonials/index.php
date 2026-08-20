@@ -748,6 +748,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         transform: none;
     }
 }
+
+/* Live Google reviews (Elfsight) */
+.rv-google { padding: var(--space-16) 0 var(--space-12); background: var(--color-bg-alt); }
+.rv-google__head { text-align: center; max-width: 62ch; margin: 0 auto var(--space-8); }
+.rv-google__head h2 { text-wrap: balance; margin: var(--space-2) 0 var(--space-3); }
+.rv-google__head p { color: var(--color-text-light); }
+.rv-google .reviews-embed { min-height: 160px; }
+.rv-google__links { text-align: center; margin-top: var(--space-6); font-size: var(--font-size-sm); display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap; }
+.rv-google__links a { color: var(--color-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 </style>
 
 <!-- Breadcrumb -->
@@ -816,6 +825,25 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </section>
 
 <!-- Reviews wall -->
+<!-- Live Google reviews (Elfsight widget — real GBP reviews, pasted verbatim, deferred; no reveal classes) -->
+<section class="rv-google" aria-labelledby="rv-google-title">
+  <div class="container">
+    <div class="rv-google__head">
+      <span class="eyebrow-label">Live from Google</span>
+      <h2 id="rv-google-title">Our latest <span class="text-accent">Google reviews</span></h2>
+      <p>Pulled straight from the Triple G Roofing &amp; Construction Google Business Profile — updated as new reviews come in.</p>
+    </div>
+    <div class="reviews-embed">
+      <?php echo $elfsightEmbed; ?>
+    </div>
+    <p class="rv-google__links">
+      <a href="<?php echo htmlspecialchars($gbpUrl); ?>" target="_blank" rel="noopener">Read all reviews on Google</a>
+      <span aria-hidden="true">·</span>
+      <a href="<?php echo htmlspecialchars($reviewRequestUrl); ?>" target="_blank" rel="noopener">Leave us a review</a>
+    </p>
+  </div>
+</section>
+
 <section class="rv-wall" id="reviews">
     <div class="container">
         <div class="rv-wall__head">

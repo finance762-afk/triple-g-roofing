@@ -120,3 +120,11 @@ frame; do not caption a photo with a city unless the manifest says so (it doesn'
   not properly ventilated** (balanced intake + exhaust per the manufacturer's spec). Use on the
   Attic Venting page, the FAQ, and the homepage services/ventilation section. Frame as "can void"
   / "may deny warranty claims" — not a legal guarantee about any specific brand.
+
+## Owner call 2026-08-20 (Calvin spoke with Tim) — decisions
+- Add 15 more dedicated city pages (20 total): Humble, Kingwood, Atascocita, Huffman, Crosby +
+  Spring, The Woodlands, Conroe, Porter, New Caney, Splendora, Cypress, Jersey Village, Houston,
+  Bellaire, Pasadena, Deer Park, La Porte, Baytown, Channelview. All 50 cities still listed.
+- KEEP the Elfsight live Google-reviews widget (`$elfsightEmbed` in config) — it shows REAL GBP
+  reviews. It lives on the homepage reviews section and /testimonials/. Never wrap it in reveal
+  classes; paste verbatim; script deferred.

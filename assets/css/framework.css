@@ -189,6 +189,9 @@ p {
 .nav-dropdown:hover .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
 .nav-dropdown-menu a { color: var(--color-dark); padding: var(--space-2) var(--space-4); display: block; font-size: var(--font-size-sm); }
 .nav-dropdown-menu a:hover { background: var(--color-light); color: var(--color-primary); }
+.nav-dropdown-menu--cols { min-width: 520px; padding: var(--space-3) var(--space-2); column-count: 2; column-gap: 0; }
+.nav-dropdown-menu--cols li { break-inside: avoid; }
+@media (max-width: 768px) { .nav-dropdown-menu--cols { column-count: 1; min-width: 0; } }
 .header-cta { margin-left: var(--space-4); }
 
 /* Mobile Nav Toggle */

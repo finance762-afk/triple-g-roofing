@@ -35,7 +35,7 @@
                     <a href="/service-areas/" <?php if (isActivePage('service-areas')): ?>aria-current="page"<?php endif; ?>>
                         Service Areas <?php echo icon('chevron-down', 16); ?>
                     </a>
-                    <ul class="nav-dropdown-menu" role="menu" style="display:none">
+                    <ul class="nav-dropdown-menu nav-dropdown-menu--cols" role="menu" style="display:none">
                         <?php foreach ($serviceAreas as $area): ?>
                         <li role="none">
                             <a href="/service-areas/<?php echo strtolower(str_replace(' ', '-', $area)); ?>/" role="menuitem">

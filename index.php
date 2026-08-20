@@ -567,6 +567,7 @@ main h1, main h2, main h3 { text-wrap: balance; }
 }
 .review-tile__name { font-family: var(--font-heading); font-weight: 700; color: var(--color-white); display: block; }
 .review-tile__city { font-size: var(--font-size-sm); color: var(--white-soft); }
+.reviews-embed { margin-top: var(--space-10); min-height: 120px; }
 .reviews-badge-strip {
   display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center;
   margin-top: var(--space-10);
@@ -1090,6 +1091,11 @@ main h1, main h2, main h3 { text-wrap: balance; }
         </footer>
       </article>
       <?php endforeach; ?>
+    </div>
+
+    <!-- Elfsight Google reviews widget (real GBP reviews — pasted verbatim, deferred; never wrapped in reveal classes) -->
+    <div class="reviews-embed" aria-label="Google reviews">
+      <?php echo $elfsightEmbed; ?>
     </div>
 
     <div class="reviews-badge-strip" data-animate>

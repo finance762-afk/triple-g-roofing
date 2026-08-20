@@ -47,7 +47,7 @@
             <div class="footer-col">
                 <h4>Service Areas</h4>
                 <ul>
-                    <?php foreach ($serviceAreas as $area): ?>
+                    <?php foreach (array_slice($serviceAreas, 0, 8) as $area): ?>
                     <li>
                         <a href="/service-areas/<?php echo getAreaSlug($area); ?>/">
                             <?php echo htmlspecialchars($area); ?>

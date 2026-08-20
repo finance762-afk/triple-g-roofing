@@ -9,10 +9,10 @@
   "expected_slug": null,
   "passed": true,
   "grade": "B",
-  "score_pct": 92,
+  "score_pct": 94,
   "summary": {
-    "total": 269,
-    "passed": 218,
+    "total": 329,
+    "passed": 278,
     "failed": 46,
     "warn": 5,
     "blockers_failed": 0,
@@ -22,42 +22,42 @@
     {
       "name": "backdrop_filter",
       "description": "Glassmorphism / frosted glass effects",
-      "matches": 19
+      "matches": 26
     },
     {
       "name": "keyframe_animation",
       "description": "Custom keyframe animations",
-      "matches": 16
+      "matches": 17
     },
     {
       "name": "clip_path_shape",
       "description": "Clip-path shapes beyond simple rects",
-      "matches": 5
+      "matches": 9
     },
     {
       "name": "mask_image",
       "description": "CSS masking effects",
-      "matches": 3
+      "matches": 6
     },
     {
       "name": "mix_blend_mode",
       "description": "Blend modes for sophisticated layering",
-      "matches": 2
+      "matches": 4
     },
     {
       "name": "color_mix",
       "description": "color-mix() function (modern CSS)",
-      "matches": 350
+      "matches": 780
     },
     {
       "name": "scroll_snap",
       "description": "Scroll snap points",
-      "matches": 1
+      "matches": 4
     },
     {
       "name": "complex_filter",
       "description": "CSS filter effects",
-      "matches": 24
+      "matches": 31
     },
     {
       "name": "transform_3d",
@@ -67,7 +67,7 @@
     {
       "name": "text_wrap_balance",
       "description": "Modern text wrapping",
-      "matches": 72
+      "matches": 134
     },
     {
       "name": "logical_properties",
@@ -255,11 +255,11 @@
     {
       "status": "pass",
       "check": "Inline <style> block",
-      "detail": "557 CSS lines in 1 block(s)",
+      "detail": "558 CSS lines in 1 block(s)",
       "file": "index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "557",
+      "actual": "558",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -299,22 +299,22 @@
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 555 lines total",
+      "detail": "Linked to 1 external CSS file(s), 558 lines total",
       "file": "privacy-policy/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "555",
+      "actual": "558",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 555 lines total",
+      "detail": "Linked to 1 external CSS file(s), 558 lines total",
       "file": "terms/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "555",
+      "actual": "558",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -332,11 +332,11 @@
     {
       "status": "pass",
       "check": "Inline <style> block",
-      "detail": "665 CSS lines in 1 block(s)",
+      "detail": "673 CSS lines in 1 block(s)",
       "file": "testimonials/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "665",
+      "actual": "673",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -365,22 +365,22 @@
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 555 lines total",
+      "detail": "Linked to 1 external CSS file(s), 558 lines total",
       "file": "cookie-policy/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "555",
+      "actual": "558",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 555 lines total",
+      "detail": "Linked to 1 external CSS file(s), 558 lines total",
       "file": "accessibility/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "555",
+      "actual": "558",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -398,11 +398,11 @@
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 555 lines total",
+      "detail": "Linked to 1 external CSS file(s), 558 lines total",
       "file": "blog/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "555",
+      "actual": "558",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -442,11 +442,121 @@
     {
       "status": "pass",
       "check": "Inline <style> block",
+      "detail": "600 CSS lines in 1 block(s)",
+      "file": "service-areas/spring/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "600",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "551 CSS lines in 1 block(s)",
+      "file": "service-areas/conroe/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "551",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "481 CSS lines in 1 block(s)",
+      "file": "service-areas/splendora/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "481",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "578 CSS lines in 1 block(s)",
+      "file": "service-areas/channelview/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "578",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "571 CSS lines in 1 block(s)",
+      "file": "service-areas/baytown/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "571",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
       "detail": "382 CSS lines in 1 block(s)",
       "file": "service-areas/crosby/index.php",
       "severity": "blocker",
       "expected": null,
       "actual": "382",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "493 CSS lines in 1 block(s)",
+      "file": "service-areas/jersey-village/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "493",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "583 CSS lines in 1 block(s)",
+      "file": "service-areas/the-woodlands/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "583",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "452 CSS lines in 1 block(s)",
+      "file": "service-areas/houston/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "452",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "495 CSS lines in 1 block(s)",
+      "file": "service-areas/porter/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "495",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "443 CSS lines in 1 block(s)",
+      "file": "service-areas/pasadena/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "443",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -464,11 +574,66 @@
     {
       "status": "pass",
       "check": "Inline <style> block",
+      "detail": "546 CSS lines in 1 block(s)",
+      "file": "service-areas/la-porte/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "546",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "588 CSS lines in 1 block(s)",
+      "file": "service-areas/cypress/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "588",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
       "detail": "419 CSS lines in 1 block(s)",
       "file": "service-areas/kingwood/index.php",
       "severity": "blocker",
       "expected": null,
       "actual": "419",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "507 CSS lines in 1 block(s)",
+      "file": "service-areas/new-caney/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "507",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "523 CSS lines in 1 block(s)",
+      "file": "service-areas/bellaire/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "523",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "Inline <style> block",
+      "detail": "443 CSS lines in 1 block(s)",
+      "file": "service-areas/deer-park/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "443",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -662,44 +827,44 @@
     {
       "status": "pass",
       "check": "Premium tier CSS bar",
-      "detail": "1112 lines (557 inline + 555 external, need \u2265400)",
+      "detail": "1116 lines (558 inline + 558 external, need \u2265400)",
       "file": "index.php",
       "severity": "blocker",
       "expected": "400",
-      "actual": "1112",
+      "actual": "1116",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "Premium tier CSS bar",
-      "detail": "1271 lines (716 inline + 555 external, need \u2265400)",
+      "detail": "1274 lines (716 inline + 558 external, need \u2265400)",
       "file": "about/index.php",
       "severity": "blocker",
       "expected": "400",
-      "actual": "1271",
+      "actual": "1274",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "Premium tier CSS bar",
-      "detail": "1090 lines (535 inline + 555 external, need \u2265400)",
+      "detail": "1093 lines (535 inline + 558 external, need \u2265400)",
       "file": "services/index.php",
       "severity": "blocker",
       "expected": "400",
-      "actual": "1090",
+      "actual": "1093",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "Premium tier CSS bar",
-      "detail": "1069 lines (514 inline + 555 external, need \u2265400)",
+      "detail": "1072 lines (514 inline + 558 external, need \u2265400)",
       "file": "contact/index.php",
       "severity": "blocker",
       "expected": "400",
-      "actual": "1069",
+      "actual": "1072",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -1213,6 +1378,171 @@
       "status": "pass",
       "check": "Single H1",
       "detail": "",
+      "file": "service-areas/spring/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/spring/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/spring/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/conroe/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/conroe/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/conroe/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/splendora/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/splendora/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/splendora/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/channelview/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/channelview/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/channelview/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/baytown/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/baytown/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/baytown/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
       "file": "service-areas/crosby/index.php",
       "severity": "blocker",
       "expected": null,
@@ -1236,6 +1566,171 @@
       "check": "Canonical tag",
       "detail": "",
       "file": "service-areas/crosby/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/jersey-village/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/jersey-village/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/jersey-village/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/the-woodlands/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/the-woodlands/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/the-woodlands/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/houston/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/houston/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/houston/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/porter/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/porter/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/porter/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/pasadena/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/pasadena/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/pasadena/index.php",
       "severity": "blocker",
       "expected": null,
       "actual": null,
@@ -1279,6 +1774,72 @@
       "status": "pass",
       "check": "Single H1",
       "detail": "",
+      "file": "service-areas/la-porte/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/la-porte/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/la-porte/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/cypress/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/cypress/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/cypress/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
       "file": "service-areas/kingwood/index.php",
       "severity": "blocker",
       "expected": null,
@@ -1302,6 +1863,105 @@
       "check": "Canonical tag",
       "detail": "",
       "file": "service-areas/kingwood/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/new-caney/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/new-caney/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/new-caney/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/bellaire/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/bellaire/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/bellaire/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "service-areas/deer-park/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "service-areas/deer-park/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "service-areas/deer-park/index.php",
       "severity": "blocker",
       "expected": null,
       "actual": null,
@@ -2741,7 +3401,7 @@
     {
       "status": "pass",
       "check": "Content H2 question ratio",
-      "detail": "160/244 content H2s are questions (66%; 6 CTA/label H2s exempt)",
+      "detail": "184/366 content H2s are questions (50%; 6 CTA/label H2s exempt)",
       "file": "",
       "severity": "blocker",
       "expected": null,
@@ -2752,7 +3412,7 @@
     {
       "status": "warn",
       "check": "Pages below 40% question-H2",
-      "detail": "10 page(s) under target: gallery/index.php, blog/storm-damage-roof-insurance-claim-texas/index.php, service-areas/humble/index.php, service-areas/crosby/index.php, service-areas/huffman/index.php",
+      "detail": "25 page(s) under target: service-areas/conroe/index.php, service-areas/baytown/index.php, service-areas/the-woodlands/index.php, service-areas/porter/index.php, service-areas/pasadena/index.php",
       "file": "",
       "severity": "warning",
       "expected": null,
@@ -2994,7 +3654,7 @@
     {
       "status": "pass",
       "check": "JS budget \u2264100KB",
-      "detail": "Total JS: 33KB",
+      "detail": "Total JS: 56KB",
       "file": "",
       "severity": "blocker",
       "expected": null,
@@ -3570,7 +4230,7 @@
     {
       "status": "warn",
       "check": "Pages below 40% question-H2",
-      "detail": "10 page(s) under target: gallery/index.php, blog/storm-damage-roof-insurance-claim-texas/index.php, service-areas/humble/index.php, service-areas/crosby/index.php, service-areas/huffman/index.php",
+      "detail": "25 page(s) under target: service-areas/conroe/index.php, service-areas/baytown/index.php, service-areas/the-woodlands/index.php, service-areas/porter/index.php, service-areas/pasadena/index.php",
       "file": "",
       "severity": "warning",
       "expected": null,
