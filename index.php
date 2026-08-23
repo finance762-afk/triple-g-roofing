@@ -827,6 +827,34 @@ main h1, main h2, main h3 { text-wrap: balance; }
             <option value="Other / Not Sure">Other / Not sure</option>
           </select>
         </div>
+        <?php if (empty($GLOBALS['__p1_consent_css'])) { $GLOBALS['__p1_consent_css'] = 1; ?>
+        <style>
+        .p1-consent{margin:14px 0;text-align:left}
+        .p1-consent-set{border:0;margin:0;padding:0}
+        .p1-consent-legend{font-size:13px;font-weight:600;padding:0;margin-bottom:6px}
+        .p1-consent-item{display:flex;gap:8px;align-items:flex-start;margin-bottom:8px;font-size:12px;line-height:1.5;cursor:pointer}
+        .p1-consent-item input{margin:2px 0 0;flex:0 0 auto;width:16px;height:16px;cursor:pointer}
+        .p1-consent-line{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.45;cursor:pointer}
+        .p1-consent-line input{margin:2px 0 0;flex:0 0 auto;width:16px;height:16px;cursor:pointer}
+        .p1-consent a{text-decoration:underline}
+        </style>
+        <?php } ?>
+        <!-- TCPA consent — terms_accepted is REQUIRED by the leads endpoint -->
+        <div class="p1-consent">
+          <label class="p1-consent-line">
+            <input type="checkbox" name="terms_accepted" value="yes" required>
+            <span>I agree to the <a href="/terms/">Terms of Service</a> and <a href="/privacy-policy/">Privacy Policy</a> and consent to be contacted about my request. *</span>
+          </label>
+        </div>
+        <input type="hidden" name="_consent_version" value="v2.1">
+        <input type="hidden" name="_consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'] ?? ''); ?>">
+        <!-- spam shield: signed render timestamp + JS interaction signal -->
+        <?php $__ft_ts = (string) time(); ?>
+        <input type="hidden" name="_ft" value="<?php echo $__ft_ts . '.' . hash_hmac('sha256', $__ft_ts, $leadsFormSecret); ?>">
+        <input type="hidden" name="_js" value="" class="js-shield-field">
+        <?php if (empty($GLOBALS['__js_shield'])) { $GLOBALS['__js_shield'] = 1; ?>
+        <script>(function(){var d=document,f=function(){var i,e=d.querySelectorAll('.js-shield-field');for(i=0;i<e.length;i++)e[i].value='1';d.removeEventListener('pointerdown',f);d.removeEventListener('keydown',f);};d.addEventListener('pointerdown',f);d.addEventListener('keydown',f);})();</script>
+        <?php } ?>
         <button type="submit" class="btn btn-primary btn-block btn-lg">Request My Free Inspection</button>
         <p class="form-footnote">By submitting, you agree to our <a href="/terms/">Terms</a> and <a href="/privacy-policy/">Privacy Policy</a>.</p>
       </form>
