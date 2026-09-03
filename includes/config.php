@@ -186,7 +186,7 @@ $yearsInBusiness = (int) date('Y') - 1973;
 $tier = 'premium';
 
 /* --- CSS cache-bust — SINGLE source of truth. Bump on every framework.css change. --- */
-$cssVersion = '10';                        // pages must NEVER set their own $cssVersion
+$cssVersion = '11';                        // pages must NEVER set their own $cssVersion
 
 /* --- Forms --- */
 $formAction = 'https://db.pageone.cloud/functions/v1/leads/triple-g-roofing';
