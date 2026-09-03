@@ -57,7 +57,7 @@ $faqs = [
     ],
     [
         'q' => 'Do you stand behind your roof damage repairs?',
-        'a' => 'Yes. Triple G Roofing & Construction has served the Greater Houston area since 1973 with the owner on every job. Ask us about the workmanship guarantee for your specific project when we write your estimate; new shingles and materials also carry their manufacturer warranty. One Crosby customer had a minor repair done at no charge eight years after we installed his roof.',
+        'a' => 'Yes. Triple G Roofing & Construction has served the Greater Houston area since 1973 with the owner on every job. Complete roof replacements come with a 5-year transferable no-leak workmanship warranty, and we will spell out the guarantee on a repair when we write your estimate; new shingles and materials also carry their manufacturer warranty. One Crosby customer had a minor repair done at no charge eight years after we installed his roof.',
     ],
 ];
 
@@ -674,7 +674,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="expert-stats">
           <div class="expert-stat"><div class="num">1973</div><div class="lbl">Serving Greater Houston since</div></div>
           <div class="expert-stat"><div class="num">Free</div><div class="lbl">Inspection &amp; estimate</div></div>
-          <div class="expert-stat"><div class="num">3&times;</div><div class="lbl">Nextdoor Favorite 2022&ndash;24</div></div>
+          <div class="expert-stat"><div class="num">3&times;</div><div class="lbl">Nextdoor Favorite 2022&ndash;25</div></div>
         </div>
         <ul class="expert-diffs">
           <li><?php echo icon('check-circle', 22); ?> Rotted decking replaced, not shingled over and hidden</li>
@@ -776,7 +776,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="timeline-step" data-animate>
         <div class="timeline-step__num">4</div>
         <h3>Final walkthrough</h3>
-        <p>We sweep for nails with a magnet, clean up, and walk the repaired roof with you. Ask about the workmanship guarantee for your project.</p>
+        <p>We sweep for nails with a magnet, clean up, and walk the repaired roof with you. Ask about the workmanship guarantee on your repair when we write the estimate; complete roof replacements carry a 5-year transferable workmanship warranty.</p>
       </div>
     </div>
   </div>

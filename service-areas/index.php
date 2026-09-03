@@ -637,8 +637,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <span class="sa-ribbon__label">Where we're based — we come to you</span>
       </div>
       <div class="sa-ribbon__item">
-        <span class="sa-ribbon__num">3×</span>
-        <span class="sa-ribbon__label">Nextdoor Neighborhood Favorite (2022–2024)</span>
+        <span class="sa-ribbon__num">4×</span>
+        <span class="sa-ribbon__label">Nextdoor Neighborhood Favorite (2022–2025)</span>
       </div>
     </div>
   </div>

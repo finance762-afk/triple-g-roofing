@@ -732,7 +732,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="container">
         <div class="lp-ribbon__row">
             <div class="lp-ribbon__item"><?php echo icon('home', 26); ?><div><strong>Father &amp; son</strong><span>Glenn and Tim Menn — the owner is on every job</span></div></div>
-            <div class="lp-ribbon__item"><?php echo icon('award', 26); ?><div><strong>Nextdoor Favorite</strong><span>Neighborhood Favorite 2022, 2023 and 2024</span></div></div>
+            <div class="lp-ribbon__item"><?php echo icon('award', 26); ?><div><strong>Nextdoor Favorite</strong><span>Neighborhood Favorite 2022, 2023, 2024 and 2025</span></div></div>
             <div class="lp-ribbon__item"><?php echo icon('search', 26); ?><div><strong>Free inspections</strong><span>Photo-documented, with a written estimate</span></div></div>
             <div class="lp-ribbon__item"><?php echo icon('map-pin', 26); ?><div><strong>50+ communities</strong><span>From Orange to Galveston and sometimes beyond</span></div></div>
         </div>

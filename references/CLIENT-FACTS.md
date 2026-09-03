@@ -25,9 +25,10 @@
   appears on his card/Wix — keep the site on 824-5463 for NAP consistency unless the owner
   says otherwise on the call. Lead notifications go to tmenn013@gmail.com.
 - Email: tmenn013@gmail.com
-- Awards: **Nextdoor Neighborhood Favorite / Neighborhood Faves — 2022, 2023 and 2024**
-  (badges on Wix testimonials page). Wording: "Voted a Nextdoor Neighborhood Favorite in
-  2022, 2023 and 2024."
+- Awards: **Nextdoor Neighborhood Favorite / Neighborhood Faves — 2022, 2023, 2024 and 2025**
+  (2022–2024 badges on Wix testimonials page; 2025 "Neighborhood Fave winner" notice sent by the
+  owner on 2026-09-02 — asset nextdoor-2025.png). Wording: "Voted a Nextdoor Neighborhood
+  Favorite in 2022, 2023, 2024 and 2025" / "four years running". NEVER "three years".
 
 ## What they actually do (Wix services page + GBP service items + gallery captions)
 Roof replacement (asphalt/architectural shingle AND metal), roof repair (leaks, flashing,
@@ -77,7 +78,7 @@ County" as the frame, never make Huffman the hometown.
 1. **"Licensed"** in any form (licensed roofer, licensed by the State of Texas, license #,
    "licenses and certifications"). Texas has NO state roofing license. Also do not say
    "insured"/"bonded"/"workers' comp" — not verified. Replace trust language with real facts:
-   since 1973, family-owned father/son, owner on every job, Nextdoor Favorite 2022–24, free
+   since 1973, family-owned father/son, owner on every job, Nextdoor Favorite 2022–25, free
    estimates, real reviews.
 2. **Same-day / next-day / 24-hour / 48-hour / emergency-response time promises** of any kind.
    Allowed: "fast response", "we'll get you on the schedule quickly", "call and we'll come
@@ -88,9 +89,14 @@ County" as the frame, never make Huffman the hometown.
    of 50 cities. Remove gratuitous Huffman mentions; re-frame to Greater Houston / your area.
 5. **Specific prices, cost ranges, deposit policies, financing terms** ("$6–12/ft", "$X–Y per
    square", "no deposit", "10% down") — none verified. Say "free written estimate" instead.
-6. **Warranty specifics**: "10-year workmanship warranty", "follow-up inspections at 1 and 3
-   years", "lifetime" — not verified (one customer review mentions a 5-year guarantee). Say
-   "workmanship guarantee — ask us for the terms for your project" or omit. Manufacturer
+6. **Warranty specifics beyond the contract**: "10-year workmanship warranty", "follow-up
+   inspections at 1 and 3 years", "lifetime" — not verified. VERIFIED (owner's own printed
+   contract form, photo 2026-09-02): line item 16 "5-year workmanship transferable warranty",
+   and a "TRANSFERABLE ___ YEAR NO-LEAK WORKMANSHIP warranty [that] applies to complete
+   installation of new composition roofs of 4/12 pitch" (lower pitches: shorter, per contract).
+   → Allowed: "5-year transferable (no-leak) workmanship warranty on complete roof
+   replacements / new composition roof installations". Do NOT extend it to repairs, gutters,
+   siding, decks etc. — for those say "ask about the workmanship guarantee". Manufacturer
    warranties may be described generically ("shingles carry a manufacturer warranty").
 7. **Manufacturer certifications** (GAF Master Elite, Owens Corning Preferred, CertainTeed),
    BBB rating, "A+" — none verified. (GAF shingle bundles appear in job photos; you may say
@@ -104,7 +110,7 @@ County" as the frame, never make Huffman the hometown.
 - "Serving the Greater Houston area since 1973"
 - "Family owned and operated — a father-and-son team"
 - "The owner is on every job"
-- "Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024"
+- "Voted a Nextdoor Neighborhood Favorite in 2022, 2023, 2024 and 2025"
 - "Free inspections and free written estimates"
 - "More than 50 years of roofing, claims-handling and adjuster experience"
 - "We walk you through the insurance claim process from start to finish"
@@ -114,6 +120,30 @@ County" as the frame, never make Huffman the hometown.
 All photos in /assets/images/ are the client's own job photos pulled from triplegroofing.com
 (manifest: references/photo-manifest.json). Alt text must describe what is actually in the
 frame; do not caption a photo with a city unless the manifest says so (it doesn't).
+
+## Contract-form install spec (owner's printed contract, photo 2026-09-02 — verified)
+Line items on his roof-replacement contract (may be quoted as "what a Triple G replacement includes"):
+remove all layers of shingles and felt; new synthetic underlayment; 2"x2" drip edge; shingles
+nailed with 6 nails (1¼") to withstand higher wind; closed valleys with ice-and-water-shield leak
+barrier; double-seal sidewall & chimney flashings, reflash if needed; reseal skylights; replace
+rotted/damaged decking (per-sheet price on the contract); replace ALL plumbing pipe flashings;
+caulk and seal all vents; ventilation / ridge vent options; debris removal and haul-away; protect
+lawn/shrubs and clean site; roll lawn and driveway with a magnetic sweeper; protect/cover pool if
+needed; 5-year workmanship transferable warranty. Contract header uses Tim's cell 281-570-3325
+and the Humble street address (still NOT for the website — SAB).
+
+## Brand / print collateral (owner photos 2026-09-02)
+- Business card + presentation-folder sticker + truck decals: the orange roof logo sits on a
+  DARK charcoal asphalt-shingle photo background; card text is orange (#EE5816-ish) on shingles.
+  Owner asked (2026-09-02) for the website "top title area" to match: replace the white header
+  bar with a light-bronze shingle background behind the logo, hamburger lines orange like the
+  logo. Implemented: `.site-header` in framework.css uses assets/images/header-shingles.webp
+  (a bronze-tinted crop of HIS attic-venting job photo) — keep it, don't revert to white.
+- Card lists social icons: TikTok, YouTube, Google, Facebook, Nextdoor. URLs NOT yet supplied —
+  do not link to guessed profiles (the job photos came from a Facebook CDN, but the page URL is
+  unverified). Ask Tim for the links.
+- Card phone is 281-570-3325 (his cell); website stays on GBP/yard-sign (281) 824-5463 until he
+  says otherwise.
 
 ## Ventilation + warranty (owner-requested talking point, 2026-08-20)
 - Say it plainly: **shingle manufacturers can void or limit shingle warranties when the attic is

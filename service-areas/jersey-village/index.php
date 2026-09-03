@@ -651,7 +651,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 </div>
 
                 <div class="jv-hero__meta">
-                    <span><?php echo icon('award', 16); ?> Nextdoor Neighborhood Favorite 2022–2024</span>
+                    <span><?php echo icon('award', 16); ?> Nextdoor Neighborhood Favorite 2022–2025</span>
                     <span><?php echo icon('hard-hat', 16); ?> The owner is on every job</span>
                     <span><?php echo icon('clock', 16); ?> <?php echo htmlspecialchars($businessHours); ?></span>
                 </div>

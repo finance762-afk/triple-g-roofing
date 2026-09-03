@@ -765,7 +765,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 <dl>
                     <div><dt>In business since</dt><dd>1973</dd></div>
                     <div><dt>Who shows up</dt><dd>The owner, every job</dd></div>
-                    <div><dt>Nextdoor Neighborhood Favorite</dt><dd>2022 · 2023 · 2024</dd></div>
+                    <div><dt>Nextdoor Neighborhood Favorite</dt><dd>2022 · 2023 · 2024 · 2025</dd></div>
                     <div><dt>Inspection &amp; estimate</dt><dd>Free</dd></div>
                 </dl>
             </aside>
@@ -779,7 +779,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <ul>
             <li><?php echo icon('home', 18); ?> Family owned — father &amp; son</li>
             <li><?php echo icon('hard-hat', 18); ?> Owner on every job</li>
-            <li><?php echo icon('award', 18); ?> Nextdoor Favorite 2022–2024</li>
+            <li><?php echo icon('award', 18); ?> Nextdoor Favorite 2022–2025</li>
             <li><?php echo icon('check-circle', 18); ?> Shingle &amp; metal roofing</li>
         </ul>
     </div>

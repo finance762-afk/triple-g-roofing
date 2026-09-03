@@ -107,7 +107,7 @@ $faqCategories = [
         ],
         [
             'q' => 'What warranty comes with a new roof?',
-            'a' => 'Shingles and other materials carry a manufacturer warranty that passes to you when the job is complete. Our workmanship is guaranteed as well — ask us about the workmanship guarantee terms for your specific project and we will put them in writing with your estimate.',
+            'a' => 'Shingles and other materials carry a manufacturer warranty that passes to you when the job is complete. Complete new composition roof installations come with a 5-year transferable no-leak workmanship warranty, spelled out on your contract. For repairs and other projects, ask us about the workmanship guarantee and we will put the terms in writing with your estimate.',
         ],
         [
             'q' => 'Which roofing materials hold up best to Gulf Coast heat, humidity and wind?',

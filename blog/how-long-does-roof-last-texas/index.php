@@ -186,7 +186,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                     </nav>
                     <div class="post-cta">
                         <h3>Free roof inspection</h3>
-                        <p>Serving the Greater Houston area since 1973. Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024.</p>
+                        <p>Serving the Greater Houston area since 1973. Voted a Nextdoor Neighborhood Favorite in 2022, 2023, 2024 and 2025.</p>
                         <a href="tel:+<?php echo $phoneRaw; ?>" class="btn btn-primary"><?php echo $phone; ?></a>
                         <p style="margin: var(--space-4) 0 0;"><a class="post-cta__link" href="/contact/">Request a free estimate online →</a></p>
                     </div>

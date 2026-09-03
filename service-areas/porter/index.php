@@ -662,7 +662,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="pt-proof__card">
             <div><strong>1973</strong><span>Serving Greater Houston since</span></div>
             <div><strong>Father &amp; son</strong><span>Glenn &amp; Tim Menn, owner on every job</span></div>
-            <div><strong>2022 · 23 · 24</strong><span>Nextdoor Neighborhood Favorite</span></div>
+            <div><strong>2022 · 23 · 24 · 25</strong><span>Nextdoor Neighborhood Favorite</span></div>
             <div><strong>Free</strong><span>Inspections &amp; written estimates</span></div>
         </div>
     </div>

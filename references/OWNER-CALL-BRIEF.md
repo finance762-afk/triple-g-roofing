@@ -8,7 +8,7 @@ The website draft is the win-back. He "likes the concept" — the problem was ac
 
 ## Open with what changed (so he hears we listened)
 1. **"Licensed" is gone everywhere.** Replaced with facts: since 1973, father-and-son, owner on
-   every job, Nextdoor Neighborhood Favorite 2022–24, free inspections & written estimates.
+   every job, Nextdoor Neighborhood Favorite 2022–25, free inspections & written estimates.
 2. **Huffman is no longer home base.** Site says "based in Humble, TX — serving the Greater
    Houston area". Huffman is just one of the 50 communities listed (his list, Aug 20).
 3. **Since 1973 / Glenn & Tim** is on the homepage, About, footer, schema and every page.
@@ -30,9 +30,10 @@ The website draft is the win-back. He "likes the concept" — the problem was ac
   and Advice Local listing should change too.)
 - **Hours.** GBP says Mon–Sat 8–7, Sun closed. His site says Mon–Fri 8–8, Sat/Sun by appt.
   Which is right? (Update GBP/AL to match.)
-- **Workmanship guarantee.** Does he offer one and for how long? (One customer review says
-  "5 year guarantee".) The site currently says "ask about the workmanship guarantee for your
-  project" — give us the real term and we'll state it.
+- **Workmanship guarantee.** ANSWERED by his own contract form (photo, 2026-09-02): "5-year
+  workmanship transferable warranty" / transferable no-leak workmanship warranty on complete new
+  composition roofs (4/12 pitch+). Site now states it for roof replacements only. Confirm on the
+  call that he's happy to advertise it that way.
 - **Business name on the site**: "Triple G Roofing & Construction" (matches card + GBP) — OK?
 - **Street address**: GBP hides it (service-area business). Keep it hidden on the site? (Wix
   shows 10506 Scenic Cove Ct, Humble 77396.)
@@ -49,6 +50,13 @@ The website draft is the win-back. He "likes the concept" — the problem was ac
   controls the Wix/registrar login?
 - **GBP**: the listing name/address change he asked for in May (needs live video verification —
   listing is still "unverified"). Can we schedule that?
+
+## Round 2 — his 2026-09-02 emails (implemented 2026-09-03)
+- 2025 Nextdoor Neighborhood Fave badge added (4 years, not 3) everywhere.
+- Header: light-bronze shingle bar behind the logo (like his card/sticker), orange hamburger lines.
+- Confirm to him: his 4 photos DID arrive via the upload link (he wasn't sure).
+- Still pending from him: a better photo of Tim + his dad (replace/add to the About figure),
+  newer job photos, and the social-profile links printed on his card (TikTok/YouTube/Facebook/Nextdoor).
 
 ## Do NOT
 - Re-send the draft email before the call.

@@ -754,7 +754,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="bt-stats__row">
             <div class="bt-stat"><strong>1973</strong><span>Serving Greater Houston since</span></div>
             <div class="bt-stat"><strong>2</strong><span>Generations — Glenn &amp; Tim Menn</span></div>
-            <div class="bt-stat"><strong>3×</strong><span>Nextdoor Neighborhood Favorite 2022–24</span></div>
+            <div class="bt-stat"><strong>4×</strong><span>Nextdoor Neighborhood Favorite 2022–25</span></div>
             <div class="bt-stat"><strong>Free</strong><span>Inspections &amp; written estimates</span></div>
         </div>
     </div>

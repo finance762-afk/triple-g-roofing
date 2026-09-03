@@ -4,7 +4,7 @@
 <!-- Site Header -->
 <header class="site-header" data-header>
     <div class="container header-inner">
-        <!-- Logo (analyzed: 1774x887 = 2:1 aspect ratio → 96px tall × 192px wide on white nav) -->
+        <!-- Logo (analyzed: 1774x887 = 2:1 aspect ratio → 96px tall × 192px wide on bronze shingle nav) -->
         <a href="/" class="site-logo" aria-label="<?php echo htmlspecialchars($siteName); ?> Home">
             <img src="/assets/images/logo.png" alt="<?php echo htmlspecialchars($siteName); ?>" width="192" height="96">
         </a>
@@ -143,9 +143,10 @@
 
     .hamburger span {
         display: block;
-        width: 24px;
-        height: 2px;
-        background: var(--color-white);
+        width: 26px;
+        height: 3px;
+        border-radius: 2px;
+        background: var(--color-primary); /* orange like the logo (owner request 2026-09-02) — was white on a white bar */
         transition: all var(--transition-fast);
     }
 

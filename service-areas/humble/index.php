@@ -638,7 +638,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="hm-proof__card">
             <div class="hm-proof__item"><strong>1973</strong><span>Serving the Greater Houston area since</span></div>
             <div class="hm-proof__item"><strong>50+</strong><span>Communities served, from Orange to Galveston</span></div>
-            <div class="hm-proof__item"><strong>3×</strong><span>Nextdoor Neighborhood Favorite — 2022, 2023, 2024</span></div>
+            <div class="hm-proof__item"><strong>4×</strong><span>Nextdoor Neighborhood Favorite — 2022, 2023, 2024, 2025</span></div>
             <div class="hm-proof__item"><strong>Free</strong><span>Inspections and written estimates</span></div>
         </div>
     </div>

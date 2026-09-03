@@ -161,25 +161,26 @@ p {
 .btn-lg { padding: var(--space-4) var(--space-8); font-size: var(--font-size-base); }
 .btn-sm { padding: var(--space-2) var(--space-4); font-size: var(--font-size-xs); }
 
-/* === Glassmorphism Navigation (white — lets the logo carry the color) === */
+/* === Header: bronze shingle bar (owner request 2026-09-02 — like his business card / truck sticker: logo over shingles) === */
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.92);
-  border-bottom: 1px solid rgba(26, 26, 46, 0.06);
-  padding: var(--space-3) 0; transition: all var(--transition-base);
+  background-color: #B8905F;
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0) 45%, rgba(0,0,0,0.10) 100%), url('/assets/images/header-shingles.webp');
+  background-size: auto, cover; background-position: center, center 40%; background-repeat: no-repeat;
+  border-bottom: 3px solid var(--color-primary);
+  box-shadow: 0 2px 14px rgba(26, 26, 46, 0.18);
+  padding: var(--space-3) 0; transition: padding var(--transition-base), box-shadow var(--transition-base);
 }
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.97);
-  box-shadow: 0 2px 20px rgba(26, 26, 46, 0.10); padding: var(--space-2) 0;
+  box-shadow: 0 4px 24px rgba(26, 26, 46, 0.30); padding: var(--space-2) 0;
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; }
 .site-logo { height: 96px; width: auto; transition: height var(--transition-base); }
-.site-logo img { height: 100%; width: auto; }
+.site-logo img { height: 100%; width: auto; filter: drop-shadow(0 0 1px rgba(255,255,255,0.9)) drop-shadow(0 2px 5px rgba(0,0,0,0.28)); }
 .site-header.scrolled .site-logo { height: 90px; }
 .nav-links { display: flex; align-items: center; gap: var(--space-6); list-style: none; }
-.nav-links a { color: var(--color-dark); font-family: var(--font-heading); font-size: var(--font-size-sm); font-weight: 500; transition: color var(--transition-fast); }
-.nav-links a:hover { opacity: 1; color: var(--color-primary); }
+.nav-links a { color: var(--color-dark); font-family: var(--font-heading); font-size: var(--font-size-sm); font-weight: 600; transition: color var(--transition-fast); }
+.nav-links a:hover, .nav-links a[aria-current="page"] { opacity: 1; color: var(--color-white); text-shadow: 0 1px 2px rgba(0,0,0,0.35); }
 .nav-dropdown { position: relative; }
 .nav-dropdown-menu {
   position: absolute; top: 100%; left: 0; background: var(--color-white); border-radius: var(--radius-md);
@@ -193,10 +194,12 @@ p {
 .nav-dropdown-menu--cols li { break-inside: avoid; }
 @media (max-width: 768px) { .nav-dropdown-menu--cols { column-count: 1; min-width: 0; } }
 .header-cta { margin-left: var(--space-4); }
+.header-cta .btn { background: var(--color-primary); border-color: var(--color-primary); color: var(--color-white); box-shadow: 0 2px 8px rgba(0,0,0,0.20); }
+.header-cta .btn:hover { background: var(--color-dark); border-color: var(--color-dark); color: var(--color-white); }
 
 /* Mobile Nav Toggle */
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: var(--space-2); background: none; border: none; }
-.hamburger span { display: block; width: 24px; height: 2px; background: var(--color-dark); transition: all var(--transition-fast); }
+.hamburger span { display: block; width: 26px; height: 3px; border-radius: 2px; background: var(--color-primary); transition: all var(--transition-fast); }
 .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
 .hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }

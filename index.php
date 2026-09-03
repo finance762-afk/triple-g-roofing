@@ -474,7 +474,7 @@ main h1, main h2, main h3 { text-wrap: balance; }
 .about-badge .big { font-family: var(--font-heading); font-size: var(--font-size-4xl); font-weight: 800; color: var(--color-primary); line-height: 1; }
 .about-badge .label { font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 1px; color: var(--color-gray-dark); margin-top: var(--space-2); }
 
-/* Awards strip — three Nextdoor badges */
+/* Awards strip — four Nextdoor badges (2022–2025) */
 .awards-strip { margin-top: var(--space-16); text-align: center; }
 .awards-strip__label {
   display: inline-block; font-family: var(--font-heading); font-size: var(--font-size-xs);
@@ -787,7 +787,7 @@ main h1, main h2, main h3 { text-wrap: balance; }
       <div class="home-hero__trust">
         <span class="home-hero__trust-item"><?php echo icon('check-circle', 18); ?> Serving Greater Houston Since <?php echo $yearEstablished; ?></span>
         <span class="home-hero__trust-item"><?php echo icon('home', 18); ?> Family Owned &amp; Operated</span>
-        <span class="home-hero__trust-item"><?php echo icon('award', 18); ?> Nextdoor Neighborhood Favorite 2022–2024</span>
+        <span class="home-hero__trust-item"><?php echo icon('award', 18); ?> Nextdoor Neighborhood Favorite 2022–2025</span>
         <span class="home-hero__trust-item"><?php echo icon('search', 18); ?> Free Inspections &amp; Estimates</span>
       </div>
     </div>
@@ -870,7 +870,7 @@ main h1, main h2, main h3 { text-wrap: balance; }
     <span>Family Owned · Father &amp; Son<span class="ticker-dot">•</span></span>
     <span>Free Inspections &amp; Estimates<span class="ticker-dot">•</span></span>
     <span>The Owner Is On Every Job<span class="ticker-dot">•</span></span>
-    <span>Nextdoor Neighborhood Favorite 2022 · 2023 · 2024<span class="ticker-dot">•</span></span>
+    <span>Nextdoor Neighborhood Favorite 2022 · 2023 · 2024 · 2025<span class="ticker-dot">•</span></span>
     <span>Roofing · Siding · Gutters · Patio Covers · Fences<span class="ticker-dot">•</span></span>
     <span>Storm Damage &amp; Claims Help<span class="ticker-dot">•</span></span>
     <?php endfor; ?>
@@ -974,7 +974,7 @@ main h1, main h2, main h3 { text-wrap: balance; }
         <p data-animate>
           The owner is on every job personally to oversee the work and make sure everything is done as agreed. No call
           center, no rotating sales reps: the person who inspects your roof is the person who stands on it with the crew.
-          No job is too big or small, and your neighbors have voted us a Nextdoor Neighborhood Favorite three years running.
+          No job is too big or small, and your neighbors have voted us a Nextdoor Neighborhood Favorite four years running.
         </p>
 
         <div class="process-steps">
@@ -1034,11 +1034,12 @@ main h1, main h2, main h3 { text-wrap: balance; }
     </div>
 
     <div class="awards-strip" data-animate>
-      <span class="awards-strip__label">Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024</span>
+      <span class="awards-strip__label">Voted a Nextdoor Neighborhood Favorite in 2022, 2023, 2024 and 2025</span>
       <div class="awards-strip__row">
         <img src="/assets/images/nextdoor-2022.png" alt="Nextdoor Neighborhood Favorite 2022 award badge" width="391" height="600" loading="lazy">
         <img src="/assets/images/nextdoor-2023.png" alt="Nextdoor Neighborhood Faves 2023 award badge" width="390" height="600" loading="lazy">
         <img src="/assets/images/nextdoor-2024.png" alt="Nextdoor Neighborhood Faves 2024 winner badge" width="338" height="600" loading="lazy">
+        <img src="/assets/images/nextdoor-2025.png" alt="Nextdoor Neighborhood Fave 2025 winner badge" width="602" height="600" loading="lazy">
       </div>
     </div>
   </div>

@@ -700,7 +700,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <div class="be-ribbon" role="presentation">
     <div class="container">
         <ul>
-            <li><?php echo icon('award', 18); ?> Nextdoor Neighborhood Favorite 2022–2024</li>
+            <li><?php echo icon('award', 18); ?> Nextdoor Neighborhood Favorite 2022–2025</li>
             <li><?php echo icon('hard-hat', 18); ?> The owner is on every job</li>
             <li><?php echo icon('home', 18); ?> Father-and-son team since 1973</li>
             <li><?php echo icon('check-circle', 18); ?> Free inspections &amp; written estimates</li>

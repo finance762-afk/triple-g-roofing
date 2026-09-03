@@ -675,7 +675,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
                 <ul class="nc-trust" aria-label="At a glance">
                     <li><?php echo icon('hard-hat', 18); ?> Father &amp; son — Glenn &amp; Tim Menn</li>
-                    <li><?php echo icon('award', 18); ?> Nextdoor Favorite 2022 · 2023 · 2024</li>
+                    <li><?php echo icon('award', 18); ?> Nextdoor Favorite 2022 · 2023 · 2024 · 2025</li>
                     <li><?php echo icon('check-circle', 18); ?> Free inspections &amp; estimates</li>
                 </ul>
             </div>

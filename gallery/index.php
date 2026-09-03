@@ -1265,7 +1265,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="container text-center">
         <span class="eyebrow-label">Get Started</span>
         <h2>Ready When You Are</h2>
-        <p style="font-size: var(--font-size-lg); margin-bottom: var(--space-lg);">Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024. Serving Humble, Kingwood, Atascocita, Spring, Baytown, The Woodlands and <?php echo count($serviceAreaCities); ?> communities across the Greater Houston area.</p>
+        <p style="font-size: var(--font-size-lg); margin-bottom: var(--space-lg);">Voted a Nextdoor Neighborhood Favorite in 2022, 2023, 2024 and 2025. Serving Humble, Kingwood, Atascocita, Spring, Baytown, The Woodlands and <?php echo count($serviceAreaCities); ?> communities across the Greater Houston area.</p>
         <div class="cta-buttons">
             <a href="tel:+<?php echo $phoneRaw; ?>" class="btn btn-primary"><?php echo icon('phone', 18); ?> <?php echo $phone; ?></a>
             <a href="/contact/" class="btn btn-secondary">Request an Estimate Online</a>

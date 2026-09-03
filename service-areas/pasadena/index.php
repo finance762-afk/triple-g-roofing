@@ -602,7 +602,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <div class="pa-trust">
     <div class="container">
         <div class="pa-trust__card">
-            <div class="pa-trust__item"><?php echo icon('award', 20); ?> Nextdoor Neighborhood Favorite 2022–2024</div>
+            <div class="pa-trust__item"><?php echo icon('award', 20); ?> Nextdoor Neighborhood Favorite 2022–2025</div>
             <div class="pa-trust__item"><?php echo icon('hard-hat', 20); ?> The owner is on every job</div>
             <div class="pa-trust__item"><?php echo icon('home', 20); ?> Father-and-son team since 1973</div>
             <div class="pa-trust__item"><?php echo icon('check-circle', 20); ?> Free inspections &amp; written estimates</div>

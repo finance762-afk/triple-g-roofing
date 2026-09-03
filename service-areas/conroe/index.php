@@ -749,7 +749,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
                 <ul class="cn-hero__facts">
                     <li><?php echo icon('check-circle', 16); ?> Father-and-son team, family owned</li>
-                    <li><?php echo icon('check-circle', 16); ?> Nextdoor Neighborhood Favorite 2022–24</li>
+                    <li><?php echo icon('check-circle', 16); ?> Nextdoor Neighborhood Favorite 2022–25</li>
                     <li><?php echo icon('check-circle', 16); ?> Free photo-documented inspections</li>
                     <li><?php echo icon('check-circle', 16); ?> 50+ Greater Houston communities</li>
                 </ul>
@@ -938,7 +938,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="cn-proof__grid">
             <div class="cn-proof__item"><strong>1973</strong><span>Serving the Greater Houston area since</span></div>
             <div class="cn-proof__item"><strong>50+</strong><span>Communities, from Orange to Galveston</span></div>
-            <div class="cn-proof__item"><strong>3×</strong><span>Nextdoor Neighborhood Favorite — 2022, 2023, 2024</span></div>
+            <div class="cn-proof__item"><strong>4×</strong><span>Nextdoor Neighborhood Favorite — 2022, 2023, 2024, 2025</span></div>
             <div class="cn-proof__item"><strong>Free</strong><span>Inspections and written estimates</span></div>
         </div>
     </div>

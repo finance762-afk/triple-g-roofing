@@ -584,7 +584,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <ul>
                 <li><strong>1973</strong><span>In business since</span></li>
                 <li><strong>Father &amp; son</strong><span>Family owned and operated</span></li>
-                <li><strong>3× Favorite</strong><span>Nextdoor 2022 · 2023 · 2024</span></li>
+                <li><strong>4× Favorite</strong><span>Nextdoor 2022 · 2023 · 2024 · 2025</span></li>
                 <li><strong>Free</strong><span>Inspections &amp; estimates</span></li>
             </ul>
         </div>

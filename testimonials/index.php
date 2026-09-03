@@ -36,6 +36,7 @@ $badges = [
     ['file' => 'nextdoor-2022.png', 'w' => 391, 'h' => 600, 'alt' => 'Nextdoor Neighborhood Favorite 2022 award badge', 'year' => '2022'],
     ['file' => 'nextdoor-2023.png', 'w' => 390, 'h' => 600, 'alt' => 'Nextdoor Neighborhood Faves 2023 award badge', 'year' => '2023'],
     ['file' => 'nextdoor-2024.png', 'w' => 338, 'h' => 600, 'alt' => 'Nextdoor Neighborhood Faves 2024 winner badge', 'year' => '2024'],
+    ['file' => 'nextdoor-2025.png', 'w' => 602, 'h' => 600, 'alt' => 'Nextdoor Neighborhood Fave 2025 winner badge', 'year' => '2025'],
 ];
 
 /* --- Schema: WebPage + BreadcrumbList ONLY --- */
@@ -813,8 +814,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 <span class="rv-fact__label">Published by customers, reproduced word for word below</span>
             </div>
             <div class="rv-fact" data-animate="fade-up" style="transition-delay: 0.16s;">
-                <span class="rv-fact__value">3 years running</span>
-                <span class="rv-fact__label">Nextdoor Neighborhood Favorite — 2022, 2023 and 2024</span>
+                <span class="rv-fact__value">4 years running</span>
+                <span class="rv-fact__label">Nextdoor Neighborhood Favorite — 2022, 2023, 2024 and 2025</span>
             </div>
             <div class="rv-fact" data-animate="fade-up" style="transition-delay: 0.24s;">
                 <span class="rv-fact__value"><?php echo count($serviceAreaCities); ?> communities</span>

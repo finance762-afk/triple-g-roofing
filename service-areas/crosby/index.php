@@ -36,7 +36,7 @@ $areaFaqs = [
     ],
     [
         'q' => 'Do you stand behind roofs you installed years ago?',
-        'a' => 'We do. A Crosby customer whose roof we installed in 2015 had us back for a minor repair in 2023 at no charge. Ask us about the workmanship guarantee for your specific project when we write the estimate, and keep in mind that shingles also carry a manufacturer warranty.',
+        'a' => 'We do. A Crosby customer whose roof we installed in 2015 had us back for a minor repair in 2023 at no charge. Complete roof replacements come with a 5-year transferable no-leak workmanship warranty; ask us about the guarantee on a repair when we write the estimate, and keep in mind that shingles also carry a manufacturer warranty.',
     ],
     [
         'q' => 'Can you help with an insurance claim after hail or hurricane damage?',
@@ -535,7 +535,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="cr-hero__strip">
         <div class="container">
             <ul>
-                <li><?php echo icon('award', 16); ?> Nextdoor Neighborhood Favorite 2022–2024</li>
+                <li><?php echo icon('award', 16); ?> Nextdoor Neighborhood Favorite 2022–2025</li>
                 <li><?php echo icon('hard-hat', 16); ?> Owner on every job</li>
                 <li><?php echo icon('home', 16); ?> Father-and-son team since 1973</li>
                 <li><?php echo icon('check-circle', 16); ?> Free inspections &amp; estimates</li>

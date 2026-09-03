@@ -871,7 +871,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <h2>What do customers say about Triple G&rsquo;s siding and exterior work?</h2>
       <p class="answer-block">
         These are real reviews from Triple G Roofing &amp; Construction customers, published on our own site with first
-        name and city. Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024, we are a father-and-son team, and
+        name and city. Voted a Nextdoor Neighborhood Favorite in 2022, 2023, 2024 and 2025, we are a father-and-son team, and
         the owner is on every job.
       </p>
     </div>

@@ -760,7 +760,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <span>Serving Greater Houston since 1973</span>
             <span>Father-and-son team — Glenn &amp; Tim Menn</span>
             <span>The owner is on every job</span>
-            <span>Nextdoor Neighborhood Favorite 2022, 2023, 2024</span>
+            <span>Nextdoor Neighborhood Favorite 2022, 2023, 2024, 2025</span>
             <span>Free inspections &amp; written estimates</span>
         </div>
     </div>

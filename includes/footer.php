@@ -17,7 +17,7 @@
                 <div class="footer-trust">
                     <span class="trust-badge"><?php echo icon('award', 16); ?> Since 1973</span>
                     <span class="trust-badge"><?php echo icon('check-circle', 16); ?> Family Owned</span>
-                    <span class="trust-badge"><?php echo icon('shield', 16); ?> Nextdoor Favorite 2022–24</span>
+                    <span class="trust-badge"><?php echo icon('shield', 16); ?> Nextdoor Favorite 2022–25</span>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@
             <meta itemprop="telephone" content="<?php echo $phone; ?>">
             <h4>About <?php echo htmlspecialchars($siteName); ?></h4>
             <p style="font-size: var(--font-size-sm); line-height: 1.7;">
-                <?php echo htmlspecialchars($siteName); ?> is a family-owned roofing and exterior renovation contractor based in <?php echo $address['city']; ?>, <?php echo $address['state']; ?>, serving the Greater Houston area since <?php echo $yearEstablished; ?>. Owner <?php echo htmlspecialchars($ownerName); ?> and his father <?php echo htmlspecialchars($founderName); ?> run a father-and-son team offering <?php echo implode(', ', array_slice(array_column($services, 'name'), 0, 4)); ?>, siding, patio covers, decks and fences, with free inspections and written estimates. Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024. Communities served include <?php echo implode(', ', array_slice($serviceAreaCities, 0, 12)); ?> and <?php echo count($serviceAreaCities) - 12; ?> more across the region.
+                <?php echo htmlspecialchars($siteName); ?> is a family-owned roofing and exterior renovation contractor based in <?php echo $address['city']; ?>, <?php echo $address['state']; ?>, serving the Greater Houston area since <?php echo $yearEstablished; ?>. Owner <?php echo htmlspecialchars($ownerName); ?> and his father <?php echo htmlspecialchars($founderName); ?> run a father-and-son team offering <?php echo implode(', ', array_slice(array_column($services, 'name'), 0, 4)); ?>, siding, patio covers, decks and fences, with free inspections and written estimates. Voted a Nextdoor Neighborhood Favorite in 2022, 2023, 2024 and 2025. Communities served include <?php echo implode(', ', array_slice($serviceAreaCities, 0, 12)); ?> and <?php echo count($serviceAreaCities) - 12; ?> more across the region.
             </p>
         </div>
 

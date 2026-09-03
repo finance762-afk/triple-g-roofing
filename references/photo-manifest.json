@@ -490,6 +490,15 @@
    "master_h": 600,
    "variants": [],
    "kind": "badge"
+  },
+  {
+   "name": "nextdoor-2025",
+   "source": "client email 2026-09-02 (screenshot of the Nextdoor 2025 Neighborhood Fave winner notice, uploaded via the draft-review upload link)",
+   "alt": "Nextdoor Neighborhood Fave 2025 winner badge",
+   "master_w": 602,
+   "master_h": 600,
+   "variants": [],
+   "kind": "badge"
   }
  ]
 }

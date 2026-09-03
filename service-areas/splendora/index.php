@@ -653,7 +653,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <ul>
             <li><?php echo icon('clock', 22); ?><span>Since 1973<small>Serving Greater Houston</small></span></li>
             <li><?php echo icon('hard-hat', 22); ?><span>Father &amp; son<small>Glenn &amp; Tim Menn — owner on every job</small></span></li>
-            <li><?php echo icon('award', 22); ?><span>Nextdoor Favorite<small>2022 · 2023 · 2024</small></span></li>
+            <li><?php echo icon('award', 22); ?><span>Nextdoor Favorite<small>2022 · 2023 · 2024 · 2025</small></span></li>
             <li><?php echo icon('check-circle', 22); ?><span>Free<small>Inspections &amp; written estimates</small></span></li>
         </ul>
     </div>

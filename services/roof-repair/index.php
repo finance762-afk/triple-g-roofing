@@ -53,7 +53,7 @@ $faqs = [
     ],
     [
         'q' => 'Do you stand behind your roof repairs?',
-        'a' => 'We do. Triple G Roofing & Construction has been serving the Greater Houston area since 1973, and the owner is on every job to make sure the work is done as agreed. Ask us about the workmanship guarantee for your specific repair when we write your estimate, and any new shingles or materials carry their manufacturer warranty.',
+        'a' => 'We do. Triple G Roofing & Construction has been serving the Greater Houston area since 1973, and the owner is on every job to make sure the work is done as agreed. Complete roof replacements come with a 5-year transferable no-leak workmanship warranty; ask us about the guarantee on your specific repair when we write your estimate, and any new shingles or materials carry their manufacturer warranty.',
     ],
     [
         'q' => 'What areas do you cover for roof repair?',
@@ -612,7 +612,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <span class="rr-hero__trust-item"><?php echo icon('award', 18); ?> Serving Greater Houston since 1973</span>
       <span class="rr-hero__trust-item"><?php echo icon('hard-hat', 18); ?> Father-and-son team, owner on every job</span>
       <span class="rr-hero__trust-item"><?php echo icon('check-circle', 18); ?> Free inspections &amp; written estimates</span>
-      <span class="rr-hero__trust-item"><?php echo icon('star', 18); ?> Nextdoor Neighborhood Favorite 2022&ndash;24</span>
+      <span class="rr-hero__trust-item"><?php echo icon('star', 18); ?> Nextdoor Neighborhood Favorite 2022&ndash;25</span>
     </div>
   </div>
 </section>
@@ -675,7 +675,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="rr-expert-stats">
           <div class="rr-expert-stat"><div class="num">1973</div><div class="lbl">Serving Greater Houston since</div></div>
           <div class="rr-expert-stat"><div class="num">Free</div><div class="lbl">Inspection &amp; estimate</div></div>
-          <div class="rr-expert-stat"><div class="num">3&times;</div><div class="lbl">Nextdoor Favorite 2022&ndash;24</div></div>
+          <div class="rr-expert-stat"><div class="num">3&times;</div><div class="lbl">Nextdoor Favorite 2022&ndash;25</div></div>
         </div>
         <ul class="rr-expert-diffs">
           <li><?php echo icon('check-circle', 22); ?> We chase the leak to its real source, not just the wet spot — and show you the photos</li>
@@ -776,7 +776,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="rr-tl-step" data-animate>
         <div class="rr-tl-step__num">4</div>
         <h3>Repair, clean up, walk through</h3>
-        <p>We make the repair, protect your landscaping, sweep for nails, and walk the finished work with you. Ask about the workmanship guarantee for your project.</p>
+        <p>We make the repair, protect your landscaping, sweep for nails, and walk the finished work with you. Ask about the workmanship guarantee on your repair when we write the estimate; complete roof replacements carry a 5-year transferable workmanship warranty.</p>
       </div>
     </div>
   </div>
@@ -859,7 +859,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <ul>
           <li><?php echo icon('check-circle', 20); ?> We trace and fix the true leak source so it stays fixed — with photos</li>
           <li><?php echo icon('check-circle', 20); ?> Free inspection and a written estimate before a single shingle moves</li>
-          <li><?php echo icon('check-circle', 20); ?> A family company that has been here since 1973 — ask about the workmanship guarantee for your project</li>
+          <li><?php echo icon('check-circle', 20); ?> A family company that has been here since 1973 — 5-year transferable workmanship warranty on complete roof replacements</li>
           <li><?php echo icon('check-circle', 20); ?> The owner on every job, reachable Mon&ndash;Sat, 8 AM&ndash;7 PM</li>
         </ul>
       </div>

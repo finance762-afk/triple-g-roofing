@@ -847,7 +847,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="av-tl-step" data-animate>
         <div class="av-tl-step__num">4</div>
         <h3>Walkthrough</h3>
-        <p>We show you the finished system and answer your questions before we pack up. Ask about the workmanship guarantee for your project.</p>
+        <p>We show you the finished system and answer your questions before we pack up. Complete roof replacements carry a 5-year transferable workmanship warranty; ask about the guarantee on a stand-alone ventilation job when we write your estimate.</p>
       </div>
     </div>
   </div>

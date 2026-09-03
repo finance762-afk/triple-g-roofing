@@ -758,7 +758,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <div class="hf-trust" aria-label="Why homeowners call Triple G">
     <div class="container">
         <ul>
-            <li><?php echo icon('award', 20); ?> Nextdoor Neighborhood Favorite 2022, 2023 &amp; 2024</li>
+            <li><?php echo icon('award', 20); ?> Nextdoor Neighborhood Favorite 2022, 2023, 2024 &amp; 2025</li>
             <li><?php echo icon('hard-hat', 20); ?> The owner is on every job</li>
             <li><?php echo icon('home', 20); ?> Family owned — a father-and-son team</li>
             <li><?php echo icon('check-circle', 20); ?> Free inspections &amp; written estimates</li>

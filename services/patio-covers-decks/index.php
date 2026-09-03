@@ -571,7 +571,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <li>Metal-roof covers and poolside palapas</li>
         <li>Wood decks, framing and custom railings</li>
       </ul>
-      <div class="pc-hero__award"><?php echo icon('award', 20); ?> Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024</div>
+      <div class="pc-hero__award"><?php echo icon('award', 20); ?> Voted a Nextdoor Neighborhood Favorite in 2022, 2023, 2024 and 2025</div>
     </aside>
   </div>
 </section>
@@ -969,7 +969,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <h2>What do homeowners say about their <?php echo $shortName; ?> patio cover or pergola?</h2>
       <p class="answer-block" style="margin-inline:auto; text-align:left;">
         These are real reviews from our own customers, quoted as they wrote them. Voted a Nextdoor Neighborhood Favorite
-        in 2022, 2023 and 2024.
+        in 2022, 2023, 2024 and 2025.
       </p>
     </div>
     <div class="pc-reviews__grid">

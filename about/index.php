@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/testimonials-data.php';
 /* ============================================================
    About — Triple G Roofing & Construction
    Facts: references/CLIENT-FACTS.md (since 1973, father/son,
-   based in Humble TX, owner on every job, Nextdoor 2022–2024).
+   based in Humble TX, owner on every job, Nextdoor 2022–2025).
    ============================================================ */
 
 $currentPage     = 'about';
@@ -33,6 +33,7 @@ $aboutBadges = [
     ['img' => 'nextdoor-2022', 'w' => 391, 'h' => 600, 'alt' => 'Nextdoor Neighborhood Favorite 2022 award badge', 'year' => '2022'],
     ['img' => 'nextdoor-2023', 'w' => 390, 'h' => 600, 'alt' => 'Nextdoor Neighborhood Faves 2023 award badge',    'year' => '2023'],
     ['img' => 'nextdoor-2024', 'w' => 338, 'h' => 600, 'alt' => 'Nextdoor Neighborhood Faves 2024 winner badge',   'year' => '2024'],
+    ['img' => 'nextdoor-2025', 'w' => 602, 'h' => 600, 'alt' => 'Nextdoor Neighborhood Fave 2025 winner badge',   'year' => '2025'],
 ];
 
 function aboutSrcset($img, $variants) {
@@ -835,7 +836,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <li><?php echo icon('check-circle', 18); ?> Serving Greater Houston since 1973</li>
       <li><?php echo icon('check-circle', 18); ?> Family owned — father and son</li>
       <li><?php echo icon('check-circle', 18); ?> The owner is on every job</li>
-      <li><?php echo icon('check-circle', 18); ?> Nextdoor Neighborhood Favorite 2022, 2023 &amp; 2024</li>
+      <li><?php echo icon('check-circle', 18); ?> Nextdoor Neighborhood Favorite 2022, 2023, 2024 &amp; 2025</li>
     </ul>
     <div class="ab-hero__actions">
       <a href="/contact/" class="btn btn-primary btn-lg">Get a Free Estimate</a>
@@ -907,7 +908,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
       <div class="ab-stat ab-delay-3" data-animate>
         <span class="ab-stat__num">3<span>×</span></span>
-        <span class="ab-stat__label">Nextdoor Neighborhood Favorite (2022, 2023, 2024)</span>
+        <span class="ab-stat__label">Nextdoor Neighborhood Favorite (2022, 2023, 2024, 2025)</span>
       </div>
     </div>
   </div>
@@ -1020,7 +1021,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="ab-head ab-head--center">
       <span class="eyebrow-label">Neighborhood Favorite</span>
-      <h2 id="ab-awards-title">Voted a Nextdoor Neighborhood Favorite in <span class="text-accent">2022, 2023 and 2024</span></h2>
+      <h2 id="ab-awards-title">Voted a Nextdoor Neighborhood Favorite in <span class="text-accent">2022, 2023, 2024 and 2025</span></h2>
       <p>Three years running, neighbors across the Greater Houston area picked Triple G as their favorite roofer on Nextdoor. We don't take that lightly.</p>
     </div>
     <div class="ab-awards__row">

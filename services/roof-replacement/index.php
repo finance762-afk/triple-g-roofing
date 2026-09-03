@@ -51,6 +51,10 @@ $faqs = [
         'q' => 'Does attic ventilation really matter on a new roof?',
         'a' => 'It matters more than most homeowners realize. Shingle manufacturers can void or limit the shingle warranty when the attic is not ventilated to their specification, and a hot, trapped attic cooks shingles from underneath. Triple G Roofing & Construction checks intake and exhaust on every replacement and will recommend ridge or box vents when the balance is off.',
     ],
+    [
+        'q' => 'Is your roof replacement work under warranty?',
+        'a' => 'Yes. A complete new composition roof from Triple G Roofing & Construction carries a 5-year transferable no-leak workmanship warranty, written into your contract, and the shingles carry their manufacturer warranty on top of that. Transferable means it goes with the house if you sell.',
+    ],
 ];
 
 /* --- Related services (3 cards — required services-grid markup) --- */
@@ -844,7 +848,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="rp-step rp-rv-down reveal-delay-2" data-animate>
         <div class="rp-step__ico"><?php echo icon('check-circle', 20); ?></div>
         <h3>Cleanup, magnet sweep, walkthrough</h3>
-        <p>Debris hauled off, gutters cleared, a rolling magnet run over the lawn and driveway for nails, and a walkthrough with you before we leave.</p>
+        <p>Debris hauled off, gutters cleared, a rolling magnet run over the lawn and driveway for nails, and a walkthrough with you before we leave. Your contract spells out the 5-year transferable workmanship warranty on the new roof.</p>
       </div>
     </div>
   </div>
@@ -892,7 +896,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <h2>What do Greater Houston homeowners say about their Triple G roof?</h2>
       <p class="answer-block">
         These are real reviews from Triple G Roofing &amp; Construction customers, published on our own site with first
-        name and city. Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024, we earn that the slow way: one
+        name and city. Voted a Nextdoor Neighborhood Favorite in 2022, 2023, 2024 and 2025, we earn that the slow way: one
         roof, one family, one clean yard at a time.
       </p>
     </div>

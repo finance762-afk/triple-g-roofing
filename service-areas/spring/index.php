@@ -793,7 +793,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                     <a href="/contact/" class="btn btn-outline-white btn-lg">Book a Free Inspection</a>
                 </div>
 
-                <p class="sp-hero__note"><?php echo icon('check-circle', 16); ?> The owner, Tim Menn, is on every job. Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024.</p>
+                <p class="sp-hero__note"><?php echo icon('check-circle', 16); ?> The owner, Tim Menn, is on every job. Voted a Nextdoor Neighborhood Favorite in 2022, 2023, 2024 and 2025.</p>
             </div>
 
             <div class="sp-hero__art">
@@ -812,7 +812,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="container">
         <ul>
             <li><?php echo icon('home', 16); ?> Father-and-son team, family owned</li>
-            <li><?php echo icon('award', 16); ?> Nextdoor Neighborhood Favorite ×3</li>
+            <li><?php echo icon('award', 16); ?> Nextdoor Neighborhood Favorite ×4</li>
             <li><?php echo icon('search', 16); ?> Free photo-documented inspections</li>
             <li><?php echo icon('map-pin', 16); ?> 50+ Greater Houston communities</li>
         </ul>

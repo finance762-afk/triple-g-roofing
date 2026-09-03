@@ -614,7 +614,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
     </div>
   </div>
-  <span class="fg-hero__badge"><?php echo icon('award', 20); ?> Nextdoor Neighborhood Favorite 2022 &middot; 2023 &middot; 2024</span>
+  <span class="fg-hero__badge"><?php echo icon('award', 20); ?> Nextdoor Neighborhood Favorite 2022 &middot; 2023 &middot; 2024 &middot; 2025</span>
 </section>
 
 <!-- ===================== BREADCRUMB ===================== -->

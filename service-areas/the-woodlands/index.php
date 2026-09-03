@@ -797,7 +797,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <div class="tw-rail" role="note" aria-label="Why homeowners call Triple G">
             <div class="tw-rail__item"><?php echo icon('clock', 22); ?><div><strong>Since 1973</strong>Serving the Greater Houston area</div></div>
-            <div class="tw-rail__item"><?php echo icon('award', 22); ?><div><strong>Nextdoor Favorite</strong>Voted 2022, 2023 and 2024</div></div>
+            <div class="tw-rail__item"><?php echo icon('award', 22); ?><div><strong>Nextdoor Favorite</strong>Voted 2022, 2023, 2024 and 2025</div></div>
             <div class="tw-rail__item"><?php echo icon('search', 22); ?><div><strong>Free inspections</strong>Photo-documented, written estimate</div></div>
             <div class="tw-rail__item"><?php echo icon('home', 22); ?><div><strong>Father &amp; son</strong>Glenn and Tim Menn, family owned</div></div>
         </div>

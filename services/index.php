@@ -803,7 +803,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
         <div class="why-card__txt">
           <h3>Glenn &amp; Tim Menn</h3>
-          <p>A father-and-son team serving the Greater Houston area since 1973. Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024.</p>
+          <p>A father-and-son team serving the Greater Houston area since 1973. Voted a Nextdoor Neighborhood Favorite in 2022, 2023, 2024 and 2025.</p>
         </div>
       </div>
       <div class="why-card" data-animate>

@@ -148,6 +148,7 @@ $awards = [
     'Nextdoor Neighborhood Favorite 2022',
     'Nextdoor Neighborhood Favorite 2023',
     'Nextdoor Neighborhood Favorite 2024',
+    'Nextdoor Neighborhood Favorite 2025',
 ];
 
 /* --- Social / external profiles --- */
@@ -185,7 +186,7 @@ $yearsInBusiness = (int) date('Y') - 1973;
 $tier = 'premium';
 
 /* --- CSS cache-bust — SINGLE source of truth. Bump on every framework.css change. --- */
-$cssVersion = '7';                        // pages must NEVER set their own $cssVersion
+$cssVersion = '8';                        // pages must NEVER set their own $cssVersion
 
 /* --- Forms --- */
 $formAction = 'https://db.pageone.cloud/functions/v1/leads/triple-g-roofing';

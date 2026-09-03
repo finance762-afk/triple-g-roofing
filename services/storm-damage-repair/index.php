@@ -863,9 +863,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <h3><?php echo icon('shield', 22); ?> Triple G Roofing &amp; Construction</h3>
         <ul>
           <li><?php echo icon('check-circle', 20); ?> A Humble-based family company serving Greater Houston since 1973</li>
-          <li><?php echo icon('check-circle', 20); ?> Ask about the workmanship guarantee for your project — from a company that stays put</li>
+          <li><?php echo icon('check-circle', 20); ?> 5-year transferable workmanship warranty on complete roof replacements — from a company that stays put</li>
           <li><?php echo icon('check-circle', 20); ?> Honest documentation and more than 50 years of claims-handling experience</li>
-          <li><?php echo icon('check-circle', 20); ?> Voted a Nextdoor Neighborhood Favorite in 2022, 2023 and 2024</li>
+          <li><?php echo icon('check-circle', 20); ?> Voted a Nextdoor Neighborhood Favorite in 2022, 2023, 2024 and 2025</li>
         </ul>
       </div>
     </div>
