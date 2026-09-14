@@ -643,7 +643,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                     <?php echo areaPhoto('roof-large-home', 'Large two-story brick home with a completed roof replacement', 1200, 1600, '(max-width: 1024px) 260px, 300px', true); ?>
                 </div>
                 <div class="at-duo__frame at-duo__frame--b">
-                    <?php echo areaPhoto('fences-gates', 'New pine privacy fence with a Triple G Roofing yard sign', 1200, 1600, '(max-width: 1024px) 200px, 230px'); ?>
+                    <?php echo areaPhoto('fences-gates-v2', 'New pine privacy fence with a Triple G Roofing yard sign', 1200, 1600, '(max-width: 1024px) 200px, 230px'); ?>
                 </div>
                 <span class="at-duo__tag">Roofing · Siding · Fences</span>
             </div>

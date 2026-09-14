@@ -14,7 +14,7 @@ $currentPage     = 'services';
 $serviceName     = 'Storm & Wind Damage Roof Repair';
 $serviceSlug     = 'storm-damage-repair';
 $pageTitle       = 'Storm & Wind Damage Roof Repair Houston TX | Triple G Roofing & Construction';
-$pageDescription = 'Hail, wind and hurricane roof damage repair across Greater Houston from Triple G Roofing & Construction, since 1973. 50+ years of claims experience, free inspection. Call (281) 824-5463.';
+$pageDescription = 'Hail, wind and hurricane roof damage repair across Greater Houston from Triple G Roofing & Construction, since 1973. 50+ years of claims experience, free inspection. Call (281) 570-3325.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 $ogImage         = 'storm-damage-repair-v2-960.webp';
 $pageReviews     = getTestimonialsFor($serviceSlug, 3);
@@ -37,7 +37,7 @@ if (!function_exists('tg_review_excerpt')) {
 $faqs = [
     [
         'q' => 'What should I do first if a storm damaged my roof?',
-        'a' => 'Stay off the wet roof and away from downed lines, photograph what you can see from the ground and any leaks inside, then call Triple G Roofing & Construction at (281) 824-5463. We will get you on the schedule quickly, inspect for free, and — if water is coming in — ask us about temporary tarping to protect the inside of your home.',
+        'a' => 'Stay off the wet roof and away from downed lines, photograph what you can see from the ground and any leaks inside, then call Triple G Roofing & Construction at (281) 570-3325. We will get you on the schedule quickly, inspect for free, and — if water is coming in — ask us about temporary tarping to protect the inside of your home.',
     ],
     [
         'q' => 'Will my homeowners insurance pay for storm damage?',

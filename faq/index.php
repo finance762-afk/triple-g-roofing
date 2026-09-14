@@ -30,7 +30,7 @@ $faqCategories = [
         ],
         [
             'q' => 'Does Triple G offer free estimates?',
-            'a' => 'Yes. Inspections and written estimates are free, with no obligation. Call (281) 824-5463 or send us a message and we will set up a time to come take a look, photograph what we find, and put a written estimate in your hands. Nothing pushy — take your time with it.',
+            'a' => 'Yes. Inspections and written estimates are free, with no obligation. Call (281) 570-3325 or send us a message and we will set up a time to come take a look, photograph what we find, and put a written estimate in your hands. Nothing pushy — take your time with it.',
             'link' => ['/contact/', 'Request a free estimate'],
         ],
         [
@@ -147,7 +147,7 @@ $faqCategories = [
         ],
         [
             'q' => 'How do I get started?',
-            'a' => 'Call (281) 824-5463 or send a message through our contact page. We will set up a time to come take a look, photograph what we find, and give you a free written estimate. We are open Monday through Saturday, 8:00 AM to 7:00 PM, and closed on Sunday.',
+            'a' => 'Call (281) 570-3325 or send a message through our contact page. We will set up a time to come take a look, photograph what we find, and give you a free written estimate. We are open Monday through Saturday, 8:00 AM to 7:00 PM, and closed on Sunday.',
             'link' => ['/contact/', 'Contact us'],
         ],
     ],

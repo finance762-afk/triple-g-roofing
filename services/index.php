@@ -12,7 +12,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'services';
 $pageTitle       = 'Roofing & Exterior Services | Triple G Roofing & Construction';
-$pageDescription = 'Roof replacement, roof repair, free inspections, storm damage repair, attic venting, gutters, siding, patio covers, decks and fences across the Greater Houston area. Family owned since 1973, owner on every job. Call (281) 824-5463.';
+$pageDescription = 'Roof replacement, roof repair, free inspections, storm damage repair, attic venting, gutters, siding, patio covers, decks and fences across the Greater Houston area. Family owned since 1973, owner on every job. Call (281) 570-3325.';
 $canonicalUrl    = $siteUrl . '/services/';
 
 /* Inline lucide SVGs not covered by icon() */
@@ -85,7 +85,7 @@ $serviceCards = [
         'icon' => $svgBuilding2,
     ],
     [
-        'name' => 'Fences & Gates', 'slug' => 'fences-gates', 'img' => 'fences-gates', 'w' => 1200, 'h' => 1600, 'variants' => [480, 960],
+        'name' => 'Fences & Gates', 'slug' => 'fences-gates', 'img' => 'fences-gates-v2', 'w' => 1200, 'h' => 1600, 'variants' => [480, 960],
         'alt'  => 'New pine privacy fence with a Triple G Roofing yard sign',
         'desc' => 'Cedar and pine privacy fences, ranch rail and custom gates.',
         'bullets' => ['Cedar and pine privacy fences', 'Ranch rail and custom gates', 'Repairs and full replacements'],

@@ -699,7 +699,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
             <aside class="sp-local__aside">
                 <figure class="sp-figure sp-from-right" data-animate>
-                    <?php echo areaPhoto('fences-gates', 'New pine privacy fence with a Triple G Roofing yard sign', 1200, 1600, '(max-width: 1024px) 50vw, 30vw'); ?>
+                    <?php echo areaPhoto('fences-gates-v2', 'New pine privacy fence with a Triple G Roofing yard sign', 1200, 1600, '(max-width: 1024px) 50vw, 30vw'); ?>
                 </figure>
                 <figure class="sp-figure sp-figure--offset sp-from-scale" data-animate>
                     <?php echo areaPhoto('deck-railing', 'Wood deck built around a mature tree with custom railing', 896, 1600, '(max-width: 1024px) 50vw, 26vw'); ?>

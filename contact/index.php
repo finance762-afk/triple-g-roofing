@@ -12,7 +12,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage     = 'contact';
 $pageTitle       = 'Contact Triple G Roofing & Construction | Free Estimates, Humble TX';
-$pageDescription = 'Call (281) 824-5463 or send a message for a free inspection and free written estimate. Based in Humble, TX and serving 50 communities across the Greater Houston area since 1973.';
+$pageDescription = 'Call (281) 570-3325 or send a message for a free inspection and free written estimate. Based in Humble, TX and serving 50 communities across the Greater Houston area since 1973.';
 $canonicalUrl    = $siteUrl . '/contact/';
 
 /* --- Schema: ContactPage + BreadcrumbList --- */

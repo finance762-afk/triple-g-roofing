@@ -14,7 +14,7 @@ $currentPage     = 'services';
 $serviceName     = 'Roof Repair';
 $serviceSlug     = 'roof-repair';
 $pageTitle       = 'Roof Repair Houston TX | Triple G Roofing & Construction';
-$pageDescription = 'Roof repair across the Greater Houston area from Triple G Roofing & Construction, family-owned since 1973. Leaks traced to the source, free inspection and written estimate. Call (281) 824-5463.';
+$pageDescription = 'Roof repair across the Greater Houston area from Triple G Roofing & Construction, family-owned since 1973. Leaks traced to the source, free inspection and written estimate. Call (281) 570-3325.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 $ogImage         = 'roof-repair-v2-960.webp';
 $pageReviews     = getTestimonialsFor($serviceSlug, 3);
@@ -41,7 +41,7 @@ $faqs = [
     ],
     [
         'q' => 'How quickly can Triple G Roofing get to my roof leak?',
-        'a' => 'Call (281) 824-5463 and we will get you on the schedule quickly — the owner comes out personally to take a look. If water is actively coming in and the weather will not allow a permanent repair yet, ask about temporary tarping to keep the inside of your home dry until the repair is done.',
+        'a' => 'Call (281) 570-3325 and we will get you on the schedule quickly — the owner comes out personally to take a look. If water is actively coming in and the weather will not allow a permanent repair yet, ask about temporary tarping to keep the inside of your home dry until the repair is done.',
     ],
     [
         'q' => 'Should I repair my roof or replace it?',

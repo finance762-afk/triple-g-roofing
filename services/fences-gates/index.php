@@ -18,9 +18,9 @@ foreach ($services as $s) {
 }
 $serviceName     = $service['name'];
 $pageTitle       = 'Fence & Gate Builders Houston TX | Triple G Roofing';
-$pageDescription = 'Cedar and pine privacy fences, ranch rail and gates by Triple G Roofing & Construction, a family team serving Greater Houston since 1973. Call (281) 824-5463.';
+$pageDescription = 'Cedar and pine privacy fences, ranch rail and gates by Triple G Roofing & Construction, a family team serving Greater Houston since 1973. Call (281) 570-3325.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
-$ogImage         = 'fences-gates-960.webp';
+$ogImage         = 'fences-gates-v2-960.webp';
 
 /* --- Real customer reviews: the two tagged fences-gates + Clint (cedar fence & gate, tagged siding) --- */
 $reviews = getTestimonialsFor($serviceSlug, 2);
@@ -91,7 +91,7 @@ $relatedServices = [
 $serviceSchema = json_decode(generateServiceSchema($service), true);
 $serviceSchema = ['@context' => 'https://schema.org', '@id' => $canonicalUrl . '#service'] + $serviceSchema;
 $serviceSchema['url']   = $canonicalUrl;
-$serviceSchema['image'] = $siteUrl . '/assets/images/fences-gates-960.webp';
+$serviceSchema['image'] = $siteUrl . '/assets/images/fences-gates-v2-960.webp';
 $breadcrumbSchema = [
     '@context' => 'https://schema.org',
     '@type'    => 'BreadcrumbList',
@@ -586,8 +586,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ===================== 1 · HERO ===================== -->
 <section class="hero hero--interior fg-hero" aria-label="Fence and gate builders in the Greater Houston area">
   <img class="fg-hero__bg"
-       src="/assets/images/fences-gates.jpg"
-       srcset="/assets/images/fences-gates-480.webp 480w, /assets/images/fences-gates-960.webp 960w"
+       src="/assets/images/fences-gates-v2.jpg"
+       srcset="/assets/images/fences-gates-v2-480.webp 480w, /assets/images/fences-gates-v2-960.webp 960w"
        sizes="100vw"
        alt="New pine privacy fence with a Triple G Roofing yard sign"
        width="1200" height="1600" loading="eager" fetchpriority="high">
@@ -701,8 +701,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </article>
       <article class="fg-style">
         <div class="fg-style__media">
-          <img src="/assets/images/fences-gates.jpg"
-               srcset="/assets/images/fences-gates-480.webp 480w, /assets/images/fences-gates-960.webp 960w"
+          <img src="/assets/images/fences-gates-v2.jpg"
+               srcset="/assets/images/fences-gates-v2-480.webp 480w, /assets/images/fences-gates-v2-960.webp 960w"
                sizes="(max-width: 600px) 82vw, 380px"
                alt="New pine privacy fence with a Triple G Roofing yard sign" width="1200" height="1600" loading="lazy">
         </div>

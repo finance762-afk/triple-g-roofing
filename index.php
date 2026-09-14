@@ -110,7 +110,7 @@ $homeServices = [
     [
         'name'     => 'Fences & Gates',
         'slug'     => 'fences-gates',
-        'img'      => 'fences-gates', 'variants' => [480, 960],
+        'img'      => 'fences-gates-v2', 'variants' => [480, 960],
         'alt'      => 'New pine privacy fence with a Triple G Roofing yard sign',
         'desc'     => 'Cedar and pine privacy fences, ranch rail and custom gates.',
         'bullets'  => ['Cedar & pine privacy fences', 'Ranch rail & custom gates', 'Repairs & full replacements'],

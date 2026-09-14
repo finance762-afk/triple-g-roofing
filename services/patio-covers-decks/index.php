@@ -18,7 +18,7 @@ foreach ($services as $s) {
 }
 $serviceName     = $service['name'];
 $pageTitle       = 'Patio Covers, Pergolas & Decks Houston | Triple G Roofing';
-$pageDescription = 'Patio covers, pergolas and wood decks built by Triple G Roofing & Construction, a father-and-son team serving Greater Houston since 1973. Call (281) 824-5463.';
+$pageDescription = 'Patio covers, pergolas and wood decks built by Triple G Roofing & Construction, a father-and-son team serving Greater Houston since 1973. Call (281) 570-3325.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 $ogImage         = 'patio-covers-decks-960.webp';
 
@@ -71,7 +71,7 @@ $relatedServices = [
         'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>',
     ],
     [
-        'name' => 'Fences & Gates', 'slug' => 'fences-gates', 'img' => 'fences-gates', 'variants' => [480, 960],
+        'name' => 'Fences & Gates', 'slug' => 'fences-gates', 'img' => 'fences-gates-v2', 'variants' => [480, 960],
         'alt' => 'New pine privacy fence with a Triple G Roofing yard sign',
         'desc' => 'Cedar and pine privacy fences, ranch rail and custom gates.',
         'bullets' => ['Cedar or pine privacy', 'Single and double gates', 'Repairs and partial replacement'],

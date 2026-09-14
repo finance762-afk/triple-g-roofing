@@ -2785,8 +2785,8 @@
     {
       "status": "fail",
       "check": "Image resolution",
-      "detail": "fences-gates-480.webp is 480x640, recommend at least 800x500 for section",
-      "file": "assets/images/fences-gates-480.webp",
+      "detail": "fences-gates-v2-480.webp is 480x640, recommend at least 800x500 for section",
+      "file": "assets/images/fences-gates-v2-480.webp",
       "severity": "warning",
       "expected": null,
       "actual": null,
@@ -3777,8 +3777,8 @@
     {
       "status": "fail",
       "check": "Image resolution",
-      "detail": "fences-gates-480.webp is 480x640, recommend at least 800x500 for section",
-      "file": "assets/images/fences-gates-480.webp",
+      "detail": "fences-gates-v2-480.webp is 480x640, recommend at least 800x500 for section",
+      "file": "assets/images/fences-gates-v2-480.webp",
       "severity": "warning",
       "expected": null,
       "actual": null,

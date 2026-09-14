@@ -21,9 +21,10 @@
   website must NOT publish a street address in footer/schema/contact — say "based in Humble, TX".
 - Hours (GBP): Mon–Sat 8:00 AM – 7:00 PM; Sunday closed. (Wix says Mon–Fri 8–8, Sat/Sun by
   appointment — GBP wins for NAP consistency; confirm on the owner call.)
-- Phone (public/GBP + Advice Local directories + his YARD SIGNS): **(281) 824-5463**. Tim's cell 281-570-3325
-  appears on his card/Wix — keep the site on 824-5463 for NAP consistency unless the owner
-  says otherwise on the call. Lead notifications go to tmenn013@gmail.com.
+- Phone: **(281) 570-3325** everywhere (owner decision 2026-09-14 via Calvin). 281-824-5463 is the
+  OLD number — it still appears on older yard signs (Tim, 2026-09-12: "our old number") and, as of
+  2026-09-14, on the GBP listing + Advice Local directories, which must be moved to 570-3325 for NAP
+  consistency. Lead notifications go to tmenn013@gmail.com.
 - Email: tmenn013@gmail.com
 - Awards: **Nextdoor Neighborhood Favorite / Neighborhood Faves — 2022, 2023, 2024 and 2025**
   (2022–2024 badges on Wix testimonials page; 2025 "Neighborhood Fave winner" notice sent by the
@@ -142,8 +143,11 @@ and the Humble street address (still NOT for the website — SAB).
 - Card lists social icons: TikTok, YouTube, Google, Facebook, Nextdoor. URLs NOT yet supplied —
   do not link to guessed profiles (the job photos came from a Facebook CDN, but the page URL is
   unverified). Ask Tim for the links.
-- Card phone is 281-570-3325 (his cell); website stays on GBP/yard-sign (281) 824-5463 until he
-  says otherwise.
+- Card phone 281-570-3325 = the published number (site switched 2026-09-14). Never reintroduce 824-5463.
+- Header (owner 2026-09-12): flat light-bronze bar, NO shingle photo texture ("more about the color
+  than the realism"), logo directly on the bronze like his card, no cream plates. Hamburger + CTA orange.
+- fences-gates-v2.jpg: the old-number yard sign was painted out (owner 2026-09-12); the original
+  fences-gates.jpg must not come back.
 
 ## Ventilation + warranty (owner-requested talking point, 2026-08-20)
 - Say it plainly: **shingle manufacturers can void or limit shingle warranties when the attic is

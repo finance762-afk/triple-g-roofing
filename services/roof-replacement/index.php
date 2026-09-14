@@ -14,7 +14,7 @@ $currentPage     = 'services';
 $serviceName     = 'Roof Replacement';
 $serviceSlug     = 'roof-replacement';
 $pageTitle       = 'Roof Replacement Greater Houston | Triple G Roofing';
-$pageDescription = 'Shingle and metal roof replacement across Greater Houston from Triple G Roofing. Family-owned since 1973, free written estimates. Call (281) 824-5463.';
+$pageDescription = 'Shingle and metal roof replacement across Greater Houston from Triple G Roofing. Family-owned since 1973, free written estimates. Call (281) 570-3325.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 $ogImage         = 'roof-replacement-960.webp';
 

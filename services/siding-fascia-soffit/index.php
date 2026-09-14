@@ -14,7 +14,7 @@ $currentPage     = 'services';
 $serviceName     = 'Siding, Fascia & Soffit';
 $serviceSlug     = 'siding-fascia-soffit';
 $pageTitle       = 'Siding, Fascia & Soffit Repair Houston | Triple G Roofing';
-$pageDescription = 'Siding repair and replacement, fascia and soffit wood-rot repair and exterior paint across Greater Houston. Family-owned since 1973. Call (281) 824-5463.';
+$pageDescription = 'Siding repair and replacement, fascia and soffit wood-rot repair and exterior paint across Greater Houston. Family-owned since 1973. Call (281) 570-3325.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 $ogImage         = 'siding-fascia-soffit-960.webp';
 

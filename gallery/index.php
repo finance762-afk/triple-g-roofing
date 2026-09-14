@@ -51,7 +51,7 @@ $photos = [
     'deck-new'             => [896,  1600, [480],      'New pressure-treated wood deck wrapping a backyard', 'Pressure-treated deck wrapping a backyard'],
     'deck-railing'         => [896,  1600, [480],      'Wood deck built around a mature tree with custom railing', 'Deck built around a mature tree, with custom railing'],
     'deck-framing'         => [896,  1600, [480],      'New deck framing laid out in a backyard', 'Deck framing laid out before the boards go down'],
-    'fences-gates'         => [1200, 1600, [480, 960], 'New pine privacy fence with a Triple G Roofing yard sign', 'Pine privacy fence with a Triple G yard sign'],
+    'fences-gates-v2'      => [1200, 1600, [480, 960], 'New pine privacy fence with a Triple G Roofing yard sign', 'Pine privacy fence with a Triple G yard sign'],
     'fence-gate-cedar'     => [1200, 1600, [480, 960], 'New cedar fence and double gate beside a brick home', 'Cedar fence and double gate beside a brick home'],
 ];
 
@@ -62,7 +62,7 @@ $metalPhotos  = ['metal-roof-barn', 'roof-metal-shop'];
 $repairPhotos = ['roof-repair-v2', 'roof-inspection-v2', 'roof-damage-repair-v2', 'storm-damage-repair-v2', 'attic-venting-v2'];
 $sidingPhotos = ['gutter-installation-v2', 'siding-fascia-soffit', 'siding-dormer', 'screened-porch'];
 $patioPhotos  = ['patio-covers-decks', 'patio-cover-fans', 'patio-enclosed', 'pergola-cedar', 'pergola-detail', 'deck-new', 'deck-railing', 'deck-framing'];
-$fencePhotos  = ['fences-gates', 'fence-gate-cedar'];
+$fencePhotos  = ['fences-gates-v2', 'fence-gate-cedar'];
 
 $categories = [
     ['id' => 'roof-replacement', 'label' => 'Roof Replacement'],
@@ -1230,7 +1230,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
 
         <div class="gal-fence">
-            <?php echo gal_figure('fences-gates', '(max-width: 640px) 100vw, (max-width: 900px) 50vw, 33vw', 'fade-left', 'fences'); ?>
+            <?php echo gal_figure('fences-gates-v2', '(max-width: 640px) 100vw, (max-width: 900px) 50vw, 33vw', 'fade-left', 'fences'); ?>
             <?php echo gal_figure('fence-gate-cedar', '(max-width: 640px) 100vw, (max-width: 900px) 50vw, 33vw', 'zoom', 'fences', 0.08); ?>
             <div class="gal-fence__copy" data-animate="fade-right">
                 <span class="eyebrow-label">Same Crew, Same Cleanup</span>

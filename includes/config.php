@@ -22,8 +22,8 @@ $siteUrl = 'https://' . $domain;         // always a valid absolute URL
 // NOTE: $canonicalUrl is NOT set here — each page sets it from $siteUrl + path.
 
 /* --- Contact --- */
-$phone          = '(281) 824-5463';      // display format
-$phoneRaw       = '12818245463';          // for tel: links → tel:+12818245463
+$phone          = '(281) 570-3325';      // display format
+$phoneRaw       = '12815703325';          // for tel: links → tel:+12815703325
 $phoneSecondary = '';
 $email          = 'tmenn013@gmail.com';
 
@@ -186,7 +186,7 @@ $yearsInBusiness = (int) date('Y') - 1973;
 $tier = 'premium';
 
 /* --- CSS cache-bust — SINGLE source of truth. Bump on every framework.css change. --- */
-$cssVersion = '11';                        // pages must NEVER set their own $cssVersion
+$cssVersion = '12';                        // pages must NEVER set their own $cssVersion
 
 /* --- Forms --- */
 $formAction = 'https://db.pageone.cloud/functions/v1/leads/triple-g-roofing';

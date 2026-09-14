@@ -24,7 +24,7 @@ The website draft is the win-back. He "likes the concept" — the problem was ac
    ventilation" — on the Attic Venting page, FAQ and homepage.
 
 ## Questions we need answered on the call
-- **Phone number to publish.** GBP + directories say (281) 824-5463 — and his own YARD SIGNS
+- **Phone number — RESOLVED 2026-09-14: (281) 570-3325 everywhere; GBP + Advice Local still need updating.** (Was: GBP + directories say (281) 824-5463 — and his own YARD SIGNS
   read 281-824-5463 (visible in his fence photo), so the site keeps that number. His card/site/
   reviews use 281-570-3325 (his cell). Confirm 824-5463 is the business line he wants published. (NAP consistency: if he wants 570-3325, the GBP
   and Advice Local listing should change too.)
