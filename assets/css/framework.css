@@ -166,7 +166,9 @@ p {
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   background-color: #2B2B2B;
-  background-image: linear-gradient(180deg, #353535 0%, #2B2B2B 60%, #232323 100%);
+  /* dark shingle field cut from HIS attic-venting job photo, under a charcoal wash so it reads as a subtle pattern (card look) */
+  background-image: linear-gradient(180deg, rgba(43,43,43,0.55) 0%, rgba(43,43,43,0.62) 60%, rgba(30,30,30,0.72) 100%), url('/assets/images/header-shingles-dark.webp');
+  background-size: auto, cover; background-position: center, center 60%;
   border-bottom: 3px solid var(--color-primary);
   box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
   padding: var(--space-3) 0; transition: padding var(--transition-base), box-shadow var(--transition-base);
