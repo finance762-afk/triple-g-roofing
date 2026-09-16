@@ -146,6 +146,14 @@ and the Humble street address (still NOT for the website — SAB).
 - Card phone 281-570-3325 = the published number (site switched 2026-09-14). Never reintroduce 824-5463.
 - Header (owner 2026-09-12): flat light-bronze bar, NO shingle photo texture ("more about the color
   than the realism"), logo directly on the bronze like his card, no cream plates. Hamburger + CTA orange.
+- **Header — FINAL RULE (owner 2026-09-16, "not on the same page"; he re-sent the card):** the header must
+  look like the business card = DARK charcoal (card is dark asphalt shingles) with the logo wordmark in
+  ORANGE. Light bronze was WRONG (the Sep 2/Sep 12 "bronze" reading misjudged the card's color). His stated
+  fallback: "solid dark gray with the logo orange." Implemented: `.site-header` = #2B2B2B charcoal gradient,
+  orange bottom rule, white nav links (orange hover/active), orange CTA + hamburger; `assets/images/logo.png`
+  = wordmark recolored #EE5816 (roof graphic untouched), 800px web copy; full-res at
+  references/brand/logo-orange-full.png; original black-lettering logo lives in git history (commit 04e37c6).
+  Do NOT go back to bronze or to the black-lettered logo on a dark bar.
 - fences-gates-v2.jpg: the old-number yard sign was painted out (owner 2026-09-12); the original
   fences-gates.jpg must not come back.
 

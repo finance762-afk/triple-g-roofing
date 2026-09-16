@@ -161,25 +161,25 @@ p {
 .btn-lg { padding: var(--space-4) var(--space-8); font-size: var(--font-size-base); }
 .btn-sm { padding: var(--space-2) var(--space-4); font-size: var(--font-size-xs); }
 
-/* === Header: flat light-bronze bar (owner request 2026-09-12 — "more about the color than the realism";
-   logo sits directly on the bronze like his business card; no photo texture, no plates) === */
+/* === Header: dark charcoal bar + orange logo (owner request 2026-09-16 — "just like the graphics on my
+   business card": dark-gray shingle card, orange wordmark; his fallback was "solid dark gray with the logo orange") === */
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  background-color: #B8905F;
-  background-image: linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0) 55%, rgba(0,0,0,0.06) 100%);
+  background-color: #2B2B2B;
+  background-image: linear-gradient(180deg, #353535 0%, #2B2B2B 60%, #232323 100%);
   border-bottom: 3px solid var(--color-primary);
-  box-shadow: 0 2px 14px rgba(26, 26, 46, 0.18);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
   padding: var(--space-3) 0; transition: padding var(--transition-base), box-shadow var(--transition-base);
 }
 .site-header.scrolled {
-  box-shadow: 0 4px 24px rgba(26, 26, 46, 0.30); padding: var(--space-2) 0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45); padding: var(--space-2) 0;
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; }
 .site-logo { display: inline-block; height: 96px; width: auto; transition: height var(--transition-base); }
-.site-logo img { height: 100%; width: auto; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.22)); }
+.site-logo img { height: 100%; width: auto; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.45)); }
 .site-header.scrolled .site-logo { height: 90px; }
 .nav-links { display: flex; align-items: center; gap: var(--space-6); list-style: none; }
-.nav-links a { color: var(--color-dark); font-family: var(--font-heading); font-size: var(--font-size-sm); font-weight: 600; transition: color var(--transition-fast); }
+.nav-links a { color: #F3F3F3; font-family: var(--font-heading); font-size: var(--font-size-sm); font-weight: 600; transition: color var(--transition-fast); }
 .nav-links a:hover, .nav-links a[aria-current="page"] { opacity: 1; color: var(--color-primary); }
 @media (min-width: 769px) { .nav-links > li > a { display: inline-flex; align-items: center; gap: 4px; padding: 4px 2px; } }
 .nav-dropdown { position: relative; }
