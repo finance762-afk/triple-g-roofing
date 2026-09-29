@@ -118,9 +118,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   Phone: <a href="tel:+<?php echo $phoneRaw; ?>"><?php echo $phone; ?></a><br>
   Address: <?php echo $address['street']; ?>, <?php echo $address['city']; ?>, <?php echo $address['state']; ?> <?php echo $address['zip']; ?></p>
 
-  <div class="legal-disclaimer">
-    This document is provided as a general template. We recommend reviewing with a licensed Texas attorney before publication.
-  </div>
 </article>
 </main>
 
