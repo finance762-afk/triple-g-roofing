@@ -42,6 +42,9 @@ DirectoryIndex index.php index.html
 # Clean URLs
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    # www → apex (one canonical host; the Google profile links to www)
+    RewriteCond %{HTTP_HOST} ^www\.triplegroofing\.com$ [NC]
+    RewriteRule ^(.*)$ https://triplegroofing.com/$1 [R=301,L]
 
     # Retired slug (pre-launch rename) — keep the old URL alive
     RewriteRule ^blog/roof-replacement-cost-huffman-tx/?$ /blog/roof-replacement-cost-houston-tx/ [R=301,L]
