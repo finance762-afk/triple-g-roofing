@@ -169,7 +169,7 @@ $certificationLinks = [];
 $logoUrl = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/triple-g-roofing/logo/1786991116016-ob2zks-Triple_G_logo.png';
 
 /* --- Analytics --- */
-$googleAnalyticsId = '';                   // not yet provided — GA snippet stays commented out until launch
+$googleAnalyticsId = 'G-65L41V7T7Y';                   // not yet provided — GA snippet stays commented out until launch
 
 /* --- Brand colors (mirror framework.css :root, extracted from logo) --- */
 $colors = [
