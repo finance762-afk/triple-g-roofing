@@ -17,7 +17,7 @@ $shortName = 'Triple G Roofing';
 
 /* --- Domain / URLs --- */
 // No production_domain in build-plan.json → default to preview URL. NEVER blank.
-$domain  = 'triple-g-roofing.pageone.cloud';
+$domain  = 'triplegroofing.com';
 $siteUrl = 'https://' . $domain;         // always a valid absolute URL
 // NOTE: $canonicalUrl is NOT set here — each page sets it from $siteUrl + path.
 
