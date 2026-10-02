@@ -843,7 +843,7 @@ main h1, main h2, main h3 { text-wrap: balance; }
         <div class="p1-consent">
           <label class="p1-consent-line">
             <input type="checkbox" name="terms_accepted" value="yes" required>
-            <span>I agree to the <a href="/terms/">Terms of Service</a> and <a href="/privacy-policy/">Privacy Policy</a> and consent to be contacted about my request. *</span>
+            <span>I agree to the <a href="/terms/" target="_blank" rel="noopener">Terms of Service</a> and <a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> and consent to be contacted about my request. *</span>
           </label>
         </div>
         <input type="hidden" name="_consent_version" value="v2.1">
@@ -856,7 +856,7 @@ main h1, main h2, main h3 { text-wrap: balance; }
         <script>(function(){var d=document,f=function(){var i,e=d.querySelectorAll('.js-shield-field');for(i=0;i<e.length;i++)e[i].value='1';d.removeEventListener('pointerdown',f);d.removeEventListener('keydown',f);};d.addEventListener('pointerdown',f);d.addEventListener('keydown',f);})();</script>
         <?php } ?>
         <button type="submit" class="btn btn-primary btn-block btn-lg">Request My Free Inspection</button>
-        <p class="form-footnote">By submitting, you agree to our <a href="/terms/">Terms</a> and <a href="/privacy-policy/">Privacy Policy</a>.</p>
+        <p class="form-footnote">By submitting, you agree to our <a href="/terms/" target="_blank" rel="noopener">Terms</a> and <a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>.</p>
       </form>
     </aside>
   </div>

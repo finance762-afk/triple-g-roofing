@@ -676,7 +676,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
                         <label class="p1-consent-item" style="display: flex; align-items: flex-start; gap: var(--space-sm); cursor: pointer;">
                             <input type="checkbox" name="terms_accepted" value="yes" required style="margin-top: 3px; flex-shrink: 0; accent-color: var(--color-primary);">
-                            <span style="font-size: var(--font-size-sm); line-height: 1.5;">I have read and agree to the <a href="/terms/" style="color: var(--color-primary); text-decoration: underline;">Terms of Service</a> and <a href="/privacy-policy/" style="color: var(--color-primary); text-decoration: underline;">Privacy Policy</a> *</span>
+                            <span style="font-size: var(--font-size-sm); line-height: 1.5;">I have read and agree to the <a href="/terms/" target="_blank" rel="noopener" style="color: var(--color-primary); text-decoration: underline;">Terms of Service</a> and <a href="/privacy-policy/" target="_blank" rel="noopener" style="color: var(--color-primary); text-decoration: underline;">Privacy Policy</a> *</span>
                         </label>
                     </fieldset>
 

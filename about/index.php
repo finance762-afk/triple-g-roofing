@@ -1022,7 +1022,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="ab-head ab-head--center">
       <span class="eyebrow-label">Neighborhood Favorite</span>
       <h2 id="ab-awards-title">Voted a Nextdoor Neighborhood Favorite in <span class="text-accent">2022, 2023, 2024 and 2025</span></h2>
-      <p>Three years running, neighbors across the Greater Houston area picked Triple G as their favorite roofer on Nextdoor. We don't take that lightly.</p>
+      <p>Four years running, neighbors across the Greater Houston area picked Triple G as their favorite roofer on Nextdoor. We don't take that lightly.</p>
     </div>
     <div class="ab-awards__row">
       <?php foreach ($aboutBadges as $i => $badge): ?>

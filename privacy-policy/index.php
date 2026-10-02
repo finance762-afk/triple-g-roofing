@@ -141,9 +141,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       Based in: <?php echo $address["city"]; ?>, <?php echo $address["state"]; ?> <?php echo $address["zip"]; ?> (service-area business — we come to you)
     </p>
 
-    <div class="legal-disclaimer">
-      This Privacy Policy is provided as a general template. We recommend reviewing this document with a licensed <?php echo $companyState; ?> attorney before publication to ensure compliance with current state and federal privacy laws.
-    </div>
   </article>
 </div>
 
