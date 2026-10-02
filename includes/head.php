@@ -24,6 +24,9 @@
     <meta name="robots" content="noindex, nofollow">
     <?php endif; ?>
     <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl); ?>">
+    <?php if (!empty($gscVerification)): ?>
+    <meta name="google-site-verification" content="<?php echo htmlspecialchars($gscVerification); ?>">
+    <?php endif; ?>
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">

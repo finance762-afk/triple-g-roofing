@@ -191,3 +191,8 @@ $cssVersion = '14';                        // pages must NEVER set their own $cs
 /* --- Forms --- */
 $formAction = 'https://db.pageone.cloud/functions/v1/leads/triple-g-roofing';
 $leadsFormSecret = 'bac7714a8f41505ab12d75311ccbb11a6374e38b1a010d69111c84a652cfa0f3'; // spam-shield HMAC (matches leads fn LEADS_FORM_SECRET)
+
+// Google Search Console — URL-prefix property verification (META).
+// The client controls this domain's DNS, so we prove ownership through
+// the site we host. Empty string = tag not rendered.
+$gscVerification = 'iHIgNr0QxmoF-yl8-LbIvqBT6Ri3S3GbeA46ujosb08';
