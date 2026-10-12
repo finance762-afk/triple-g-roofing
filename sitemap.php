@@ -160,12 +160,5 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
         <priority>0.3</priority>
     </url>
 
-    <!-- Thank You page (noindexed on-page but included here for crawl discovery) -->
-    <url>
-        <loc><?php echo $siteUrl; ?>/thank-you</loc>
-        <lastmod><?php echo $lastmod; ?></lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.1</priority>
-    </url>
 
 </urlset>
