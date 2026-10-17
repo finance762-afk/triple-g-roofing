@@ -196,3 +196,11 @@ $leadsFormSecret = 'bac7714a8f41505ab12d75311ccbb11a6374e38b1a010d69111c84a652cf
 // The client controls this domain's DNS, so we prove ownership through
 // the site we host. Empty string = tag not rendered.
 $gscVerification = 'iHIgNr0QxmoF-yl8-LbIvqBT6Ri3S3GbeA46ujosb08';
+
+// ── PAGEONE SITE LOCK (do not edit; managed from the CRM) ───────────────
+// A .site-locked marker in the site root puts the whole site behind a 503
+// hold page. Remove the marker (via the CRM unlock) to restore.
+if (file_exists(__DIR__ . '/../.site-locked')) {
+    include __DIR__ . '/../suspended.php';
+    exit;
+}
